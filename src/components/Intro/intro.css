@@ -2,25 +2,35 @@
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
     position: relative;
 }
 
-.bg {
+.bg-container {
     position: absolute;
-    top: -4rem;
+    padding-right: 100px;
+    top: 0;
     right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 100vh;
+    z-index: 2;
+    
 }
+
+.bg {
+    border-radius: 50%; /* Makes the image round */
+    width: 400px; /* Adjust to the size you want */
+    height: 400px; 
+    object-fit: cover;
+    padding-bottom: 20px;
+  }
+  
+  /* Add this if you need to center the image */
+
 
 .introContent {
     height: 100vh;
     width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -36,25 +46,19 @@
     color: yellow;
 }
 
-.introPara {
+.subtitle {
     font-size: medium;
     font-weight: 300;
-    letter-spacing: 1px;
 }
 
-.btn {
-    background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 2rem;
+.links {
+    padding-top: 50px;
+    align-items: center;
 }
 
-.btnImg {
-    object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
-}
+
+
+
 
 @media screen and (max-width:840px) {
     .bg {
