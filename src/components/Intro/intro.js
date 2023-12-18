@@ -20,22 +20,22 @@ const Intro = () => {
             years as a tech-startup founder.
           </p>
         </span>
-        <div className="links">
+        <div className="social-links">
           <a
             href="https://www.linkedin.com/in/rasmus-henriksen-a5b660109/"
             rel="noopener noreferrer"
           >
-            <img src={linkedinIcon} alt="Linkedin" className="link" />
+            <img src={linkedinIcon} alt="Linkedin" className="social-link" />
           </a>
           <a href="mailto:rasmus.henriksen@live.dk" rel="noopener noreferrer">
-            <img src={emailIcon} alt="Email" className="link" />
+            <img src={emailIcon} alt="Email" className="social-link" />
           </a>
 
           <a
             href="https://github.com/Rallefar1103?tab=repositories"
             rel="noopener noreferrer"
           >
-            <img src={githubIcon} alt="Github" className="link" />
+            <img src={githubIcon} alt="Github" className="social-link" />
           </a>
         </div>
       </div>

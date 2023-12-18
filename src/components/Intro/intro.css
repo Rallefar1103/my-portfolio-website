@@ -51,9 +51,16 @@
     font-weight: 300;
 }
 
-.links {
+.social-links {
     padding-top: 50px;
     align-items: center;
+}
+
+.social-link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
 }
 
 
