@@ -4,6 +4,7 @@ import bg from "../../assets/profile.jpeg";
 import linkedinIcon from "../../assets/linkedin.png";
 import githubIcon from "../../assets/github.png";
 import emailIcon from "../../assets/gmail.png";
+import medium from "../../assets/medium.png";
 const Intro = () => {
   return (
     <section id="intro">
@@ -36,6 +37,12 @@ const Intro = () => {
             rel="noopener noreferrer"
           >
             <img src={githubIcon} alt="Github" className="social-link" />
+          </a>
+          <a
+            href="https://medium.com/me/stories/public"
+            rel="noopener noreferrer"
+          >
+            <img src={medium} alt="Medium" className="social-link" />
           </a>
         </div>
       </div>
