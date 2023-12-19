@@ -22,8 +22,9 @@ const Skills = () => {
           <div className="skillBarText">
             <h2>Web Development</h2>
             <p>
-              React, Next.js, TypeScript, JavaScript, GraphQL, MongoDB, API
-              Design
+              My web development toolkit comprises a solid stack of React,
+              Next.js, TypeScript, JavaScript using Node.js, GraphQL, REST and
+              MongoDB on the backend as well as strong skills in API Design.
             </p>
           </div>
         </div>
@@ -57,8 +58,8 @@ const Skills = () => {
             <h2>Testing & Debugging</h2>
             <p>
               Robust unit, integration and end-to-end testing as well as strong
-              debugging skills are foundational to creating high-quality
-              software.
+              debugging skills are foundational in my approach to creating
+              high-quality and robust software solutions.
             </p>
           </div>
         </div>
@@ -68,7 +69,9 @@ const Skills = () => {
             <h2>Project Management</h2>
             <p>
               One of my biggest passions is to blend technical expertise with my
-              business acumen and steer projects from conception to completion.
+              business acumen and steer projects from conception to completion
+              by fostering a culture of innovation and collaboration amongst my
+              team.
             </p>
           </div>
         </div>
