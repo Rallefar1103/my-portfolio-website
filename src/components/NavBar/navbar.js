@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
-import contactImg from "../../assets/contact.png";
+import emailIcon from "../../assets/gmail.png";
 import { Link } from "react-scroll";
 import menu from "../../assets/menu.png";
 
@@ -9,7 +9,6 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="navbar">
-      <img src={logo} alt="Logo" className="logo" />
       <div className="desktopMenu">
         <Link
           activeClass="active"
@@ -56,15 +55,10 @@ const Navbar = () => {
           Articles
         </Link>
       </div>
-      <button
-        className="desktopMenuBtn"
-        onClick={() => {
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        <img src={contactImg} alt="" className="desktopMenuImg" />
+      <button className="desktopMenuBtn" onClick={() => {}}>
+        <a href="mailto:rasmus.henriksen@live.dk" rel="noopener noreferrer">
+          <img src={emailIcon} alt="Email" className="email-link" />
+        </a>
         Contact Me
       </button>
 

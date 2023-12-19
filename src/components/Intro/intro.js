@@ -3,7 +3,7 @@ import "./intro.css";
 import bg from "../../assets/profile.jpeg";
 import linkedinIcon from "../../assets/linkedin.png";
 import githubIcon from "../../assets/github.png";
-import emailIcon from "../../assets/gmail.png";
+
 import medium from "../../assets/medium.png";
 const Intro = () => {
   return (
@@ -12,7 +12,7 @@ const Intro = () => {
         <div className="bg-container">
           <img src={bg} alt="Profile" className="bg" />
         </div>
-        <span className="hello">Hello,</span>
+        <span className="hello">Hi!</span>
         <span className="introText">
           I'm <span className="introName">Rasmus</span> <br />
           Full-Stack Software Engineer <br />
@@ -27,9 +27,6 @@ const Intro = () => {
             rel="noopener noreferrer"
           >
             <img src={linkedinIcon} alt="Linkedin" className="social-link" />
-          </a>
-          <a href="mailto:rasmus.henriksen@live.dk" rel="noopener noreferrer">
-            <img src={emailIcon} alt="Email" className="social-link" />
           </a>
 
           <a
