@@ -22,19 +22,20 @@ const Article = (props) => {
         <div className="article-date">{date}</div>
       </div>
 
-      <Link to={link}>
+      <a href={link}>
         <div className="article-right">
           <div className="article-title">{title}</div>
           <div className="article-teaser">{teaserText}</div>
           <div className="article-link">
             Read Article{" "}
             <FontAwesomeIcon
+              className="icon"
               style={{ fontSize: "10px" }}
               icon={faChevronRight}
             />
           </div>
         </div>
-      </Link>
+      </a>
     </div>
   );
 };

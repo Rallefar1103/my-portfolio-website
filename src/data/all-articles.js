@@ -1,7 +1,7 @@
 import Article from "./article";
 
 let allArticles = [
-  Article(
+  new Article(
     "Why code ownership is BAD and constructive feedback is KING in software development",
     "7 May 2023",
     `Deployed a Flutter app globally to 2500 customers in 15+ countries, streamlining a once manual robot base station setup into a digital process.
@@ -9,7 +9,7 @@ let allArticles = [
     Enhanced the layout engine codebase quality by refactoring classes and methods, reducing lines of code by ≈30% leading to a faster delivery of new layouts.`,
     "https://github.com/Medium/medium-api-docs"
   ),
-  Article(
+  new Article(
     "I did Test-Driven-Development for six months on a project, this is how it went",
     "7 May 2023",
     `Deployed a Flutter app globally to 2500 customers in 15+ countries, streamlining a once manual robot base station setup into a digital process.
@@ -17,7 +17,7 @@ let allArticles = [
   Enhanced the layout engine codebase quality by refactoring classes and methods, reducing lines of code by ≈30% leading to a faster delivery of new layouts.`,
     "https://github.com/Medium/medium-api-docs"
   ),
-  Article(
+  new Article(
     "The best way to refactor your code for better readability and maintainability",
     "7 May 2023",
     `Deployed a Flutter app globally to 2500 customers in 15+ countries, streamlining a once manual robot base station setup into a digital process.
