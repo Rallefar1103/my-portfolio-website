@@ -6,19 +6,37 @@ let allProjects = [
     "travel-planner",
     "Smart Travel Assistant",
     "Travel Planner Assistant description..",
-    "/assets/travel-planner.jpg"
+    "/assets/travel-planner.jpg",
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
   ),
   new Project(
     "food-truck-tracker",
     "Food Truck Tracker",
     "Some description goes here..",
-    "/assets/food-truck.jpg"
+    "/assets/food-truck.jpg",
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
   ),
   new Project(
     "foodie-friends",
     "Foodie Friends",
     "Some description goes here..",
-    "/assets/foodie-friends.jpg"
+    "/assets/foodie-friends.jpg",
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
   ),
   new Project(
     "washee",
@@ -36,13 +54,25 @@ let allProjects = [
     "data-analytics",
     "Data Analytics Microservice",
     "Some description goes here..",
-    "/assets/data-analytics.jpg"
+    "/assets/data-analytics.jpg",
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
   ),
   new Project(
     "shopday",
     "Local Rewards Shopping App",
     "Some description goes here..",
-    "/assets/shopday.jpg"
+    "/assets/shopday.jpg",
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
   ),
 ];
 

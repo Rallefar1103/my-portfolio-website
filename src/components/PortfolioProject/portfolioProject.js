@@ -1,9 +1,5 @@
 import { useParams } from "react-router-dom";
 import allProjects from "../../data/allProjects";
-import typeScriptIcon from "../../icons/typescript.png";
-import reactIcon from "../../icons/atom.png";
-import supabaseIcon from "../../icons/aws.png";
-import mongoIcon from "../../icons/leaf.png";
 import "./portfolioProject.css";
 
 const PortfolioProject = () => {
@@ -11,6 +7,7 @@ const PortfolioProject = () => {
 
   const project = allProjects.find((p) => p.id === projectId);
   const projectImageUrl = project.imgUrl;
+  const techStack = project.techStack;
 
   if (!project) {
     return <div> 404 Project not found </div>;
@@ -23,10 +20,9 @@ const PortfolioProject = () => {
         <img src={projectImageUrl} alt="" className="portImg" />
       </div>
       <div className="tech-stack-row">
-        <img src={typeScriptIcon} alt="ts" className="techStackImg" />
-        <img src={reactIcon} alt="react" className="techStackImg" />
-        <img src={supabaseIcon} alt="supabase" className="techStackImg" />
-        <img src={mongoIcon} alt="mongo" className="techStackImg" />
+        {techStack.map((tech, index) => (
+          <img src={tech} alt="ts" className="techStackImg" />
+        ))}
       </div>
 
       <p className="project-description">{project.description}</p>

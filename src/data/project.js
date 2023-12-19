@@ -1,9 +1,10 @@
 class Project {
-  constructor(id, title, description, imgUrl) {
+  constructor(id, title, description, imgUrl, techStack) {
     this.id = id;
     this.title = title;
     this.description = description;
     this.imgUrl = imgUrl;
+    this.techStack = techStack;
   }
 }
 
