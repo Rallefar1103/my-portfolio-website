@@ -6,6 +6,7 @@ import foodieFriends from "../../assets/foodie-friends.jpg";
 import washee from "../../assets/washee.jpg";
 import delivery from "../../assets/delivery.jpg";
 import dataAnalytics from "../../assets/data-analytics.jpg";
+import shopday from "../../assets/shopday.jpg";
 
 const Works = () => {
   return (
@@ -38,6 +39,10 @@ const Works = () => {
         <div className="imgContainer">
           <span className="imgTitle">Data Analytics Microservice</span>
           <img src={dataAnalytics} alt="" className="worksImg" />
+        </div>
+        <div className="imgContainer">
+          <span className="imgTitle">Local Rewards Shopping App</span>
+          <img src={shopday} alt="" className="worksImg" />
         </div>
       </div>
     </section>

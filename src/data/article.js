@@ -1,8 +1,9 @@
 class Article {
-  constructor(title, date, teaser) {
+  constructor(title, date, teaser, link) {
     this.title = title;
     this.date = date;
     this.teaser = teaser;
+    this.link = link;
   }
 }
 
