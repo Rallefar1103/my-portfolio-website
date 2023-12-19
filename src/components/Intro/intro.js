@@ -18,7 +18,7 @@ const Intro = () => {
           Full-Stack Software Engineer <br />
           <p className="subtitle">
             Computer Science M.S. graduate from UCLA with five years of
-            professional industry experience <br />
+            professional experience <br />
             working as a software engineer including two years as a tech-startup
             founder.
           </p>
