@@ -10,10 +10,25 @@
     padding: 0; 
 }
 
+.tech-stack-row {
+    flex-direction: row;
+    align-items: center; /* Align items to the start (left) */
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.techStackImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
 .portImg-container {
     position: relative;
     width: 100%;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .portImg {
