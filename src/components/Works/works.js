@@ -1,11 +1,11 @@
 import React from "react";
 import "./works.css";
-import Portfolio1 from "../../assets/portfolio-1.png";
-import Portfolio2 from "../../assets/portfolio-2.png";
-import Portfolio3 from "../../assets/portfolio-3.png";
-import Portfolio4 from "../../assets/portfolio-4.png";
-import Portfolio5 from "../../assets/portfolio-5.png";
-import Portfolio6 from "../../assets/portfolio-6.png";
+import foodtruck from "../../assets/food-truck.jpg";
+import travelPlanner from "../../assets/travel-planner.jpg";
+import foodieFriends from "../../assets/foodie-friends.jpg";
+import washee from "../../assets/washee.jpg";
+import delivery from "../../assets/delivery.jpg";
+import dataAnalytics from "../../assets/data-analytics.jpg";
 
 const Works = () => {
   return (
@@ -17,15 +17,12 @@ const Works = () => {
         quality.
       </span>
       <div className="worksImgs">
-        <img src={Portfolio1} alt="" className="worksImg" />
-        <img src={Portfolio2} alt="" className="worksImg" />
-        <img src={Portfolio3} alt="" className="worksImg" />
-        <img src={Portfolio4} alt="" className="worksImg" />
-        <img src={Portfolio5} alt="" className="worksImg" />
-        <img src={Portfolio6} alt="" className="worksImg" />
-        <img src={Portfolio4} alt="" className="worksImg" />
-        <img src={Portfolio5} alt="" className="worksImg" />
-        <img src={Portfolio6} alt="" className="worksImg" />
+        <img src={travelPlanner} alt="" className="worksImg" />
+        <img src={foodtruck} alt="" className="worksImg" />
+        <img src={foodieFriends} alt="" className="worksImg" />
+        <img src={washee} alt="" className="worksImg" />
+        <img src={delivery} alt="" className="worksImg" />
+        <img src={dataAnalytics} alt="" className="worksImg" />
       </div>
     </section>
   );
