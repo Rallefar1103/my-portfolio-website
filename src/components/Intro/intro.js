@@ -17,7 +17,7 @@ const Intro = () => {
           I'm <span className="introName">Rasmus</span> <br />
           Full-Stack Software Engineer <br />
           <p className="subtitle">
-            Computer Science M.S. graduate from UCLA with five years of
+            with a M.S. degree in Computer Science from UCLA and five years of
             professional experience <br />
             working as a software engineer including two years as a tech-startup
             founder.

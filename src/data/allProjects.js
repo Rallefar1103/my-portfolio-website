@@ -32,23 +32,30 @@ let allProjects = [
     "Some description goes here..",
     "/assets/foodie-friends.jpg",
     [
-      "/icons/typescript.png",
+      "/icons/js.png",
       "/icons/atom.png",
-      "/icons/aws.png",
-      "/icons/leaf.png",
+      "/icons/logo-logomark.png",
+      "/icons/yelp.png",
     ]
   ),
   new Project(
     "washee",
     "Eco Laundry Assistant",
     "Some description goes here..",
-    "/assets/washee.jpg"
+    "/assets/washee.jpg",
+    ["/icons/python.png", "/icons/flutter.png", "/icons/docker.png"]
   ),
   new Project(
     "food-delivery",
     "Food Delivery Application",
     "Some description goes here..",
-    "/assets/delivery.jpg"
+    "/assets/delivery.jpg",
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
   ),
   new Project(
     "data-analytics",

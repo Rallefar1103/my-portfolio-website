@@ -20,7 +20,7 @@ const PortfolioProject = () => {
         <img src={projectImageUrl} alt="" className="portImg" />
       </div>
       <div className="tech-stack-row">
-        {techStack.map((tech, index) => (
+        {techStack.map((tech, _) => (
           <img src={tech} alt="ts" className="techStackImg" />
         ))}
       </div>
