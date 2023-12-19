@@ -17,8 +17,10 @@ const Intro = () => {
           I'm <span className="introName">Rasmus</span> <br />
           Full-Stack Software Engineer <br />
           <p className="subtitle">
-            with five years of professional industry experience including two
-            years as a tech-startup founder.
+            Computer Science M.S. graduate from UCLA with five years of
+            professional industry experience <br />
+            working as a software engineer including two years as a tech-startup
+            founder.
           </p>
         </span>
         <div className="social-links">

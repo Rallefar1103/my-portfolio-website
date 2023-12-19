@@ -4,9 +4,30 @@
     max-width: 60rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Align items to the start (left) */
     justify-content: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0; 
 }
 
+
+
+.headerTitle {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .articles-wrapper {
+        padding-left: 0.5rem; /* Adjust the value for tablet screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .articles-wrapper {
+        padding-left: 0; /* Adjust the value for mobile screens */
+    }
+}
