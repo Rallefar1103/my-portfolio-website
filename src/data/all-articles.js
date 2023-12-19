@@ -26,3 +26,5 @@ let allArticles = [
     "https://github.com/Medium/medium-api-docs"
   ),
 ];
+
+export default allArticles;
