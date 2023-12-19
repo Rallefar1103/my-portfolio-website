@@ -1,8 +1,10 @@
 import React from "react";
 import "./skills.css";
-import UIDesign from "../../assets/ui-design.png";
-import WebDesign from "../../assets/website-design.png";
-import AppDesign from "../../assets/app-design.png";
+import webDev from "../../assets/coding.png";
+import mobileDev from "../../assets/development.png";
+import cloud from "../../assets/server.png";
+import testing from "../../assets/testing.png";
+import projMan from "../../assets/processing.png";
 
 const Skills = () => {
   return (
@@ -16,7 +18,7 @@ const Skills = () => {
       </span>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
+          <img src={webDev} alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Web Development</h2>
             <p>
@@ -26,33 +28,47 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
+          <img src={mobileDev} alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Mobile Development</h2>
-            <p>React Native, Flutter, Firebase, Firestore, API Design.</p>
+            <p>
+              I utilize React Native, Flutter, Firestore & Firebase to create
+              cross-platform applications that offer native-like performance,
+              streamlining the development process without sacrificing user
+              experience.
+            </p>
           </div>
         </div>
         <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
+          <img src={cloud} alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Cloud & CI/CD Solutions</h2>
-            <p>AWS, Supabase, Docker, Azure DevOps, Bitrise, Github Actions</p>
+            <p>
+              I architect projects for scalability and seamless integration,
+              capitalizing on cloud technologies and continuous integration and
+              delivery using AWS, Supabase, Docker, Azure DevOps, Bitrise and
+              Github Actions.
+            </p>
           </div>
         </div>
         <div className="skillBar">
-          <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
+          <img src={testing} alt="AppDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Testing & Debugging</h2>
-            <p>You can write text related to mobile app development.</p>
+            <p>
+              Robust unit, integration and end-to-end testing as well as strong
+              debugging skills are foundational to creating high-quality
+              software.
+            </p>
           </div>
         </div>
         <div className="skillBar">
-          <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
+          <img src={projMan} alt="WebDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Project Management</h2>
             <p>
-              This demo text can be changed while making the production ready
-              website.
+              One of my biggest passions is to blend technical expertise with my
+              business acumen and steer projects from conception to completion.
             </p>
           </div>
         </div>
