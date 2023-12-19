@@ -1,0 +1,20 @@
+.article {
+	display: flex;
+}
+
+.article a {
+    text-decoration: none;
+}
+
+.article-left {
+    min-width: 20%;
+}
+
+.article-right {
+    flex-basis: 80%;
+    min-width: 700px;
+    mix-blend-mode: normal;
+    border-radius: 25px;
+    opacity: 0.6;
+    padding: 30px;
+}
