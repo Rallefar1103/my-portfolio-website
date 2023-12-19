@@ -11,6 +11,10 @@
     padding: 0 1rem;
 }
 
+.portfolioYellow {
+    color: yellow;
+}
+
 .worksTitle {
     margin: 1rem 0;
     font-size: 3rem;

@@ -6,7 +6,7 @@ let allProjects = [
     "travel-planner",
     "Smart Travel Assistant",
     "Travel Planner Assistant description..",
-    "/assets/travel-planner.jpg",
+    "/assets/travel-planner-img.png",
     [
       "/icons/typescript.png",
       "/icons/atom.png",
@@ -18,7 +18,7 @@ let allProjects = [
     "food-truck-tracker",
     "Food Truck Tracker",
     "Some description goes here..",
-    "/assets/food-truck.jpg",
+    "/assets/food-truck-img.png",
     [
       "/icons/typescript.png",
       "/icons/atom.png",
@@ -30,7 +30,7 @@ let allProjects = [
     "foodie-friends",
     "Foodie Friends",
     "Some description goes here..",
-    "/assets/foodie-friends.jpg",
+    "/assets/foodie-friends-img.png",
     [
       "/icons/js.png",
       "/icons/atom.png",
@@ -42,14 +42,14 @@ let allProjects = [
     "washee",
     "Eco Laundry Assistant",
     "Some description goes here..",
-    "/assets/washee.jpg",
+    "/assets/washee-img.png",
     ["/icons/python.png", "/icons/flutter.png", "/icons/docker.png"]
   ),
   new Project(
     "food-delivery",
     "Food Delivery Application",
     "Some description goes here..",
-    "/assets/delivery.jpg",
+    "/assets/food-delivery-img.png",
     [
       "/icons/typescript.png",
       "/icons/atom.png",
@@ -61,7 +61,7 @@ let allProjects = [
     "data-analytics",
     "Data Analytics Microservice",
     "Some description goes here..",
-    "/assets/data-analytics.jpg",
+    "/assets/data-analytics-img.png",
     [
       "/icons/typescript.png",
       "/icons/atom.png",
@@ -73,7 +73,7 @@ let allProjects = [
     "shopday",
     "Local Rewards Shopping App",
     "Some description goes here..",
-    "/assets/shopday.jpg",
+    "/assets/shopday-img.png",
     [
       "/icons/typescript.png",
       "/icons/atom.png",

@@ -12,9 +12,13 @@ import { Link } from "react-router-dom";
 const Works = () => {
   return (
     <section id="works">
-      <h2 className="worksTitle">My Portfolio</h2>
+      <h2 className="worksTitle">
+        My <span className="portfolioYellow">Portfolio</span>
+      </h2>
       <span className="worksDesc">
-        Below you will find a selection of my web and mobile applications.
+        Below you will find a selection of my web and mobile projects. You can
+        click on each project to get more information regarding the tech stack
+        and implementation details.
       </span>
 
       <div className="worksImgs">
