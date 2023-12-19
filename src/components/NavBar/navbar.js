@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import emailIcon from "../../assets/gmail.png";
 import { Link } from "react-scroll";
-import menu from "../../assets/menu.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -56,13 +54,13 @@ const Navbar = () => {
       </div>
       <button className="desktopMenuBtn" onClick={() => {}}>
         <a href="mailto:rasmus.henriksen@live.dk" rel="noopener noreferrer">
-          <img src={emailIcon} alt="Email" className="email-link" />
+          <img src="/assets/gmail.png" alt="Email" className="email-link" />
         </a>
         Contact Me
       </button>
 
       <img
-        src={menu}
+        src="assets/menu.png"
         alt="Menu"
         className="mobMenu"
         onClick={() => setShowMenu(!showMenu)}

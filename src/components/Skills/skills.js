@@ -1,10 +1,10 @@
 import React from "react";
 import "./skills.css";
-import webDev from "../../assets/coding.png";
-import mobileDev from "../../assets/development.png";
-import cloud from "../../assets/server.png";
-import testing from "../../assets/testing.png";
-import projMan from "../../assets/processing.png";
+// import webDev from "/assets/coding.png";
+// import mobileDev from "/assets/development.png";
+// import cloud from "/assets/server.png";
+// import testing from "/assets/testing.png";
+// import projMan from "/assets/processing.png";
 
 const Skills = () => {
   return (
@@ -18,7 +18,7 @@ const Skills = () => {
       </span>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={webDev} alt="UIDesign" className="skillBarImg" />
+          <img src="assets/coding.png" alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Web Development</h2>
             <p>
@@ -29,7 +29,11 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img src={mobileDev} alt="UIDesign" className="skillBarImg" />
+          <img
+            src="assets/development.png"
+            alt="UIDesign"
+            className="skillBarImg"
+          />
           <div className="skillBarText">
             <h2>Mobile Development</h2>
             <p>
@@ -41,7 +45,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img src={cloud} alt="UIDesign" className="skillBarImg" />
+          <img src="assets/server.png" alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Cloud & CI/CD Solutions</h2>
             <p>
@@ -53,7 +57,11 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img src={testing} alt="AppDesign" className="skillBarImg" />
+          <img
+            src="assets/testing.png"
+            alt="AppDesign"
+            className="skillBarImg"
+          />
           <div className="skillBarText">
             <h2>Testing & Debugging</h2>
             <p>
@@ -64,7 +72,11 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img src={projMan} alt="WebDesign" className="skillBarImg" />
+          <img
+            src="assets/processing.png"
+            alt="WebDesign"
+            className="skillBarImg"
+          />
           <div className="skillBarText">
             <h2>Project Management</h2>
             <p>
