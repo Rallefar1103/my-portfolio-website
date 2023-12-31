@@ -3,6 +3,9 @@
     width: 100vw;
     max-width: 75rem;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; /* Add padding to ensure content does not touch the edges */
 }
 
 .bg-container {

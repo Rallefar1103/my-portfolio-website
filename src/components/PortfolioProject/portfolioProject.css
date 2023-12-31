@@ -1,39 +1,105 @@
 #portfolioProject {
-    margin: 0 auto;
     width: 100vw;
     max-width: 60rem;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Align items to the start (left) */
+    align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0; 
+    padding: 1rem; /* Add padding to ensure content does not touch the edges */
+    box-sizing: border-box; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.tech-stack-row {
-    flex-direction: row;
-    align-items: center; /* Align items to the start (left) */
-    justify-content: space-between;
-    padding-bottom: 25px;
-}
-
-.techStackImg {
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem;
+.project-name {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .portImg-container {
-    position: relative;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 1rem;
 }
 
 .portImg {
-    object-fit: cover;
-    height: 30rem;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 35rem; /* Limit height to 30rem */
     width: 100%;
     border-radius: 20px;
+}
+
+.tech-stack-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow tech stack images to wrap */
+    justify-content: center; /* Center tech stack images */
+    gap: 1rem; /* Space between tech stack images */
+    padding-bottom: 1rem;
+}
+
+.techStackImg {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.project-description {
+    width: calc(100% - 4rem); /* Full width minus padding */
+    text-align: center;
+    padding: 1rem;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+.project-architecture {
+    width: calc(100% - 4rem); /* Full width minus padding */
+    text-align: center;
+    padding: 1rem;
+    font-size: 22px;
+}
+
+.portArchImg-container {
+    width: 100%;
+    padding: 1rem; /* Padding top and bottom */
+}
+
+.portArchImg {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 25rem; /* Limit height to 20rem */
+    max-width: 50rem; 
+    border-radius: 15px;
+
+}
+.architecture-description {
+    width: calc(100% - 4rem); /* Full width minus padding */
+    text-align: left;
+    padding: 1rem;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.project-demo {
+    width: calc(100% - 4rem); /* Full width minus padding */
+    text-align: center;
+    padding: 1rem;
+    font-size: 22px;
+}
+
+.mvp-description {
+    width: calc(100% - 4rem); /* Full width minus padding */
+    text-align: center;
+    font-size: 15px;
+}
+.youtube-video-container {
+    width: 100%;
+    max-width: 50rem; /* Maximum width of the YouTube video */
+
+    margin: 1rem auto; /* Centering the YouTube container */
+    padding: 0;
+}
+
+.youtube-video-container iframe {
+    width: 100%; /* Full width of the container */
+    height: 25rem; /* Fixed height */
+    border: none;
+    border-radius: 10px;
 }

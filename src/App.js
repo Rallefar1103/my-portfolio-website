@@ -4,7 +4,7 @@ import Skills from "./components/Skills/skills";
 import Works from "./components/Works/works";
 import Articles from "./components/Articles/article-feed";
 import PortfolioProject from "./components/PortfolioProject/portfolioProject";
-
+import "./app.css";
 import { Routes, Route } from "react-router-dom";
 
 function App() {

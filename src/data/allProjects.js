@@ -4,15 +4,20 @@ import Project from "./project";
 let allProjects = [
   new Project(
     "travel-planner",
-    "Smart Travel Assistant",
-    "Travel Planner Assistant description..",
-    "/assets/travel-planner-img.png",
+    "City Travel Planner",
+    "The City Travel Planner is a React web application built on a microservice architecture, designed to simplify the itinerary planning process for urban adventurers. With a tech stack that includes JavaScript, TypeScript, MongoDB Atlas, GraphQL, and integrations with the OpenAI and Yelp APIs, this application offers a responsive, intuitive and personal experience for travelers to craft their perfect day out in the city.",
+    "/assets/city-travel-planner.png",
     [
       "/icons/typescript.png",
+      "/icons/js.png",
+      "/icons/nodejs.png",
       "/icons/atom.png",
-      "/icons/aws.png",
+      "/icons/graphql-logo.png",
       "/icons/leaf.png",
-    ]
+      "/icons/openai-logo.png",
+      "/icons/yelp-logo.png",
+    ],
+    "/assets/travel-planner-architecture-transp.png"
   ),
   new Project(
     "food-truck-tracker",

@@ -1,12 +1,6 @@
 import React from "react";
 import "./works.css";
-// import foodtruck from "/assets/food-truck.jpg";
-// import travelPlanner from "/assets/travel-planner.jpg";
-// import foodieFriends from "/assets/foodie-friends.jpg";
-// import washee from "/assets/washee.jpg";
-// import delivery from "/assets/delivery.jpg";
-// import dataAnalytics from "/assets/data-analytics.jpg";
-// import shopday from "/assets/shopday.jpg";
+import allProjects from "../../data/allProjects";
 import { Link } from "react-router-dom";
 
 const Works = () => {
@@ -22,49 +16,24 @@ const Works = () => {
       </span>
 
       <div className="worksImgs">
-        <Link to="/projects/travel-planner">
+        {allProjects.map((project) => (
           <div className="imgContainer">
-            <span className="imgTitle">Intelligent Travel Assistant</span>
-            <img src="assets/travel-planner.jpg" alt="" className="worksImg" />
+            <div className="topBar">
+              <span className="imgTitle">{project.title}</span>
+            </div>
+            <img src={project.imgUrl} alt="" className="worksImg" />
+            <div className="buttonBar">
+              <Link to={`/projects/${project.id}`}>
+                <button type="button" className="imgButton">
+                  Learn more
+                </button>
+              </Link>
+              <button type="button" className="imgButton">
+                Github
+              </button>
+            </div>
           </div>
-        </Link>
-        <Link to="/projects/food-truck-tracker">
-          <div className="imgContainer">
-            <span className="imgTitle">Food Truck Tracker</span>
-            <img src="assets/food-truck.jpg" alt="" className="worksImg" />
-          </div>
-        </Link>
-        <Link to="/projects/foodie-friends">
-          <div className="imgContainer">
-            <span className="imgTitle">Foodie Friends</span>
-            <img src="assets/foodie-friends.jpg" alt="" className="worksImg" />
-          </div>
-        </Link>
-
-        <Link to="/projects/washee">
-          <div className="imgContainer">
-            <span className="imgTitle">Eco Laundry Assistant</span>
-            <img src="assets/washee.jpg" alt="" className="worksImg" />
-          </div>
-        </Link>
-        <Link to="/projects/food-delivery">
-          <div className="imgContainer">
-            <span className="imgTitle">Food Delivery Application</span>
-            <img src="assets/delivery.jpg" alt="" className="worksImg" />
-          </div>
-        </Link>
-        <Link to="/projects/data-analytics">
-          <div className="imgContainer">
-            <span className="imgTitle">Data Analytics Microservice</span>
-            <img src="assets/data-analytics.jpg" alt="" className="worksImg" />
-          </div>
-        </Link>
-        <Link to="/projects/shopday">
-          <div className="imgContainer">
-            <span className="imgTitle">Local Rewards Shopping App</span>
-            <img src="assets/shopday.jpg" alt="" className="worksImg" />
-          </div>
-        </Link>
+        ))}
       </div>
     </section>
   );
