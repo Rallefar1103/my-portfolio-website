@@ -1,23 +1,19 @@
 import { useParams } from "react-router-dom";
 import allProjects from "../../data/allProjects";
+import ProjectImgUrl from "../../assets/fitness-inspo-frontpage.png";
 import "./FitnessInspirationProject.css";
 
 const FitnessInspirationProject = () => {
   let { projectId } = useParams(); // This will match the :projectId in your route
 
-  const project = allProjects.find((p) => p.id === projectId);
-  const projectImageUrl = project.imgUrl;
+  const project = allProjects.find((p) => p.id === "fitness-inspiration");
   const techStack = project.techStack;
-
-  if (!project) {
-    return <div> 404 Project not found </div>;
-  }
 
   return (
     <section id="portfolioProject">
       <h1 className="project-name">{project.title}</h1>
       <div className="portImg-container">
-        <img src={projectImageUrl} alt="" className="portImg" />
+        <img src={ProjectImgUrl} alt="" className="portImg" />
       </div>
       <div className="tech-stack-row">
         {techStack.map((tech, _) => (
@@ -25,28 +21,21 @@ const FitnessInspirationProject = () => {
         ))}
       </div>
 
-      <p className="architecture-description">
-        At the user interface level, the React-based frontend interfaces with a
-        GraphQL server that serves as the nervous system of the application.
-        This GraphQL layer orchestrates the flow of data, handling user sign-ins
-        as well as initiating the itinerary planning process. <br></br>
-        <br></br>Beneath this layer, a constellation of node.js microservices
-        works to create the actual itinerary based on the user input. The User
-        Authentication Service upholds security, interfacing with a NoSQL
-        database to manage user credentials. The Core Service - with its
-        dedicated NoSQL database - engages with additional microservices to
-        procure and refine travel recommendations. <br></br>
-        <br></br>First, the Core Service uses the Yelp Service to tap into
-        restaurant data for the destination in order to suggest dining spots.
-        Second, it contacts the Recommender Service, powered by the OpenAI API,
-        to get a personalized itinerary description based on the user input and
-        the restaurant recommendations. Together, these components form a
-        resilient and scalable backend, ensuring users receive tailored travel
-        plans that match their preferences and real-time local insights.
+      <p className="project-description">
+        The Fitness Inspiration application is a React web application built
+        using JavaScript and Node.js. It's designed to help you ramp up your
+        next workout by tapping into the ExerciseDB API and give you a huge
+        selection of more than 1000 exercises divided into muscle group
+        categories to fuel your inspiration and try new exercises in the gym.
+        Search for a muscle group or a specific exercise and the app will show
+        you all the recommended movements. Click on an exercise and get more
+        details on how to perform it, what it targets and watch videos to ensure
+        proper form!
       </p>
+
       <p className="project-demo">Demo Video</p>
       <p className="mvp-description">
-        Below is a video showing the current simplistic MVP version
+        Below is a video showing the current version
       </p>
       <div className="youtube-video-container">
         <iframe

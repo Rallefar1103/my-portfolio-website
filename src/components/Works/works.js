@@ -4,7 +4,7 @@ import allProjects from "../../data/allProjects";
 import { Link } from "react-router-dom";
 
 const Works = () => {
-  const _openGithub = (url) => {
+  const _openWebAddress = (url) => {
     window.open(url, "_blank");
   };
 
@@ -32,12 +32,20 @@ const Works = () => {
                   Learn more
                 </button>
               </Link>
+
               <button
                 type="button"
                 className="imgButton"
-                onClick={() => _openGithub(project.githubUrl)}
+                onClick={() => _openWebAddress(project.githubUrl)}
               >
                 Github
+              </button>
+              <button
+                type="button"
+                className="imgButton"
+                onClick={() => _openWebAddress(project.websiteUrl)}
+              >
+                Website
               </button>
             </div>
           </div>

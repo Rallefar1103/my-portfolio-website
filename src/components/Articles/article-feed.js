@@ -6,7 +6,7 @@ import allArticles from "../../data/all-articles";
 const Articles = () => {
   return (
     <section id="articles">
-      <h2 className="headerTitle"> My Medium Articles </h2>
+      <h2 className="headerTitle"> My Tech Blog </h2>
       <div className="articles-wrapper">
         {allArticles.map((article, index) => (
           <Article

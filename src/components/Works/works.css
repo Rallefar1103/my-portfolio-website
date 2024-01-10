@@ -34,7 +34,8 @@
     border-radius: 20px; /* New border radius */
     overflow: hidden; /* This ensures the contents are clipped to the border radius */
     background-color: rgb(50, 50, 50); 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    
 }
 
 .topBar {

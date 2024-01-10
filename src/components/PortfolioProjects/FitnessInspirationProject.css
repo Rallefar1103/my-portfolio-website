@@ -18,12 +18,12 @@
 }
 
 .portImg-container {
-    width: 100%;
+    width: 75rem;
     padding: 1rem;
 }
 
 .portImg {
-    height: auto; /* Maintain aspect ratio */
+    height: 50rem; /* Maintain aspect ratio */
     max-height: 35rem; /* Limit height to 30rem */
     width: 100%;
     border-radius: 20px;

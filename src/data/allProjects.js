@@ -24,13 +24,9 @@ let allProjects = [
     "fitness-inspiration",
     "Fitness Inspiration Application",
     FitnessInspirationImg,
-    [
-      "/icons/typescript.png",
-      "/icons/atom.png",
-      "/icons/aws.png",
-      "/icons/leaf.png",
-    ],
-    "https://github.com/Rallefar1103/fitness-app"
+    ["/icons/js.png", "/icons/atom.png", "/icons/mui.png"],
+    "https://github.com/Rallefar1103/fitness-app",
+    "https://fitness-inspo.netlify.app/"
   ),
   // new Project(
   //   "events",
