@@ -1,24 +1,24 @@
 import React from "react";
 import "./skills.css";
-// import webDev from "/assets/coding.png";
-// import mobileDev from "/assets/development.png";
-// import cloud from "/assets/server.png";
-// import testing from "/assets/testing.png";
-// import projMan from "/assets/processing.png";
+import WebDevIcon from "../../assets/coding.png";
+import MobileDevIcon from "../../assets/development.png";
+import CloudIcon from "../../assets/server.png";
+import TestingIcon from "../../assets/testing.png";
+import ProjectManIcon from "../../assets/processing.png";
 
 const Skills = () => {
   return (
     <section id="skills">
       <span className="skillTitle">What I do</span>
       <span className="skillDesc">
-        Specialized in full-stack development I take great pride in designing
-        and developing large web- and smartphone applications with a focus on
-        highly scalable solutions that align closely with business goals and
-        objectives.
+        Specialized in full-stack development, I take great pride in
+        architecting and developing large web- and smartphone applications with
+        a focus on highly scalable solutions that align closely with business
+        requirements, goals and objectives.
       </span>
       <div className="skillBars">
         <div className="skillBar">
-          <img src="assets/coding.png" alt="UIDesign" className="skillBarImg" />
+          <img src={WebDevIcon} alt="WebDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Web Development</h2>
             <p>
@@ -29,11 +29,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img
-            src="assets/development.png"
-            alt="UIDesign"
-            className="skillBarImg"
-          />
+          <img src={MobileDevIcon} alt="MobDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Mobile Development</h2>
             <p>
@@ -45,7 +41,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img src="assets/server.png" alt="UIDesign" className="skillBarImg" />
+          <img src={CloudIcon} alt="Cloud" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Cloud & CI/CD Solutions</h2>
             <p>
@@ -57,11 +53,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img
-            src="assets/testing.png"
-            alt="AppDesign"
-            className="skillBarImg"
-          />
+          <img src={TestingIcon} alt="Testing" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Testing & Debugging</h2>
             <p>
@@ -72,11 +64,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img
-            src="assets/processing.png"
-            alt="WebDesign"
-            className="skillBarImg"
-          />
+          <img src={ProjectManIcon} alt="ProjMang" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Project Management</h2>
             <p>

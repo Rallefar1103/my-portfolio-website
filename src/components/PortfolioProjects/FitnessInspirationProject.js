@@ -1,14 +1,13 @@
 import { useParams } from "react-router-dom";
 import allProjects from "../../data/allProjects";
-import "./portfolioProject.css";
+import "./FitnessInspirationProject.css";
 
-const PortfolioProject = () => {
+const FitnessInspirationProject = () => {
   let { projectId } = useParams(); // This will match the :projectId in your route
 
   const project = allProjects.find((p) => p.id === projectId);
   const projectImageUrl = project.imgUrl;
   const techStack = project.techStack;
-  const archImg = project.archUrl;
 
   if (!project) {
     return <div> 404 Project not found </div>;
@@ -26,11 +25,6 @@ const PortfolioProject = () => {
         ))}
       </div>
 
-      <p className="project-description">{project.description}</p>
-      <p className="project-architecture">System Architecture</p>
-      <div className="portArchImg-container">
-        <img src={archImg} alt="" className="portArchImg" />
-      </div>
       <p className="architecture-description">
         At the user interface level, the React-based frontend interfaces with a
         GraphQL server that serves as the nervous system of the application.
@@ -52,7 +46,7 @@ const PortfolioProject = () => {
       </p>
       <p className="project-demo">Demo Video</p>
       <p className="mvp-description">
-        Below is a video showing the simplistic MVP version
+        Below is a video showing the current simplistic MVP version
       </p>
       <div className="youtube-video-container">
         <iframe
@@ -65,4 +59,4 @@ const PortfolioProject = () => {
   );
 };
 
-export default PortfolioProject;
+export default FitnessInspirationProject;

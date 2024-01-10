@@ -4,6 +4,10 @@ import allProjects from "../../data/allProjects";
 import { Link } from "react-router-dom";
 
 const Works = () => {
+  const _openGithub = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="works">
       <h2 className="worksTitle">
@@ -16,8 +20,8 @@ const Works = () => {
       </span>
 
       <div className="worksImgs">
-        {allProjects.map((project) => (
-          <div className="imgContainer">
+        {allProjects.map((project, index) => (
+          <div className="imgContainer" key={index}>
             <div className="topBar">
               <span className="imgTitle">{project.title}</span>
             </div>
@@ -28,7 +32,11 @@ const Works = () => {
                   Learn more
                 </button>
               </Link>
-              <button type="button" className="imgButton">
+              <button
+                type="button"
+                className="imgButton"
+                onClick={() => _openGithub(project.githubUrl)}
+              >
                 Github
               </button>
             </div>
