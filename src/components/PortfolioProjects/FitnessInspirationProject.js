@@ -23,14 +23,14 @@ const FitnessInspirationProject = () => {
 
       <p className="project-description">
         The Fitness Inspiration application is a React web application built
-        using JavaScript and Node.js. It's designed to help you ramp up your
-        next workout by tapping into the ExerciseDB API and give you a huge
-        selection of more than 1000 exercises divided into muscle group
-        categories to fuel your inspiration and try new exercises in the gym.
-        Search for a muscle group or a specific exercise and the app will show
-        you all the recommended movements. Click on an exercise and get more
-        details on how to perform it, what it targets and watch videos to ensure
-        proper form!
+        using JavaScript, Material UI and Node.js. It's designed to help you
+        ramp up your next workout by tapping into the ExerciseDB API and give
+        you a huge selection of more than 1000 exercises divided into
+        muscle-group categories to fuel your inspiration and try new exercises
+        in the gym. Search for a muscle group or a specific exercise and the app
+        will show you all the recommended movements. Click on an exercise and
+        get more details on how to perform it, what it targets and watch videos
+        to ensure proper form!
       </p>
 
       <p className="project-demo">Demo Video</p>

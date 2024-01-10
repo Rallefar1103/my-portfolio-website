@@ -2,6 +2,10 @@ import "./project";
 import Project from "./project";
 import CityTravelPlannerImg from "../assets/city-travel-planner.png";
 import FitnessInspirationImg from "../assets/fitness-tracker-img.png";
+import EventsAppImg from "../assets/events-img.png";
+import FoodieFriendsImg from "../assets/foodie-friends-img.png";
+import WasheeImg from "../assets/washee-img.png";
+import ShopdayImg from "../assets/shopday-img.png";
 
 let allProjects = [
   new Project(
@@ -24,34 +28,22 @@ let allProjects = [
     "fitness-inspiration",
     "Fitness Inspiration Application",
     FitnessInspirationImg,
-    ["/icons/js.png", "/icons/atom.png", "/icons/mui.png"],
+    ["/icons/js.png", "/icons/atom.png", "/icons/nodejs.png", "/icons/mui.png"],
     "https://github.com/Rallefar1103/fitness-app",
     "https://fitness-inspo.netlify.app/"
   ),
-  // new Project(
-  //   "events",
-  //   "Events App",
-  //   "Some description goes here..",
-  //   "/assets/events-img.png",
-  //   [
-  //     "/icons/typescript.png",
-  //     "/icons/atom.png",
-  //     "/icons/aws.png",
-  //     "/icons/leaf.png",
-  //   ]
-  // ),
-  // new Project(
-  //   "foodie-friends",
-  //   "Foodie Friends",
-  //   "Some description goes here..",
-  //   "/assets/foodie-friends-img.png",
-  //   [
-  //     "/icons/js.png",
-  //     "/icons/atom.png",
-  //     "/icons/logo-logomark.png",
-  //     "/icons/yelp.png",
-  //   ]
-  // ),
+  new Project("events", "Events App", EventsAppImg, [
+    "/icons/typescript.png",
+    "/icons/atom.png",
+    "/icons/aws.png",
+    "/icons/leaf.png",
+  ]),
+  new Project("foodie-friends", "Foodie Friends", FoodieFriendsImg, [
+    "/icons/js.png",
+    "/icons/atom.png",
+    "/icons/logo-logomark.png",
+    "/icons/yelp.png",
+  ]),
   // new Project(
   //   "food-delivery",
   //   "Food Delivery App",
@@ -64,13 +56,13 @@ let allProjects = [
   //     "/icons/yelp.png",
   //   ]
   // ),
-  // new Project(
-  //   "washee",
-  //   "Eco Laundry Assistant",
-  //   "Some description goes here..",
-  //   "/assets/washee-img.png",
-  //   ["/icons/python.png", "/icons/flutter.png", "/icons/docker.png"]
-  // ),
+  new Project(
+    "washee",
+    "Eco Laundry Assistant",
+
+    WasheeImg,
+    ["/icons/python.png", "/icons/flutter.png", "/icons/docker.png"]
+  ),
 
   // new Project(
   //   "price-checker",
@@ -84,18 +76,18 @@ let allProjects = [
   //     "/icons/leaf.png",
   //   ]
   // ),
-  // new Project(
-  //   "shopday",
-  //   "Rewards Shopping App",
-  //   "Some description goes here..",
-  //   "/assets/shopday-img.png",
-  //   [
-  //     "/icons/typescript.png",
-  //     "/icons/atom.png",
-  //     "/icons/aws.png",
-  //     "/icons/leaf.png",
-  //   ]
-  // ),
+  new Project(
+    "shopday",
+    "Rewards Shopping App",
+
+    ShopdayImg,
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
+  ),
 ];
 
 export default allProjects;
