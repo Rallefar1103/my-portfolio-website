@@ -1,7 +1,7 @@
 import "./project";
 import Project from "./project";
 import CityTravelPlannerImg from "../assets/city-travel-planner.png";
-import FitnessInspirationImg from "../assets/fitness-tracker-img.png";
+import FitnessInspirationImg from "../assets/fitness-inspo-frontpage.png";
 import TechHavenImg from "../assets/tech-haven-landing.png";
 import FoodieFriendsImg from "../assets/foodie-friends-img.png";
 import WasheeImg from "../assets/washee-img.png";
@@ -45,7 +45,7 @@ let allProjects = [
     FitnessInspirationImg,
     ["/icons/js.png", "/icons/atom.png", "/icons/nodejs.png", "/icons/mui.png"],
     "https://github.com/Rallefar1103/fitness-app",
-    "https://fitness-inspo.netlify.app/"
+    "https://fitness-inspo-club.netlify.app/"
   ),
   // new Project("events", "Events App", EventsAppImg, [
   //   "/icons/typescript.png",

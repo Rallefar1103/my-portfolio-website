@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useParams, useLocation } from "react-router-dom";
 import allProjects from "../../data/allProjects";
 import ProjectImgUrl from "../../assets/fitness-inspo-frontpage.png";
 import "./FitnessInspirationProject.css";
@@ -8,6 +9,12 @@ const FitnessInspirationProject = () => {
 
   const project = allProjects.find((p) => p.id === "fitness-inspiration");
   const techStack = project.techStack;
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <section id="portfolioProject">
