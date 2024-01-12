@@ -8,6 +8,7 @@ import "./app.css";
 import { Routes, Route } from "react-router-dom";
 import TravelPlannerProject from "./components/PortfolioProjects/TravelPlannerProject";
 import FitnessInspirationProject from "./components/PortfolioProjects/FitnessInspirationProject";
+import TechHaven from "./components/PortfolioProjects/TechHaven";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           path="/projects/fitness-inspiration"
           element={<FitnessInspirationProject />}
         />
+        <Route path="/projects/tech-haven" element={<TechHaven />} />
       </Routes>
     </div>
   );
