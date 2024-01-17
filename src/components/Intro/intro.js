@@ -6,11 +6,31 @@ import GitHubIcon from "../../assets/github.png";
 import MediumIcon from "../../assets/medium.png";
 import ProfilePic from "../../assets/profile.jpeg";
 
+import BackgroundVideo from "../../assets/Videos/background-vid-1.mp4";
+
 const Intro = () => {
   return (
     <section id="intro">
+      <div className="background-video">
+        <video
+          autoPlay
+          loop
+          muted
+          style={{
+            position: "fixed", // Changed from absolute to fixed
+            width: "100vw",
+            height: "100vh", // Ensure it covers the full viewport height
+            objectFit: "cover",
+            top: "0", // Start from the top edge
+            left: "0", // Start from the left edge
+            zIndex: "-1", // Keep it behind other content
+          }}
+        >
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
+      </div>
       <div className="introContent">
-        <div className="bg-container">
+        <div className="picture-container">
           <img src={ProfilePic} alt="Profile" className="bg" />
         </div>
         <span className="hello">Hi!</span>
