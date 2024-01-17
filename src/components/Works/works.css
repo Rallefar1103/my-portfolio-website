@@ -16,8 +16,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Set to two columns */
     gap: 2rem; /* This adds space between grid items */
-    width: 70vw;
-    max-width: 80rem; /* Match the max-width of #works for alignment */
+    width: 60vw;
+    max-width: 60rem; /* Match the max-width of #works for alignment */
     align-items: center;
     
     justify-content: center;

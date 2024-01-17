@@ -7,6 +7,7 @@
     justify-content: center;
     flex-wrap: wrap; /* Allows content to stack on smaller screens */
     text-align: left;
+    margin-bottom: 100px;
    
   }
   
@@ -67,7 +68,8 @@
     .intro-content {
         width: 600px; 
         margin-top: 5rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 10rem;
     }
 
     .profile-picture-container {
@@ -92,8 +94,11 @@
   
   }
 
-  @media (max-width: 1200px){
- 
+  @media (max-width: 1100px){
+
+    .name {
+      color: red
+    }
 
     #intro {
         position: relative;
@@ -109,7 +114,7 @@
     .intro-content {
         width: 600px; 
         margin: 0;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
     }
 
     .profile-picture-container {
