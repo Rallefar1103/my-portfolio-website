@@ -1,14 +1,87 @@
 #works {
     margin: 0 auto;
+    margin-bottom: 150px;
     min-height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 60rem;
+    max-width: 80rem; /* Adjusted to allow for larger project containers */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set to two columns */
+    gap: 2rem; /* This adds space between grid items */
+    width: 90vw;
+    max-width: 80rem; /* Match the max-width of #works for alignment */
+    padding: 4rem 1rem; /* Reduced side padding to fit within #works */
+    margin-bottom: 0;
+    justify-content: center;
+   
+}
+
+.project-container {
+    background-color: rgb(50, 50, 50);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* This will separate the image from the buttons */
+    padding: 1rem; 
+    align-items: center; /* Center-align the child elements */
+    text-align: center; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); 
+    transition: box-shadow 0.3s; 
+}
+
+.project-container:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+}
+
+.project-image-container {
+    width: calc(100% - 2rem); /* Adjust width to account for padding */
+    
+    overflow: hidden; /* Hide overflow to maintain border-radius */
+    position: relative; /* Set position relative for aspect ratio spacing */
+    padding-top: 56.25%; /* This sets an aspect ratio of 16:9 */
+    border-radius: 20px;
+    margin-top: 0.5rem;
+   
+}
+
+.project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20px;
+}
+
+.topBar, .buttonBar {
+    width: calc(100% - 2rem); /* Subtract the padding from the width */
+    margin: 0 1rem; /* Add horizontal margin to match the image's margin */
+}
+
+.project-title, .project-subtitle {
+    margin: 1rem 0; /* Add vertical margin for spacing */
+}
+
+.project-title {
+    position: relative;
+    color: White; 
+    text-align: center;
+    font-size: 0.95rem;
+    
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    font-weight: bold;
+   
 }
 
 .portfolioYellow {
@@ -28,72 +101,16 @@
 
 
 
-.imgContainer {
-    position: relative;
-    width: 100%;
-    border-radius: 20px; /* New border radius */
-    overflow: hidden; /* This ensures the contents are clipped to the border radius */
-    background-color: rgb(50, 50, 50); 
-    margin-bottom: 2rem;
-    
-}
-
-.topBar {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    background-color: rgb(50, 50, 50); /* Background color for the button bar */
-    border-top-left-radius: 20px; /* Match the border radius of the container */
-    border-top-right-radius: 20px; /* Match the border radius of the container */
-    margin-top: -1px; 
-}
-
-.imgTitle {
-    position: absolute;
-    color: White; 
-    text-align: center;
-    font-size: 0.95rem;
-    
-    font-size: 1.25rem; /* Adjust the font size as needed */
-    font-weight: bold;
-   
-}
-
-.worksImgs {
-    display: block;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    max-width: 65rem;
-    padding: 4rem;
-    margin-bottom: 0;
-   
-}
-
-.worksImg {
-    object-fit: cover;
-    height: 22rem;
-    width: 100%;
-    filter: grayscale(20%);
-    display: block;
-    border-radius: 50px;
-    padding: 1rem;
-}
-
 .buttonBar {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Center the buttons vertically */
-    padding-bottom: 1rem;
-    background-color: rgb(50, 50, 50); /* Background color for the button bar */
-    border-bottom-left-radius: 20px; /* Match the border radius of the container */
-    border-bottom-right-radius: 20px; /* Match the border radius of the container */
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+    padding-top: 10px;
+  
 }
+
   
   .imgButton {
-    margin: 0 0.5rem; /* Add some space between the buttons */
     padding: 0.5rem 1rem; /* Add some padding inside the buttons */
     border: 2px solid white; /* Remove border */
     border-radius: 5px; /* Optionally round the button corners */
@@ -103,6 +120,8 @@
     text-decoration: none; /* Remove text decoration */
     font-weight: bold;
     transition: background-color 0.3s;
+    width: auto; /* Auto width instead of 100% to not stretch */
+    margin: 0.5rem; /* Add some margin around the buttons */
   }
   
   .imgButton:hover {
@@ -110,9 +129,22 @@
     color: black;
   }
 
+  .imgButton:first-child {
+    margin-left: 1rem; /* Add left margin to the first button */
+}
+
+.imgButton:last-child {
+    margin-right: 1rem; /* Add right margin to the last button */
+}
+
+  @media screen and (max-width:768px) {
+    .worksImgs {
+        padding: 2rem; /* Less padding on smaller screens */
+    }
+}
 
 @media screen and (max-width:585px) {
     .worksImg {
-        height: 48vw;
+        height: auto; /* Adjust height to maintain aspect ratio */
     }
 }

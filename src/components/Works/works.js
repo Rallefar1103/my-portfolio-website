@@ -19,13 +19,20 @@ const Works = () => {
         and implementation details.
       </span>
 
-      <div className="worksImgs">
+      <div className="projects">
         {allProjects.map((project, index) => (
-          <div className="imgContainer" key={index}>
+          <div className="project-container" key={index}>
             <div className="topBar">
-              <span className="imgTitle">{project.title}</span>
+              <span className="project-title">{project.title}</span>
             </div>
-            <img src={project.imgUrl} alt="" className="worksImg" />
+            <div className="project-image-container">
+              <img
+                src={project.imgUrl}
+                alt="project"
+                className="project-image"
+              />
+            </div>
+
             <div className="buttonBar">
               <Link to={`/projects/${project.id}`}>
                 <button type="button" className="imgButton">

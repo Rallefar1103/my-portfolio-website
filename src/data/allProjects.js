@@ -1,6 +1,6 @@
 import "./project";
 import Project from "./project";
-import CityTravelPlannerImg from "../assets/city-travel-planner.png";
+import CityTravelPlannerImg from "../assets/city-travel-planner-1.png";
 import FitnessInspirationImg from "../assets/fitness-inspo-frontpage.png";
 import TechHavenImg from "../assets/tech-haven-landing.png";
 import FoodieFriendsImg from "../assets/foodie-friends-img.png";
@@ -53,20 +53,20 @@ let allProjects = [
   //   "/icons/aws.png",
   //   "/icons/leaf.png",
   // ]),
-  // new Project("foodie-friends", "Foodie Friends", FoodieFriendsImg, [
-  //   "/icons/js.png",
-  //   "/icons/atom.png",
-  //   "/icons/logo-logomark.png",
-  //   "/icons/yelp.png",
-  // ]),
+  new Project("foodie-friends", "Foodie Friends", FoodieFriendsImg, [
+    "/icons/js.png",
+    "/icons/atom.png",
+    "/icons/logo-logomark.png",
+    "/icons/yelp.png",
+  ]),
 
-  // new Project(
-  //   "washee",
-  //   "Eco Laundry Assistant",
+  new Project(
+    "washee",
+    "Eco Laundry Assistant",
 
-  //   WasheeImg,
-  //   ["/icons/python.png", "/icons/flutter.png", "/icons/docker.png"]
-  // ),
+    WasheeImg,
+    ["/icons/python.png", "/icons/flutter.png", "/icons/docker.png"]
+  ),
 
   // new Project(
   //   "price-checker",
@@ -80,18 +80,18 @@ let allProjects = [
   //     "/icons/leaf.png",
   //   ]
   // ),
-  // new Project(
-  //   "shopday",
-  //   "Rewards Shopping App",
+  new Project(
+    "shopday",
+    "Rewards Shopping App",
 
-  //   ShopdayImg,
-  //   [
-  //     "/icons/typescript.png",
-  //     "/icons/atom.png",
-  //     "/icons/aws.png",
-  //     "/icons/leaf.png",
-  //   ]
-  // ),
+    ShopdayImg,
+    [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/aws.png",
+      "/icons/leaf.png",
+    ]
+  ),
 ];
 
 export default allProjects;

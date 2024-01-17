@@ -1,5 +1,6 @@
 #articles {
     margin: 0 auto;
+    margin-bottom: 50px;
     width: 100vw;
     max-width: 60rem;
     display: flex;
