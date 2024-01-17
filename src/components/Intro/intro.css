@@ -40,6 +40,7 @@
     right: 0;
     z-index: 2;
     
+    
 }
 
 .bg {
@@ -47,10 +48,15 @@
     width: 500px; /* Adjust to the size you want */
     height: 500px; 
     object-fit: cover;
-    padding-bottom: 20px;
     margin-top: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05); 
+   
   }
   
+  .bg:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15); /* Larger and lighter shadow on hover for a "lifted" effect */
+}
 
 
 

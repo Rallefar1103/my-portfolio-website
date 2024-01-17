@@ -18,7 +18,7 @@
     gap: 2rem; /* This adds space between grid items */
     width: 90vw;
     max-width: 80rem; /* Match the max-width of #works for alignment */
-    padding: 4rem 1rem; /* Reduced side padding to fit within #works */
+    padding: 2rem 1rem; /* Reduced side padding to fit within #works */
     margin-bottom: 0;
     justify-content: center;
    
@@ -89,7 +89,7 @@
 }
 
 .worksTitle {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
     font-size: 3rem;
 }
 

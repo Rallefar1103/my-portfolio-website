@@ -13,11 +13,11 @@ const Works = () => {
       <h2 className="worksTitle">
         My <span className="portfolioYellow">Portfolio</span>
       </h2>
-      <span className="worksDesc">
+      <p className="worksDesc">
         Below you will find a selection of my web and mobile projects. You can
         click on each project to get more information regarding the tech stack
         and implementation details.
-      </span>
+      </p>
 
       <div className="projects">
         {allProjects.map((project, index) => (

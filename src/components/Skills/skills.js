@@ -6,13 +6,13 @@ import allSkills from "../../data/skillsData";
 const Skills = () => {
   return (
     <section id="skills">
-      <p className="skills-title">What I do</p>
-      <span className="skills-description">
+      <h2 className="skills-title">What I do</h2>
+      <p className="skills-description">
         Specialized in full-stack development, I take great pride in
         architecting and developing large web- and smartphone applications with
         a focus on highly scalable solutions that align closely with business
         requirements, goals and objectives.
-      </span>
+      </p>
       <div className="skills-list">
         {allSkills.map((skill, index) => (
           <div className="skill-card" key={index}>
