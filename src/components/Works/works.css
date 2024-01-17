@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Set to two columns */
     gap: 2rem; /* This adds space between grid items */
-    width: 90vw;
+    width: 70vw;
     max-width: 80rem; /* Match the max-width of #works for alignment */
     align-items: center;
     
@@ -28,6 +28,8 @@
     background-color: rgb(50, 50, 50);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     overflow: hidden;
     display: flex;
     height: 420px;

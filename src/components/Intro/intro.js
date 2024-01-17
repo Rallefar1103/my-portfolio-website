@@ -22,7 +22,7 @@ const Intro = () => {
         <div className="picture-container">
           <img src={ProfilePic} alt="Profile" className="bg" />
         </div>
-        <span className="hello">Hi!</span>
+        <p className="hello">Hi!</p>
         <span className="introText">
           I'm <span className="introName">Rasmus</span> <br />
           Full-Stack Software Engineer <br />

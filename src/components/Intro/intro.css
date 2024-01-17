@@ -90,21 +90,57 @@
 
 
 
-@media screen and (max-width:840px) {
-    .bg {
-        right: -10vw
+@media screen and (max-width: 1500px) {
+    #intro {
+        height: 100vh;
+        width: 100vw;
     }
+
     .introContent {
-        font-size: 10vw;
+        height: 100%;
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+        position: relative;
+        border: 2px solid green;
     }
-    .hello {
-        font-size: 4.5vw;
+
+    .picture-container {
+        position: absolute;
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the size of the container */
+        z-index: 2;
+        border: 2px solid red;
     }
-    
+
+    .bg {
+        border-radius: 50%; /* Makes the image round */
+        width: 300px; /* Adjust to the size you want */
+        height: 300px;
+        object-fit: cover;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
 }
 
-@media screen and (max-width:480px) {
-    .bg {
-        right: -20vw
-    }
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  /* styles */
+}
+
+/* Larger iPhones (Plus/Max models) */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  /* styles */
 }

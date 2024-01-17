@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import TravelPlannerProject from "./components/PortfolioProjects/TravelPlannerProject";
 import FitnessInspirationProject from "./components/PortfolioProjects/FitnessInspirationProject";
 import TechHaven from "./components/PortfolioProjects/TechHaven";
+import IntroRevised from "./components/Intro/intro-revised";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           path="/"
           element={
             <>
-              <Intro />
+              <IntroRevised />
               <Skills />
               <Works />
               <Articles />
