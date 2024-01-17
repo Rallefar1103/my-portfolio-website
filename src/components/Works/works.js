@@ -14,17 +14,14 @@ const Works = () => {
         My <span className="portfolioYellow">Portfolio</span>
       </h2>
       <p className="worksDesc">
-        Below you will find a selection of my web and mobile projects. You can
-        click on each project to get more information regarding the tech stack
-        and implementation details.
+        My projects mainly consist of web and mobile applications. You can click
+        on "Learn more" to read about the project, check out the tech stack, and
+        see a demo video.
       </p>
 
       <div className="projects">
         {allProjects.map((project, index) => (
           <div className="project-container" key={index}>
-            <div className="topBar">
-              <span className="project-title">{project.title}</span>
-            </div>
             <div className="project-image-container">
               <img
                 src={project.imgUrl}
@@ -32,28 +29,35 @@ const Works = () => {
                 className="project-image"
               />
             </div>
-
-            <div className="buttonBar">
-              <Link to={`/projects/${project.id}`}>
-                <button type="button" className="imgButton">
-                  Learn more
-                </button>
-              </Link>
-
-              <button
-                type="button"
-                className="imgButton"
-                onClick={() => _openWebAddress(project.githubUrl)}
-              >
-                Github
-              </button>
-              <button
-                type="button"
-                className="imgButton"
-                onClick={() => _openWebAddress(project.websiteUrl)}
-              >
-                Website
-              </button>
+            <div className="project-info-container">
+              <p className="project-title">{project.title}</p>
+              <div className="project-label">{project.type}</div>
+              <div className="buttonBar">
+                <div className="learn-more">
+                  <Link to={`/projects/${project.id}`}>
+                    <button type="button" className="link-button">
+                      Learn more
+                    </button>
+                  </Link>
+                </div>
+                <div className="websites">
+                  {" "}
+                  <button
+                    type="button"
+                    className="imgButton"
+                    onClick={() => _openWebAddress(project.githubUrl)}
+                  >
+                    Github
+                  </button>
+                  <button
+                    type="button"
+                    className="imgButton"
+                    onClick={() => _openWebAddress(project.websiteUrl)}
+                  >
+                    Website
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         ))}

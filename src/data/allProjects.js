@@ -11,6 +11,7 @@ let allProjects = [
   new Project(
     "travel-planner",
     "City Travel Planner Web Application",
+    "Web Development",
     CityTravelPlannerImg,
     [
       "/icons/typescript.png",
@@ -27,6 +28,7 @@ let allProjects = [
   new Project(
     "tech-haven",
     "Tech Haven Webshop",
+    "Web Development",
     TechHavenImg,
     [
       "/icons/typescript.png",
@@ -42,6 +44,7 @@ let allProjects = [
   new Project(
     "fitness-inspiration",
     "Fitness Inspiration Web Application",
+    "Web Development",
     FitnessInspirationImg,
     ["/icons/js.png", "/icons/atom.png", "/icons/nodejs.png", "/icons/mui.png"],
     "https://github.com/Rallefar1103/fitness-app",
@@ -53,17 +56,23 @@ let allProjects = [
   //   "/icons/aws.png",
   //   "/icons/leaf.png",
   // ]),
-  new Project("foodie-friends", "Foodie Friends", FoodieFriendsImg, [
-    "/icons/js.png",
-    "/icons/atom.png",
-    "/icons/logo-logomark.png",
-    "/icons/yelp.png",
-  ]),
+  new Project(
+    "foodie-friends",
+    "Foodie Friends",
+    "Mobile Development",
+    FoodieFriendsImg,
+    [
+      "/icons/js.png",
+      "/icons/atom.png",
+      "/icons/logo-logomark.png",
+      "/icons/yelp.png",
+    ]
+  ),
 
   new Project(
     "washee",
     "Eco Laundry Assistant",
-
+    "Web & Mobile Development",
     WasheeImg,
     ["/icons/python.png", "/icons/flutter.png", "/icons/docker.png"]
   ),
@@ -83,7 +92,7 @@ let allProjects = [
   new Project(
     "shopday",
     "Rewards Shopping App",
-
+    "Mobile Development",
     ShopdayImg,
     [
       "/icons/typescript.png",
