@@ -1,7 +1,7 @@
 import "./project";
 import Project from "./project";
 import CityTravelPlannerImg from "../assets/city-travel-planner-1.png";
-import FitnessInspirationImg from "../assets/fitness-inspo-frontpage.png";
+import FitnessInspirationImg from "../assets/fitness-app/fitness-inspo-background.png";
 import TechHavenImg from "../assets/tech-haven-landing.png";
 import FoodieFriendsImg from "../assets/foodie-friends-img.png";
 import WasheeImg from "../assets/washee-img.png";

@@ -6,13 +6,14 @@ import GitHubIcon from "../../assets/github.png";
 import MediumIcon from "../../assets/medium.png";
 import ProfilePic from "../../assets/profile.jpeg";
 
-import BackgroundImage from "../../assets/background/abstract-background.jpg";
+import BackgroundImage from "../../assets/background/background-img-5.jpg";
+import AbstractBackgroundImage from "../../assets/background/abstract-background.jpg";
 
 const IntroRevised = () => {
   return (
     <section id="intro">
       <img
-        src={BackgroundImage}
+        src={AbstractBackgroundImage}
         alt="Background"
         className="background-image"
       />
