@@ -38,14 +38,6 @@ const Works = () => {
                   Learn more
                 </button>
               </Link>
-
-              {/* <button
-                type="button"
-                className="imgButton"
-                onClick={() => _openWebAddress(project.githubUrl)}
-              >
-                Github
-              </button> */}
             </div>
           </div>
         ))}
