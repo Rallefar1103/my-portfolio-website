@@ -60,17 +60,16 @@
 .footer-links-container {
   display: flex;
   flex-direction: row;
-  align-items: center; 
-  justify-content: start;
+  align-items: center;
+  justify-content: space-around;
   width: 40vw;
-  padding-left: 1vw;
 }
 
 .footer-right {
   width: 50vw;
 }
 
-.footer img {
+.team-work-img {
     max-width: 100%; 
     max-height: 40vw; 
     object-fit: cover;
@@ -79,10 +78,17 @@
 
 .footer-icon {
   object-fit: cover;
-    height: 2.5vh;
-    width: 2.5vh;
-    margin: 0 0.75rem;
+  height: 2.5vh;
+  width: 2.5vh;
+  margin: 0 0.75rem;
+  filter: none; 
+}
 
+.icon-link-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

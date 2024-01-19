@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css"; // Make sure the CSS file is named Footer.css and is in the same directory
 import FooterImg from "../../assets/footer/team.jpg";
 import GmailIcon from "../../assets/gmail.png";
+import ResumeIcon from "../../assets/footer/resume.png";
 
 const Footer = () => {
   return (
@@ -18,13 +19,21 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-links-container">
-          <img src={GmailIcon} alt="mail" className="footer-icon" />
-          <a href="https://m.me/YourMessengerLink">rasmus.henriksen@live.dk</a>
+          <div className="icon-link-wrapper">
+            <img src={GmailIcon} alt="mail" className="footer-icon" />
+            <a href="https://m.me/YourMessengerLink">
+              rasmus.henriksen@live.dk
+            </a>
+          </div>
+          <div className="icon-link-wrapper">
+            <img src={ResumeIcon} alt="mail" className="footer-icon" />
+            <a href="https://m.me/YourMessengerLink">Download my resume</a>
+          </div>
         </div>
       </div>
 
       <div className="footer-right">
-        <img src={FooterImg} alt="laptop" />
+        <img src={FooterImg} alt="laptop" className="team-work-img" />
       </div>
     </footer>
   );
