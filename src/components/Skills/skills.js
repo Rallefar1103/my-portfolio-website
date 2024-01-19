@@ -55,10 +55,10 @@ const Skills = () => {
           <div className="text-container">
             <h2>Project & Product Management</h2>
             <p>
-              One of my biggest passions is to blend technical expertise with
-              business acumen and steer a project from conception to launch
-              managing our team through all phases of the product development
-              lifecycle.
+              I thrive when I can blend my technical expertise with business
+              acumen and steer a project from conception to launch by assisting
+              and managing the team through all phases of the product
+              development lifecycle.
             </p>
           </div>
         </div>
