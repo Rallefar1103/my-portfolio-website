@@ -1,239 +1,198 @@
+
+
 #skills {
-    overflow: hidden;
-    width: 100vw;
-    max-width: 90rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 150px;
-    padding: 3rem 0;
+    padding: 5vh 5%;
+    margin-bottom: 5vh;
 }
 
 .skills-title {
-    font-size: 3rem;
-    font-weight: 600;
-    
+    font-size: 3vw;
+    margin-bottom: 2vh;
 }
 
 .skills-description-container {
-    font-weight: 400;
-    font-size: 1rem;
-    max-width: 51rem;
-    margin-bottom: 2rem;
+    max-width: 55vw;
+    font-size: 1.2vw;
+    margin-bottom: 5vh;
 }
 
 .skills-list {
-    display: flex; /* Use flex display for a row of cards */
-    flex-wrap: wrap; /* Allow wrapping to the next line on smaller screens */
-    justify-content: center; /* Center the cards in the row */
-    gap: 1.5rem; /* Space between the cards */
-    width: 70vw;
-    margin: 0 auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4vw;
+    width: 100%;
 }
 
 .skill-card {
-    flex: 1; /* Allows flex items to grow and shrink */
+    flex: 1;
+    max-width: calc(33.33% - 4vw); /* Three items per row minus gap */
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    align-items: center;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: rgb(50, 50, 50);
-    text-align: center;
-    height: 450px;
-    border: 2px solid rgba(255, 255, 255, 0.05); 
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05); 
-    transition: box-shadow 0.3s; 
-}
-
-
-
-.project-management-card {
     align-items: center;
     background: rgb(50, 50, 50);
-    border-radius: 0.5rem;
-    text-align: center;
-    height: 250px;
-    padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.1); 
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); 
-    transition: box-shadow 0.3s; 
-    margin-top: 15px; 
-    max-width: 54.5vw;
-    
+    border-radius: 1vw;
+    padding: 4vh;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0.5vw 1vw rgba(255, 255, 255, 0.1);
 }
 
-.project-management-card:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15); /* Larger and lighter shadow on hover for a "lifted" effect */
+.skill-card:hover {
+    transform: translateY(-1vw);
 }
 
 .skill-card-img {
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 1rem;
+    height: 8vw;
+    width: 8.2vw;
+    margin-bottom: 2vh;
 }
 
 .skill-card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+    width: 24vw;
 }
 
-
-.skill-card-text > h2 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+.skill-project-management-text {
+    border: 2px solid blue;
+    width: 24;
 }
 
-.skill-card-text > p {
-    font-size: 1rem;
-    font-weight: 200;
+.skill-card-text h2 {
+    font-size: 1.2vw; 
+    padding-bottom: 1vh;
 }
 
-
-.skill-card:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15); /* Larger and lighter shadow on hover for a "lifted" effect */
+.skill-card-description {
+    font-size: 1vw; 
+    font-weight: 300;
+    padding-bottom: 3vh;
 }
 
-@media screen and (max-width:1024px) {
-    #skills {
-        max-width: 100vw;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-
-    .skill-card {
-        min-width: 250px; 
-        padding-top: 2rem;
-        height: 310px;
-    }
-
-    .project-management-card {
-    
-        height: 350px;
-        margin-top: 22px; 
-        width: 69vw;
-        padding-top: 2rem;
-        padding-bottom: 0rem;
-        
-    }
-
-   
+.skill-card-text h3 {
+    font-size: 1vw; 
+    padding-bottom: 2vh;
 }
 
-@media screen and (max-width:770px) {
-    #skills {
-        max-width: 90vw;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-
-    .skills-list {
-        display: flex; /* Use flex display for a row of cards */
-        flex-wrap: wrap; /* Allow wrapping to the next line on smaller screens */
-        justify-content: center; /* Center the cards in the row */
-        width: 10vw;
-        margin: 0 auto;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-
-    .skill-card {
-        min-width: 300px; 
-        padding-top: 2rem;
-        padding-bottom: 0rem;
-    }
-
-    .project-management-card {
-    
-        height: 400px;
-        margin-top: 22px; 
-        width: 39vw;
-        padding-top: 2rem;
-        padding-bottom: 0rem;
-        
-    }
-
-    .skills-title {
-        font-size: 2rem;
-        font-weight: 600;
-        
-    }
-
-    .skills-description-container {
-        font-weight: 400;
-        font-size: 1rem;
-        width: 90%;
-    }
+.tech-stack-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 10vw)); /* Creates a 3-column grid with a minimum auto size and a maximum relative to the viewport width */
+  grid-gap: 1vw; /* Space between grid items relative to the viewport width */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 1vw; /* Padding around the grid */
 }
 
-
-
-
-@media screen and (max-width:720px) {
-    .skill-card {
-        min-width: 200px; 
+.skill-card-tech-icon {
+  height: 5vw; /* Dynamic height relative to the viewport width */
+  width: 5vw; /* Dynamic width relative to the viewport width */
+  max-height: 50px; /* Maximum height to prevent the icons from becoming too large on wider screens */
+  max-width: 50px; /* Maximum width to prevent the icons from becoming too large on wider screens */
+  object-fit: cover;
 }
 
 .project-management-card {
+    width: 75vw; /* Adjust based on the desired width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+    margin-top: 4vh;
+    background: rgb(50, 50, 50);
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.2);
    
-    height: 400px;
-    margin-top: 22px; 
-    width: 69vw;
-    
+    margin-bottom: 5vh;
 }
 
-.skills-title {
-    font-size: 2rem;
-    font-weight: 600;
-    
+
+
+@media screen and (max-width: 1024px) {
+    .skill-card {
+        max-width: calc(50% - 4vw); /* Two items per row minus gap */
+    }
 }
 
-.skills-description-container {
-    font-weight: 400;
-    font-size: 1rem;
-    width: 90%;
-    text-align: left;
-}
-}
-
-@media screen and (max-width:330px) {
-    .skills-list {
-        flex-direction: column; 
-        align-items: center; 
+@media screen and (max-width: 768px) {
+    .skill-card {
+        max-width: calc(100% - 4vw); /* One item per row minus gap */
     }
 
     .project-management-card {
-        
-        height: 400px;
-        margin-top: 22px; 
-        width: 69vw;
-        
+        width: 90vw;
+    }
+
+    .tech-stack-list {
+        grid-template-columns: repeat(1, minmax(auto, 20vw)); /* 1-column grid for very small screens with a minimum auto size and a maximum relative to the viewport width */
+        grid-gap: 4vw; /* Larger gap for very small screens */
+      }
+
+      .skill-card-text {
+        border: 2px solid red;
+        width: 24vw;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .skills-list {
+        flex-direction: column; /* Stack the skill cards in a column */
+        align-items: center; /* Center the cards on the screen */
+    }
+
+    .tech-stack-list {
+        grid-template-columns: repeat(1, minmax(auto, 20vw)); /* 1-column grid for very small screens with a minimum auto size and a maximum relative to the viewport width */
+        grid-gap: 4vw; /* Larger gap for very small screens */
+      }
+
+      .skill-card-tech-icon {
+        height: 8vw; /* Larger icons for very small screens */
+        width: 8vw; /* Larger icons for very small screens */
+        max-height: 40px; /* Adjust maximum height for small screens */
+        max-width: 40px; /* Adjust maximum width for small screens */
+      }
+
+    .skill-card {
+        max-width: 80vw; /* Adjust the skill card width as desired */
+        margin-bottom: 2vh; /* Add some space between stacked cards */
+    }
+
+    .project-management-card {
+        width: 80vw; /* Adjust the width of the project management card to match the skill cards */
+        margin-top: 2vh; /* Ensure there's space between the last skill card and the project management card */
     }
 
     .skills-title {
-        font-size: 2rem;
-        font-weight: 600;
-        
-    }
-    
-    .skills-description-container {
-        font-weight: 400;
-        font-size: 1rem;
-        width: 90%;
-        text-align: left;
+        font-size: 7vw;
     }
 
-    #skills {
-       
-        margin-bottom: 100px;
+    .skills-description-container {
+        font-size: 3.5vw;
+    }
+
+    .skill-card-img {
+        height: 16vw;
+        width: 16vw;
+    }
+
+    .skill-card-text h2 {
+        font-size: 1.2vw; 
+        padding-bottom: 1vh;
+    }
+    
+    .skill-card-description {
+        font-size: 1vw; 
+        font-weight: 300;
+        padding-bottom: 1vh;
+    
+    }
+
+    .skill-card-text {
+        border: 2px solid red;
+        width: 24vw;
     }
 }
+

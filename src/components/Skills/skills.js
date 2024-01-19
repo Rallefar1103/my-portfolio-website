@@ -27,7 +27,18 @@ const Skills = () => {
             <div className="skill-card-text">
               <h2>{skill.title}</h2>
 
-              <p>{skill.description}</p>
+              <p className="skill-card-description">{skill.description}</p>
+              <h3> Proficient Tech Stack </h3>
+              <div className="tech-stack-list">
+                {skill.tech.map((tech, index) => (
+                  <img
+                    src={tech}
+                    alt="ts"
+                    className="skill-card-tech-icon"
+                    key={index}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         ))}
@@ -39,7 +50,7 @@ const Skills = () => {
           alt="project-management"
           className="skill-card-img"
         />
-        <div className="skill-card-text">
+        <div className="skill-project-management-text">
           <h2>Project Management</h2>
           <p>
             One of my biggest passions is to blend technical expertise with my
