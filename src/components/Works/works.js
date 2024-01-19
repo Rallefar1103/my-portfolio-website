@@ -11,7 +11,7 @@ const Works = () => {
   return (
     <section id="works">
       <h2 className="title">
-        My <span className="portfolioYellow">Portfolio</span>
+        <span className="portfolioYellow">Portfolio</span>
       </h2>
       <p className="intro">
         My projects mainly consist of web and mobile applications. You can click
@@ -42,6 +42,11 @@ const Works = () => {
           </div>
         ))}
       </div>
+      <Link to={`/all-projects`}>
+        <button type="button" className="all-projects-button">
+          See all projects
+        </button>
+      </Link>
     </section>
   );
 };

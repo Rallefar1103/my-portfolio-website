@@ -3,6 +3,7 @@ import Intro from "./components/Intro/intro";
 import Skills from "./components/Skills/skills";
 import Works from "./components/Works/works";
 import Articles from "./components/Articles/article-feed";
+import Footer from "./components/Footer/footer";
 
 import "./app.css";
 import { Routes, Route } from "react-router-dom";
@@ -37,6 +38,7 @@ function App() {
         />
         <Route path="/projects/tech-haven" element={<TechHaven />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

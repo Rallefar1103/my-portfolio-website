@@ -90,8 +90,6 @@
     transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
 }
 
-
-
 .project-title {
     font-size: 1vw;
     font-weight: 600;
@@ -128,6 +126,27 @@
     color: black;
 }
 
+.all-projects-button {
+    margin-top: 4vh;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    padding-right: 2vw;
+    border: 3px solid  #2E1E41; 
+    border-radius: 25px;
+    color: white; 
+    background-color: transparent;
+    cursor: pointer; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1.1vw;
+}
+
+.all-projects-button:hover {
+    background-color: #faf9f7; 
+    color: black;
+}
 
 
 
