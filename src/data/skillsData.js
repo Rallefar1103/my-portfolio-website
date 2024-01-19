@@ -35,7 +35,7 @@ let allSkills = [
     ],
   },
   {
-    title: "Cloud & CI/CD Solutions",
+    title: "Cloud & CI/CD",
     icon: CloudIcon,
     description:
       "I architect projects for scalability and seamless integration, capitalizing on cloud technologies and continuous integration and delivery using AWS, Supabase, Docker, Azure DevOps, Bitrise and Github Actions.",
@@ -50,4 +50,13 @@ let allSkills = [
   },
 ];
 
-export default allSkills;
+let projectManagementSkills = [
+  "/icons/jira.png",
+  "/icons/bitbucket.png",
+  "/icons/confluence.png",
+  "/icons/trello.png",
+  "/icons/architecture.png",
+  "/icons/agile.png",
+];
+
+export { allSkills, projectManagementSkills };
