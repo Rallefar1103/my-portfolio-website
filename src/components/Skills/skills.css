@@ -47,16 +47,14 @@
 }
 
 .skill-card-img {
-    height: 8vw;
-    width: 8.2vw;
+    height: 6.5vw;
+    width: 6.5vw;
     margin-bottom: 2vh;
 }
 
 .skill-card-text {
-    width: 24vw;
+    width: 22vw;
 }
-
-
 
 .skill-card-text h2 {
     font-size: 1.2vw; 
@@ -64,7 +62,7 @@
 }
 
 .skill-card-text p {
-    font-size: 1.2vw; 
+    font-size: 0.8vw; 
     font-weight: 300;
     padding-bottom: 3vh;
 }

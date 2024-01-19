@@ -4,6 +4,20 @@ import CloudIcon from "../assets/server.png";
 
 let allSkills = [
   {
+    title: "Mobile Development",
+    icon: MobileDevIcon,
+    description:
+      "When it comes to mobile apps, I'm your guy for creating something that works smoothly across platforms. Using React Native and Flutter, I build apps that feel native no matter the OS. And with Firestore & Firebase in my toolkit, I make sure the development process is as sleek as the user experience.",
+    tech: [
+      "/icons/atom.png",
+      "/icons/js.png",
+      "/icons/flutter.png",
+      "/icons/dart.png",
+      "/icons/firebase.png",
+      "/icons/android.png",
+    ],
+  },
+  {
     title: "Web Development",
     icon: WebDevIcon,
     description:
@@ -20,20 +34,7 @@ let allSkills = [
       "/icons/mui.png",
     ],
   },
-  {
-    title: "Mobile Development",
-    icon: MobileDevIcon,
-    description:
-      "When it comes to mobile apps, I'm your guy for creating something that works smoothly across platforms. Using React Native and Flutter, I build apps that feel native no matter the OS. And with Firestore & Firebase in my toolkit, I make sure the development process is as sleek as the user experience.",
-    tech: [
-      "/icons/atom.png",
-      "/icons/js.png",
-      "/icons/flutter.png",
-      "/icons/dart.png",
-      "/icons/firebase.png",
-      "/icons/android.png",
-    ],
-  },
+
   {
     title: "Cloud & CI/CD",
     icon: CloudIcon,
