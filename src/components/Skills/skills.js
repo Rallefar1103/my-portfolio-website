@@ -27,7 +27,8 @@ const Skills = () => {
             <div className="skill-card-text">
               <h2>{skill.title}</h2>
 
-              <p className="skill-card-description">{skill.description}</p>
+              <p>{skill.description}</p>
+              <div class="white-horizontal-bar-skill-card"></div>
               <h3> Proficient Tech Stack </h3>
               <div className="tech-stack-list">
                 {skill.tech.map((tech, index) => (
@@ -54,26 +55,27 @@ const Skills = () => {
           <div className="text-container">
             <h2>Project & Product Management</h2>
             <p>
-              One of my biggest passions is to blend technical expertise with my
-              business acumen and steer projects from conception to completion
-              by fostering a culture of innovation and collaboration amongst my
-              team.
+              One of my biggest passions is to blend technical expertise with
+              business acumen and steer a project from conception to launch
+              managing our team through all phases of the product development
+              lifecycle.
             </p>
           </div>
         </div>
 
-        <div className="project-management-text">
-          <div class="white-horizontal-bar"></div>
-          <div className="proj-man-tech-stack-list">
-            {projectManagementSkills.map((tech, index) => (
+        <div class="white-horizontal-bar"></div>
+        <div className="proj-man-tech-stack-list">
+          {projectManagementSkills.map((tech, index) => (
+            <div className="icon-text-container">
               <img
-                src={tech}
+                src={tech.icon}
                 alt="ts"
-                className="skill-card-tech-icon"
+                className="proj-tech-icon"
                 key={index}
               />
-            ))}
-          </div>
+              <p> {tech.description} </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
