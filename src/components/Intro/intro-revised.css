@@ -1,11 +1,11 @@
-#intro {
+/* #intro {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Allows content to stack on smaller screens */
+    flex-wrap: wrap; 
     text-align: left;
     margin-bottom: 100px;
    
@@ -20,7 +20,7 @@
     height: 100%;
     z-index: -1;
     
-    /* filter: grayscale(100%) brightness(30%); */
+    
 }
 
 
@@ -29,7 +29,7 @@
     z-index: 2;
     margin-top: 10rem;
     margin-left: 5rem;
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px; 
     color: white;
   }
 
@@ -47,8 +47,8 @@
   }
   
   .social-links img {
-    height: 3rem; /* Adjust as needed */
-    margin: 0 10px; /* Adjust as needed */
+    height: 3rem; 
+    margin: 0 10px; 
   }
   
   .profile-picture-container {
@@ -60,14 +60,14 @@
   
   .profile-picture {
     border-radius: 50%;
-    width: 30rem; /* Adjust as needed */
-    height: 30rem; /* Adjust as needed */
+    width: 30rem; 
+    height: 30rem; 
     object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
   }
   
-  /* Responsive adjustments */
+  
   @media (max-width: 1500px) {
     .intro-content {
         width: 600px; 
@@ -91,8 +91,8 @@
       }
   
     .profile-picture {
-      width: 22rem; /* Adjust as needed */
-      height: 22rem; /* Adjust as needed */
+      width: 22rem; 
+      height: 22rem; 
     }
 
   
@@ -111,7 +111,7 @@
         display: flex;
         align-items: end;
         justify-content: end;
-        flex-wrap: wrap; /* Allows content to stack on smaller screens */
+        flex-wrap: wrap; 
         text-align: left;
       }
       
@@ -185,8 +185,8 @@
       
       .profile-picture {
         border-radius: 50%;
-        width: 20rem; /* Adjust as needed */
-        height: 20rem; /* Adjust as needed */
+        width: 20rem; 
+        height: 20rem; 
         object-fit: cover;
         border: 2px solid rgba(255, 255, 255, 0.4);
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
@@ -223,8 +223,8 @@
       
       .profile-picture {
         border-radius: 50%;
-        width: 20rem; /* Adjust as needed */
-        height: 20rem; /* Adjust as needed */
+        width: 20rem; 
+        height: 20rem; 
         object-fit: cover;
         border: 2px solid rgba(255, 255, 255, 0.4);
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
@@ -256,8 +256,8 @@
       
       .profile-picture {
         border-radius: 50%;
-        width: 15rem; /* Adjust as needed */
-        height: 15rem; /* Adjust as needed */
+        width: 15rem; 
+        height: 15rem; 
         object-fit: cover;
         border: 2px solid rgba(255, 255, 255, 0.4);
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
@@ -272,4 +272,147 @@
         font-weight: 700;
         font-size: 2rem
       }
+  } */
+
+  #intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted for spacing around items */
+    flex-direction: row;
+    text-align: left;
+    padding: 0 5%; /* Adjusted padding for large screens */
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    overflow: hidden; /* Ensures no scrolling due to absolute positioning */
+  }
+  
+  .background-image {
+    object-fit: cover;
+    object-position: 10% 40%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+  
+  .intro-content {
+    z-index: 2;
+    max-width: 850px; /* Adjust as needed */
+    color: white;
+    padding: 0 2rem;
+    margin-left: 10rem;
+  }
+  
+  .hello {
+    font-size: 3rem; /* Large text size for 'Hi! I'm Rasmus' */
+    font-weight: bold;
+    line-height: 1.2; /* Closer line spacing */
+  }
+  
+  .name {
+    color: yellow;
+  }
+  
+  .intro-description {
+    font-size: 1.25rem; /* Smaller text size for description */
+    font-weight: normal;
+    margin-top: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    margin-top: 2rem;
+  }
+  
+  .social-links img {
+    height: 2.5rem; /* Smaller social icons */
+    margin-right: 1rem;
+  }
+  
+  .profile-picture-container {
+    position: absolute;
+    top: 35%;
+    right: 10%; /* Align to the right with some padding */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    #intro {
+      flex-direction: column; /* Stack elements for narrower screens */
+      justify-content: flex-start;
+      padding-top: 3rem;
+    }
+  
+    .background-image {
+      object-position: 50% 20%; /* Shift background focus */
+    }
+  
+    .profile-picture-container {
+      position: relative; /* No longer absolutely positioned */
+      right: auto;
+      transform: none;
+      order: -1; /* Ensure profile picture appears above text */
+      margin-bottom: 2rem;
+    }
+  
+    .hello {
+      font-size: 2.5rem;
+    }
+  
+    .intro-description {
+      font-size: 1rem;
+    }
+  
+    .social-links img {
+      height: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hello {
+      font-size: 2rem;
+    }
+  
+    .profile-picture {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hello {
+      font-size: 1.75rem;
+    }
+  
+    .intro-description {
+      font-size: 0.9rem;
+    }
+  
+    .social-links img {
+      height: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .hello {
+      font-size: 1.5rem;
+    }
+  
+    .profile-picture {
+      width: 12rem;
+      height: 12rem;
+    }
   }
