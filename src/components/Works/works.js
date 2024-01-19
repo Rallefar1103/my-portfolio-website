@@ -10,10 +10,10 @@ const Works = () => {
 
   return (
     <section id="works">
-      <h2 className="worksTitle">
+      <h2 className="title">
         My <span className="portfolioYellow">Portfolio</span>
       </h2>
-      <p className="worksDesc">
+      <p className="intro">
         My projects mainly consist of web and mobile applications. You can click
         on "Learn more" to read about the project, check out the tech stack, and
         see a demo video.
@@ -31,33 +31,21 @@ const Works = () => {
             </div>
             <div className="project-info-container">
               <p className="project-title">{project.title}</p>
-              <div className="project-label">{project.type}</div>
-              <div className="buttonBar">
-                <div className="learn-more">
-                  <Link to={`/projects/${project.id}`}>
-                    <button type="button" className="link-button">
-                      Learn more
-                    </button>
-                  </Link>
-                </div>
-                <div className="websites">
-                  {" "}
-                  <button
-                    type="button"
-                    className="imgButton"
-                    onClick={() => _openWebAddress(project.githubUrl)}
-                  >
-                    Github
-                  </button>
-                  <button
-                    type="button"
-                    className="imgButton"
-                    onClick={() => _openWebAddress(project.websiteUrl)}
-                  >
-                    Website
-                  </button>
-                </div>
-              </div>
+              <p className="project-label">{project.type}</p>
+
+              <Link to={`/projects/${project.id}`}>
+                <button type="button" className="link-button">
+                  Learn more
+                </button>
+              </Link>
+
+              {/* <button
+                type="button"
+                className="imgButton"
+                onClick={() => _openWebAddress(project.githubUrl)}
+              >
+                Github
+              </button> */}
             </div>
           </div>
         ))}

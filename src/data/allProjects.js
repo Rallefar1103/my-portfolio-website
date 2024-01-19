@@ -10,7 +10,7 @@ import ShopdayImg from "../assets/shopday-img.png";
 let allProjects = [
   new Project(
     "travel-planner",
-    "City Travel Planner Web Application",
+    "City Travel Planner",
     "Web Development",
     CityTravelPlannerImg,
     [
@@ -43,7 +43,7 @@ let allProjects = [
   ),
   new Project(
     "fitness-inspiration",
-    "Fitness Inspiration Web Application",
+    "Fitness Inspiration",
     "Web Development",
     FitnessInspirationImg,
     ["/icons/js.png", "/icons/atom.png", "/icons/nodejs.png", "/icons/mui.png"],
