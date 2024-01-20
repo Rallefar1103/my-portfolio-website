@@ -6,11 +6,17 @@ import Articles from "./components/Articles/article-feed";
 import Footer from "./components/Footer/footer";
 
 import "./app.css";
-import { Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import IntroRevised from "./components/Intro/intro-revised";
 import ProjectDetails from "./components/PortfolioProjects/projectDetails";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <Navbar />
@@ -28,7 +34,7 @@ function App() {
         />
         <Route path="/projects/:projectId" element={<ProjectDetails />} />
       </Routes>
-      <Footer />
+      {location.pathname === "/" && <Footer />}
     </div>
   );
 }
