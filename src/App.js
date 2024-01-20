@@ -6,12 +6,7 @@ import Articles from "./components/Articles/article-feed";
 import Footer from "./components/Footer/footer";
 
 import "./app.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import IntroRevised from "./components/Intro/intro-revised";
 import ProjectDetails from "./components/PortfolioProjects/projectDetails";
 
