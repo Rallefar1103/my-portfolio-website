@@ -2,7 +2,7 @@
     color: #fff;
     background-color: #000; /* Assuming a dark theme as per the image */
     padding: 3rem; /* Adjust as needed */
-    max-width: 800px; /* Adjust as needed */
+    max-width: 100%;
     margin: auto; /* Center the container */
   }
   
@@ -45,6 +45,26 @@
   .open-project-btn:hover {
     background-color: #ddd; /* Lighter background on hover */
   }
+
+  .back-button {
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    padding-right: 2vw;
+    border: 2px solid white; 
+    border-radius: 20px;
+    color: white; 
+    background-color: transparent;
+    cursor: pointer; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #faf9f7; 
+    color: black;
+}
   
   @media (max-width: 768px) {
     .info-sections {

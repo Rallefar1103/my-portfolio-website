@@ -1,5 +1,5 @@
 import "./project";
-
+import CityTravelPlannerImg from "../assets/city-travel-planner.png";
 import FitnessInspirationImg from "../assets/fitness-app/fitness-inspo-background.png";
 import TechHavenImg from "../assets/tech-haven-landing.png";
 import FoodieFriendsImg from "../assets/foodie-friends-img.png";
@@ -7,6 +7,23 @@ import WasheeImg from "../assets/washee-img.png";
 import LyriksImg from "../assets/lyriks.png";
 
 let allProjects = [
+  {
+    id: "city-travel-planner",
+    name: "AI City Travel Planner",
+    type: "Web Development",
+    image: CityTravelPlannerImg,
+    stack: [
+      "/icons/typescript.png",
+      "/icons/atom.png",
+      "/icons/nextjs-icon-dark-background.png",
+
+      "/icons/payload.jpeg",
+      "/icons/leaf.png",
+    ],
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    webUrl: "",
+    youtubeId: "",
+  },
   {
     id: "tech-haven",
     name: "Tech Haven Webshop",
