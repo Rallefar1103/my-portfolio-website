@@ -24,7 +24,7 @@
 }
   
   .intro-content {
-    max-width: 54vw; /* Use viewport width units for max-width */
+    max-width: 52vw; /* Use viewport width units for max-width */
     padding: 2vw;
     color: white;
     
@@ -74,6 +74,8 @@
     border: 3px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
+
   
   /* Larger screens: Adjust layout to row */
   @media (max-width: 768px) {
