@@ -12,10 +12,10 @@ const Footer = () => {
           <h2>Let's Build Something Together!</h2>
           <p>
             I'm all about delivering high quality results and enhancing team
-            dynamics with my expertise. If you're looking for a dedicated
-            engineer to help move projects forward,{" "}
+            dynamics with my expertise. If you're looking for a dedicated and
+            skilled engineer to help move projects forward,{" "}
             <span className="bold-white">let's</span>{" "}
-            <span className="portfolio-yellow">talk.</span>
+            <span className="portfolio-footer-yellow">talk.</span>
           </p>
         </div>
         <div className="footer-links-container">
