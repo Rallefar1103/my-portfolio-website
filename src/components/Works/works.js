@@ -23,13 +23,13 @@ const Works = () => {
           <div className="project-container" key={index}>
             <div className="project-image-container">
               <img
-                src={project.imgUrl}
+                src={project.image}
                 alt="project"
                 className="project-image"
               />
             </div>
             <div className="project-info-container">
-              <p className="project-title">{project.title}</p>
+              <p className="project-title">{project.name}</p>
               <p className="project-label">{project.type}</p>
 
               <Link to={`/projects/${project.id}`}>

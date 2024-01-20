@@ -7,10 +7,8 @@ import Footer from "./components/Footer/footer";
 
 import "./app.css";
 import { Routes, Route } from "react-router-dom";
-import TravelPlannerProject from "./components/PortfolioProjects/TravelPlannerProject";
-import FitnessInspirationProject from "./components/PortfolioProjects/FitnessInspirationProject";
-import TechHaven from "./components/PortfolioProjects/TechHaven";
 import IntroRevised from "./components/Intro/intro-revised";
+import ProjectDetails from "./components/PortfolioProjects/projectDetails";
 
 function App() {
   return (
@@ -28,15 +26,7 @@ function App() {
             </>
           }
         />
-        <Route
-          path="/projects/travel-planner"
-          element={<TravelPlannerProject />}
-        />
-        <Route
-          path="/projects/fitness-inspiration"
-          element={<FitnessInspirationProject />}
-        />
-        <Route path="/projects/tech-haven" element={<TechHaven />} />
+        <Route path="/projects/:projectId" element={<ProjectDetails />} />
       </Routes>
       <Footer />
     </div>

@@ -1,0 +1,58 @@
+.project-details {
+    color: #fff;
+    background-color: #000; /* Assuming a dark theme as per the image */
+    padding: 3rem; /* Adjust as needed */
+    max-width: 800px; /* Adjust as needed */
+    margin: auto; /* Center the container */
+  }
+  
+
+  .title {
+    font-size: 3rem; /* Large font size for the title */
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    margin-bottom: 2rem; /* Space before the info sections */
+  }
+  
+  .info-sections {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #aaa; /* Top border as per the image */
+    border-bottom: 1px solid #aaa; /* Bottom border as per the image */
+    padding: 1rem 0; /* Padding around the info blocks */
+  }
+  
+  .info-block {
+    text-align: center; /* Centering the content */
+  }
+  
+  .open-project-btn {
+    display: block; /* Make the button a block to occupy full width */
+    text-align: center;
+    background-color: #fff; /* Contrasting button color */
+    color: #000;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    margin-top: 2rem; /* Space after the info sections */
+    cursor: pointer;
+  }
+  
+  .open-project-btn:hover {
+    background-color: #ddd; /* Lighter background on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .info-sections {
+      flex-direction: column; /* Stack the info blocks on smaller screens */
+    }
+  
+    .open-project-btn {
+      width: 100%; /* Full-width button on smaller screens */
+    }
+  }
+  
