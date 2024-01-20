@@ -14,9 +14,8 @@ const Works = () => {
         <span className="portfolioYellow">Portfolio</span>
       </h2>
       <p className="intro">
-        My projects mainly consist of web and mobile applications. You can click
-        on "Learn more" to read about the project, check out the tech stack, and
-        see a demo video.
+        Click on 'Learn more' to read about the project, check out the tech
+        stack, browse the GitHub repository, and see a demo video.
       </p>
 
       <div className="projects">

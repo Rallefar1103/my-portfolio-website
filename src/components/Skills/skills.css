@@ -183,7 +183,46 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+    .skills-title {
+        font-size: 4.5vw;
+        margin-bottom: 2vh;
+    }
 
+    .skills-description-container {
+        max-width: 70vw;
+        font-size: 1.3vw;
+        margin-bottom: 5vh;
+    }
+
+    .skill-card-text {
+        width: 24vw;
+    }
+
+    
+    .skill-card-text h2 {
+        font-size: 1.8vw; 
+        padding-bottom: 1vh;
+    }
+    
+    .skill-card-text p {
+        font-size: 1.2vw; 
+        font-weight: 300;
+        padding-bottom: 3vh;
+    }
+    
+    .white-horizontal-bar-skill-card {
+        height: 0.3vh; 
+        background-color: white;
+        max-width: 40vw;
+        margin-bottom: 2vh; 
+    }
+    
+    .skill-card-text h3 {
+        font-size: 1.4vw; 
+        padding-bottom: 2vh;
+    }
+} 
 
 
 
@@ -198,6 +237,7 @@
         font-size: 1.6vw;
         margin-bottom: 5vh;
     }
+
     .skill-card {
         max-width: calc(50% - 4vw); 
     }

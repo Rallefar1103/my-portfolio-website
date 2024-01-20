@@ -60,7 +60,7 @@ let projectManagementSkills = [
   {
     icon: "/icons/bitbucket.png",
     description:
-      "I leverage Bitbucket's robust version control and branch management to streamline our team's collaborative development, ensuring high code integrity through best practice pull request reviews.",
+      "I leverage Bitbucket's robust version control and branch management to streamline our team's collaborative development efforts, ensuring high code integrity and quality using industry best practices for documentation, code reviews, PRs and more.",
   },
   {
     icon: "/icons/jira.png",
@@ -70,7 +70,7 @@ let projectManagementSkills = [
   {
     icon: "/icons/confluence.png",
     description:
-      "I leverage Confluence to document project insights and create user guides that enhance knowledge sharing, aiming to support team efficiency and product useability.",
+      "I leverage Confluence to document project insights and create user guides that enhance knowledge sharing, aiming to support team efficiency and product useability for clients and customers.",
   },
 ];
 
