@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
+import { marked } from "marked";
 import allProjects from "../../data/allProjects";
 import "./projectDetails.css";
 import { useNavigate } from "react-router-dom";
@@ -17,6 +18,7 @@ const BackButton = () => {
 };
 
 const ProjectDetails = () => {
+  const [projectDescription, setProjectDescription] = useState("");
   let { projectId } = useParams(); // This will match the :projectId in your route
 
   const project = allProjects.find((p) => p.id === projectId);
@@ -29,6 +31,24 @@ const ProjectDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  useEffect(() => {
+    const projectDescriptionPath = `/project-descriptions/${projectId}.md`;
+
+    fetch(projectDescriptionPath)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then((markdown) => {
+        setProjectDescription(marked(markdown));
+      })
+      .catch((error) => {
+        console.error("Failed to fetch project description:", error);
+      });
+  }, [projectId]);
 
   const extractFirstWord = (string) => {
     return string.split(" ")[0];
@@ -61,14 +81,17 @@ const ProjectDetails = () => {
             <div className="tag-description-wrapper">
               <div className="tags-wrapper">
                 {project.stack.map((tag, index) => (
-                  <div className="tag-container">
+                  <div className="tag-container" key={index}>
                     <p className="tag">{tag}</p>
                   </div>
                 ))}
               </div>
 
               <div className="description-container">
-                <p className="description">{description}</p>
+                <p
+                  className="description"
+                  dangerouslySetInnerHTML={{ __html: projectDescription }}
+                />
               </div>
               <div className="buttons-container">
                 <button className="open-project-btn">Go to website</button>

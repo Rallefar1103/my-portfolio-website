@@ -18,7 +18,7 @@ let allProjects = [
   {
     id: "city-travel-planner",
     name: "AI City Travel Planner",
-    type: "Web",
+    type: "Web Development",
     image: CityTravelPlannerImg,
     backgroundImage: CityTravelPlannerBgImg,
     stack: ["React", "Typescript", "Node", "AI", "Microservices"],
@@ -29,7 +29,7 @@ let allProjects = [
   {
     id: "tech-haven",
     name: "Tech Haven Webshop",
-    type: "Web",
+    type: "Web Development",
     image: TechHavenImg,
     backgroundImage: TechHavenBgImg,
     stack: ["React", "Next.js", "Typescript", "Payload CMS"],
@@ -41,7 +41,7 @@ let allProjects = [
   {
     id: "fitness-inspiration",
     name: "Fitness Inspiration",
-    type: "Web",
+    type: "Web Development",
     image: FitnessInspirationImg,
     backgroundImage: FitnessInspoBgImg,
     stack: ["React", "JavaScript", "RapidAPI", "Material UI"],
@@ -53,7 +53,7 @@ let allProjects = [
   {
     id: "foodie-friends",
     name: "Foodie Friends",
-    type: "Mobile",
+    type: "Mobile Development",
     image: FoodieFriendsImg,
     backgroundImage: FoodieFriendsBgImg,
     stack: ["React Native", "JavaScript", "Firestore", "APIs"],
@@ -65,7 +65,7 @@ let allProjects = [
   {
     id: "washee",
     name: "Eco Laundry Assistant",
-    type: "Web & Mobile",
+    type: "Web & Mobile Development",
     image: WasheeImg,
     backgroundImage: WasheeBgImg,
     stack: ["Flutter", "Dart", "Django", "Python"],
@@ -77,7 +77,7 @@ let allProjects = [
   {
     id: "lyriks",
     name: "Music Player",
-    type: "Web",
+    type: "Web Development",
     image: LyriksImg,
     backgroundImage: LyriksBgImg,
     stack: ["React", "JavaScript", "Tailwind", "Redux"],
