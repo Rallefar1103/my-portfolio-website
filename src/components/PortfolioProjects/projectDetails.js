@@ -30,6 +30,12 @@ const ProjectDetails = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  const extractFirstWord = (string) => {
+    return string.split(" ")[0];
+  };
+
+  let projectName = project.name;
+
   if (!project) {
     return <div>Project not found</div>;
   }
@@ -42,7 +48,14 @@ const ProjectDetails = () => {
         </div>
         <div className="details-content">
           <div className="title-container">
-            <h1 className="title">{project.name}</h1>
+            <h1 className="title">
+              {" "}
+              <span className="title-yellow">
+                {" "}
+                {extractFirstWord(projectName)}{" "}
+              </span>{" "}
+              {projectName.substring(extractFirstWord(projectName).length)}
+            </h1>
           </div>
           <div className="lower-details">
             <div className="tag-description-wrapper">

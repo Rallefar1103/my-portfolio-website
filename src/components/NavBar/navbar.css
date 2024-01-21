@@ -13,18 +13,22 @@
     padding-right: 7vw;
 }
 
-.email-btn {
+.email-btn-wrapper {
     background: white;
     margin-top: 1vh;
-    color: black;
-    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1vw;
     border-radius: 20px;
     height: 2vh;
+    color: black;
 }
+
+.email-btn {
+    border: none;
+}
+
 
 
 .email-link-icon {

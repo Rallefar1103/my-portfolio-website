@@ -28,12 +28,15 @@ const Navbar = () => {
         <NavLink to="works">Portfolio</NavLink>
         <NavLink to="articles">Articles</NavLink>
       </div>
-      <button className="email-btn">
-        <a href="mailto:rasmus.henriksen@live.dk" rel="noopener noreferrer">
-          <img src={GmailIcon} alt="Email" className="email-link-icon" />
-        </a>
-        Contact Me
-      </button>
+      <a href="mailto:rasmus.henriksen@live.dk" rel="noopener noreferrer">
+        <div className="email-btn-wrapper">
+          <button className="email-btn">
+            <img src={GmailIcon} alt="Email" className="email-link-icon" />
+          </button>
+          Contact Me
+        </div>
+      </a>
+
       {/* ... other menu items and mobile menu ... */}
     </nav>
   );
