@@ -1,3 +1,1 @@
-# City Travel Planner
-
-This is the description of City Travel Planner that I just did in the markdown file. Trying to fetch it and paste it on the page.
+Embark on unforgettable urban adventures with the AI City Travel Planner. This innovative web application revolutionizes city exploration by tailoring itineraries to your unique preferences. Enter your trip duration, budget, desired destinations, dining choices, and attractions, and our AI system skillfully crafts a personalized journey. Experience a new way of travel planning, where technology meets your travel aspirations, making every city visit uniquely yours.

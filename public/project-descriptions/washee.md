@@ -1,0 +1,1 @@
+Embrace eco-friendly living with the Eco Laundry Assistant. This smartphone application guides you on the optimal times to do your laundry, based on wind energy availability in the grid. Save money and reduce your carbon footprint by syncing your laundry schedule with green energy peaks. It's not just about clean clothes; it's about a cleaner planet.

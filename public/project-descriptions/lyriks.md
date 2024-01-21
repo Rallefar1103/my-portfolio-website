@@ -1,0 +1,1 @@
+Enter the world of Lyriks, where music discovery takes a front seat. Our state-of-the-art web application offers an immersive experience to explore new and popular music across genres. Filter, find, and fall in love with sounds that resonate with your soul. Lyriks isn't just a music player; it's a journey through the world of melody, rhythm, and beyond.
