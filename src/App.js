@@ -4,6 +4,7 @@ import Skills from "./components/Skills/skills";
 import Works from "./components/Works/works";
 import Articles from "./components/Articles/article-feed";
 import Footer from "./components/Footer/footer";
+import AllProjectsPage from "./pages/allProjectsPage";
 
 import "./app.css";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -29,6 +30,7 @@ function App() {
           }
         />
         <Route path="/projects/:projectId" element={<ProjectDetails />} />
+        <Route path="/all-projects" element={<AllProjectsPage />} />
       </Routes>
       {location.pathname === "/" && <Footer />}
     </div>
