@@ -1,36 +1,39 @@
 .navbar {
     background: transparent;
-    height: 5rem;
+   
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     z-index: 20;
+    padding-top: 1vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
-.desktopMenuBtn {
+.email-btn {
     background: white;
+    margin-top: 1vh;
     color: black;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0.7rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.9rem;
-    border-radius: 2rem;
-    height: 2.5rem;
+    padding: 1vw;
+    border-radius: 20px;
+    height: 2vh;
 }
 
 
-.email-link {
+.email-link-icon {
     object-fit: cover;
     height: 1.5rem;
     width: 1.5rem;
-    margin: 0 0.75rem;
+    margin-right: 0.5vw;
+    margin-top: 0.5vh;
+   
 }
 
 
@@ -53,11 +56,7 @@
     border-bottom: 3px solid yellow;
 }
 
-.mobMenu {
-    display: none;
-    object-fit: cover;
-    height: 1.8rem;
-}
+
 
 .navMenu {
     position: absolute;
@@ -71,13 +70,6 @@
     min-width: 15rem;
     background: rgb(40, 40, 40);
     border-radius: 1rem;
-}
-
-.listItem {
-    color: white;
-    padding: 0.5rem 3rem;
-    margin: 0.25rem;
-    background: rgb(30, 30, 30);
 }
 
 @media screen and (max-width:720px) {

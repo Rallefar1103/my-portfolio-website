@@ -1,10 +1,10 @@
 import "./project";
-import CityTravelPlannerImg from "../assets/city-travel-planner.png";
-import FitnessInspirationImg from "../assets/fitness-app/fitness-inspo-background.png";
-import TechHavenImg from "../assets/tech-haven-landing.png";
-import FoodieFriendsImg from "../assets/foodie-friends-img.png";
+import CityTravelPlannerImg from "../assets/city-travel-planner-project-img.jpg";
+import FitnessInspirationImg from "../assets/fitness-inspo-project-img.jpg";
+import TechHavenImg from "../assets/tech-haven-project-img.jpg";
+import FoodieFriendsImg from "../assets/foodie-friends-project-img.jpg";
 import WasheeImg from "../assets/washee-img.png";
-import LyriksImg from "../assets/lyriks.png";
+import LyriksImg from "../assets/lyriks-project-img.jpg";
 
 // Background Images
 import CityTravelPlannerBgImg from "../assets/project-details/city-travel-planner-bg-img-3.jpg";

@@ -5,12 +5,13 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjusted for spacing around items */
+    justify-content: space-between; 
     flex-direction: row;
     text-align: left;
-    padding: 4vw; /* Use viewport width units for padding */
-    box-sizing: border-box; /* Ensures padding doesn't add to the width */
-    overflow: hidden; /* Ensures no scrolling due to absolute positioning */
+    padding: 4vw; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+    margin-top: 5vh;
   }
   
   .background-image {
@@ -61,7 +62,7 @@
     position: absolute;
     max-width: 32vw; /* Use viewport width units for width */
     max-height: 32vw; /* Use viewport width units for height */
-    top: 35%;
+    top: 40%;
     right: 10%; /* Align to the right with some padding */
     transform: translateY(-50%); /* Center vertically */
   }
