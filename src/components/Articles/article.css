@@ -25,9 +25,9 @@
 }
 
 .article-right:hover {
-	background: #423d3d;
+	background: transparent;
 	opacity: 1;
-	transition: background-color 0.2s ease-in-out;
+    border: 2px solid #2E1E41; 
 }
 
 .article-title {
