@@ -44,10 +44,15 @@ const ProjectDetails = () => {
             <h1 className="title">{project.name}</h1>
           </div>
           <div className="lower-details">
-            <div className="subtitle-description-wrapper">
-              <div className="subtitle-container">
-                <h3 className="subtitle">{project.type}</h3>
+            <div className="tag-description-wrapper">
+              <div className="tags-wrapper">
+                {project.stack.map((tag, index) => (
+                  <div className="tag-container">
+                    <p className="tag">{tag}</p>
+                  </div>
+                ))}
               </div>
+
               <div className="description-container">
                 <p className="description">{description}</p>
               </div>
