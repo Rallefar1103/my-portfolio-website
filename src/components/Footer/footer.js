@@ -27,7 +27,13 @@ const Footer = () => {
           </div>
           <div className="icon-link-wrapper">
             <img src={ResumeIcon} alt="mail" className="footer-icon" />
-            <a href="https://m.me/YourMessengerLink">Download my resume</a>
+            <a
+              href="https://docs.google.com/document/d/1KRfPIXxqUX_IVMoVGpZelYMUXTWruaEPB-gnazVb4to/export?format=pdf"
+              download="Henriksen-Resume-24.pdf"
+            >
+              {" "}
+              Download my resume
+            </a>
           </div>
         </div>
       </div>
