@@ -141,6 +141,7 @@
     text-decoration: none; 
     font-weight: bold;
     transition: background-color 0.3s;
+    box-shadow: 0 0 0.5vw #2E1E41; 
     font-size: 1.1vw;
 }
 

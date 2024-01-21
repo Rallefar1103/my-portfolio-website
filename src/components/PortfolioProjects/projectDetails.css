@@ -2,7 +2,6 @@
 .project-details-container {
   background-image: url('../../assets/project-details/details-background-img.jpg');
   background-size: cover;
-  background-position: center;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -17,7 +16,6 @@
 .details-content {
   color: #fff;
   text-align: center;
-  z-index: 2; 
   display: flex;
   align-items: start;
   justify-content: start;
@@ -33,6 +31,7 @@
   flex-direction: column;
   width: 20vw;
   height: 100vh;
+  padding-top: 1.5vh;
 }
 
 .back-button {
@@ -41,9 +40,7 @@
   justify-content: center;
   padding: 0.5em 1em;
   margin: 1em;
-  background-color: #f2f2f2;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
   color: #333;
@@ -58,6 +55,7 @@
 .back-button svg {
   margin-right: 0.5em;
 }
+
 .title-container {
   align-self: flex-start; 
   margin-top: 10vh; 
@@ -145,37 +143,6 @@
     margin-left: 2vw;
   }
 
-  .tech-stack-card {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-  
-    background: rgb(50, 50, 50);
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0.5vw 1vw rgba(255, 255, 255, 0.1);
-    height: 35vh;
-    width: 30vw;
-    border-radius: 25px;
-  }
-  
-  .tech-stack {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    justify-items: center; 
-    align-items: center;
-    gap: 3vw;
-    padding: 2vw;
-    
-  }
-
-  .project-tech-icon {
-    height: 5vw; 
-    width: 5vw; 
-    max-height: 50px;
-    max-width: 50px; 
-    object-fit: cover;
-  }
-
   .buttons-container {
     flex-direction: row;
     display: flex;
@@ -227,47 +194,59 @@
 
 
 /* Project Image and Text Section */
-
 .project-screens {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  height: 80vh;
+  height: 90vh;
 }
 
-.left {
+.project-screens-left {
   flex: 1; 
   display: flex;
   flex-direction: column;
   align-items: center; 
-  height: 100%;
-  max-width: 50%;
+  max-width: 50vw;
+  height: 90vh;
 }
 
-.project-text-container {
-  border: 3px solid #2E1E41;
+.project-screens-bg-image {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  border-bottom-right-radius: 10px;
+  box-shadow: 
+  6px 0 15px -5px #F54B41,
+  12px 0 15px -5px #2585BE,
+  2px 0 15px -5px #F9DBC1;
+}
+
+.project-screens-right {
+  width: 50vw;
+}
+
+.project-screens-text-container {
   border-radius: 20px;
-  padding-left: 2vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  padding-right: 1vw;
+  padding: 2vw;
   margin-bottom: 2vw; 
+  margin-left: 2vw;
   width: 40vw;
+  
 }
 
-.project-text-container h2 {
+.project-screens-text-container h2 {
   font-size: 2vw; 
   color: #fff;
 }
 
-.project-text-container p {
+.project-screens-text-container p {
   font-size: 1vw; 
   color: white; 
   font-weight: 200;
 }
 
-.portfolio-yellow {
+.portfolio-footer-yellow {
   color: yellow;
   font-weight: 600;
   font-size: 1.3vw;
@@ -279,20 +258,65 @@
   font-size: 1.1vw;
 }
 
-.right {
-  width: 50vw;
+
+/* Tech Section */
+.project-tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
 }
 
-.project-bg-image {
-    max-width: 100%; 
-    height: 100vh;
-    object-fit: cover;
+.project-tech-left {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 50vw;
+}
+
+.project-tech-right {
+  flex: 1;
+  width: 50vw; 
+  height: 80vh; 
+  
+}
+
+
+.project-tech-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 
+  -4px 2px 15px -5px #7C2559,
+  -6px 2px 15px -5px rgba(255, 87, 34, 0.7);
+  border-top-left-radius: 10px;
+ 
 }
 
 
 
 
 
+.project-tech-text-container {
+  border-radius: 20px;
+  padding: 2vw;
+  margin-bottom: 2vw; 
+  margin-left: 2vw;
+  width: 40vw;
+}
+
+.project-tech-text-container h2 {
+  font-size: 2vw; 
+  color: #fff;
+}
+
+.project-tech-text-container p {
+  font-size: 1vw; 
+  color: white; 
+  font-weight: 200;
+}
 
 
 

@@ -4,6 +4,7 @@ import allProjects from "../../data/allProjects";
 import "./projectDetails.css";
 import { useNavigate } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import TechImage from "../../assets/project-details/tech-description-2.jpg";
 
 const BackButton = () => {
   const navigate = useNavigate();
@@ -66,16 +67,16 @@ const ProjectDetails = () => {
       </div>
 
       <div className="project-screens">
-        <div className="left">
+        <div className="project-screens-left">
           <img
             src={project.backgroundImage}
             alt="background-img"
-            className="project-bg-image"
+            className="project-screens-bg-image"
           />
         </div>
 
-        <div className="right">
-          <div className="project-text-container">
+        <div className="project-screens-right">
+          <div className="project-screens-text-container">
             <h2>Let's Build Something Together!</h2>
             <p>
               I'm all about delivering high quality results and enhancing team
@@ -85,6 +86,29 @@ const ProjectDetails = () => {
               <span className="portfolio-footer-yellow">talk.</span>
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="project-tech">
+        <div className="project-tech-left">
+          <div className="project-tech-text-container">
+            <h2>Let's Build Something Together!</h2>
+            <p>
+              I'm all about delivering high quality results and enhancing team
+              dynamics with my expertise. If you're looking for a dedicated and
+              skilled engineer to help move projects forward,{" "}
+              <span className="bold-white">let's</span>{" "}
+              <span className="portfolio-footer-yellow">talk.</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="project-tech-right">
+          <img
+            src={TechImage}
+            alt="background-img"
+            className="project-tech-bg-image"
+          />
         </div>
       </div>
     </>

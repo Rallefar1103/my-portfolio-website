@@ -7,11 +7,11 @@ import WasheeImg from "../assets/washee-img.png";
 import LyriksImg from "../assets/lyriks.png";
 
 // Background Images
-import CityTravelPlannerBgImg from "../assets/project-details/city-travel-planner-bg-img.jpg";
-import TechHavenBgImg from "../assets/project-details/tech-haven-details-bg-img.jpg";
-import FitnessInspoBgImg from "../assets/project-details/fitness-inspo-bg-img.jpg";
-import FoodieFriendsBgImg from "../assets/project-details/foodie-friends-bg-img.jpg";
-import WasheeBgImg from "../assets/project-details/washee-bg-img.jpg";
+import CityTravelPlannerBgImg from "../assets/project-details/city-travel-planner-bg-img-3.jpg";
+import TechHavenBgImg from "../assets/project-details/tech-haven-bg-img-2.jpg";
+import FitnessInspoBgImg from "../assets/project-details/fitness-inspo-bg-img-2.jpg";
+import FoodieFriendsBgImg from "../assets/project-details/foodie-friends-bg-img-3.jpg";
+import WasheeBgImg from "../assets/project-details/washee-bg-img-3.jpg";
 import LyriksBgImg from "../assets/project-details/lyriks-bg-img-2.jpg";
 
 let allProjects = [
