@@ -53,7 +53,7 @@ const Skills = () => {
             className="project-man-img"
           />
           <div className="text-container">
-            <h2>Project & Product Management</h2>
+            <h2>Project Management</h2>
             <p>
               I thrive when I can blend my technical expertise with business
               acumen and steer a project from conception to launch by assisting
