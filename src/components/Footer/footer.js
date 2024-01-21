@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="footer-links-container">
           <div className="icon-link-wrapper">
             <img src={GmailIcon} alt="mail" className="footer-icon" />
-            <a href="https://m.me/YourMessengerLink">
+            <a href="mailto:rasmus.henriksen@live.dk">
               rasmus.henriksen@live.dk
             </a>
           </div>
