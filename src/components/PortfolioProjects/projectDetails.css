@@ -210,6 +210,81 @@
     background-color: #faf9f7; 
     color: black;
 }
+
+
+/* Project Image and Text */
+
+.project-screens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
+}
+
+.left {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 100%;
+  max-width: 50%;
+}
+
+.project-text-container {
+  border: 3px solid #2E1E41;
+  border-radius: 20px;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-right: 1vw;
+  margin-bottom: 2vw; 
+  width: 40vw;
+}
+
+.project-text-container h2 {
+  font-size: 2vw; 
+  color: #fff;
+}
+
+.project-text-container p {
+  font-size: 1vw; 
+  color: white; 
+  font-weight: 200;
+}
+
+.portfolio-yellow {
+  color: yellow;
+  font-weight: 600;
+  font-size: 1.3vw;
+}
+
+.bold-white {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1vw;
+}
+
+.right {
+  width: 50vw;
+}
+
+.project-bg-image {
+    max-width: 100%; 
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
   
   @media (max-width: 768px) {
     .info-sections {

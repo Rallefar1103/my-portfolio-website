@@ -61,7 +61,26 @@ const ProjectDetails = () => {
       </div>
 
       <div className="project-screens">
-        <p>Screenshots</p>
+        <div className="left">
+          <img
+            src={project.backgroundImage}
+            alt="background-img"
+            className="project-bg-image"
+          />
+        </div>
+
+        <div className="right">
+          <div className="project-text-container">
+            <h2>Let's Build Something Together!</h2>
+            <p>
+              I'm all about delivering high quality results and enhancing team
+              dynamics with my expertise. If you're looking for a dedicated and
+              skilled engineer to help move projects forward,{" "}
+              <span className="bold-white">let's</span>{" "}
+              <span className="portfolio-footer-yellow">talk.</span>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

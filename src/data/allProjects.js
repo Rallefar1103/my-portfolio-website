@@ -12,7 +12,7 @@ import TechHavenBgImg from "../assets/project-details/tech-haven-details-bg-img.
 import FitnessInspoBgImg from "../assets/project-details/fitness-inspo-bg-img.jpg";
 import FoodieFriendsBgImg from "../assets/project-details/foodie-friends-bg-img.jpg";
 import WasheeBgImg from "../assets/project-details/washee-bg-img.jpg";
-import LyriksBgImg from "../assets/project-details/lyriks-bg-img.jpg";
+import LyriksBgImg from "../assets/project-details/lyriks-bg-img-2.jpg";
 
 let allProjects = [
   {
