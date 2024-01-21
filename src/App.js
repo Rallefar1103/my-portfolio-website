@@ -14,7 +14,8 @@ function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <Navbar />
+      {location.pathname === "/" && <Navbar />}
+
       <Routes>
         <Route
           path="/"
