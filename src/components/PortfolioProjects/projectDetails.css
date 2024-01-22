@@ -132,7 +132,9 @@
     height: 40vh;
     text-align: left;
     border-radius: 20px;
-    padding: 1vw;
+   padding-top: 1vh;
+   padding-left: 1vw;
+   padding-right: 1vw;
   }
 
   .description-container h3 {
@@ -196,7 +198,7 @@
 }
 
 
-/* Project Image and Text Section */
+/* Project Screens Section */
 .project-screens {
   display: flex;
   justify-content: space-between;
@@ -255,6 +257,56 @@
   font-weight: 600;
   font-size: 1.1vw;
 }
+
+/* Project Presentation Section */
+.project-presentation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  margin-top: 5vh ;
+}
+
+.project-presentation-left {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 50vw;
+  height: 90vh;
+}
+
+.project-presentation-right {
+  width: 50vw;
+}
+
+.project-presentation-text-container {
+  border-radius: 20px;
+  padding: 2vw;
+  margin-bottom: 2vw; 
+  margin-left: 2vw;
+  width: 40vw;
+}
+
+.project-presentation-image {
+  width: 75%;
+  height: 80vh;
+  object-fit: fill;
+  border-bottom-right-radius: 10px;
+  box-shadow: 
+  6px 0 15px -5px #F54B41,
+  12px 0 15px -5px #2585BE,
+  2px 0 15px -5px #F9DBC1;
+}
+
+
+/* Mobile Images */
+.project-presentation-image-mobile {
+
+}
+
 
 
 /* Tech Section */

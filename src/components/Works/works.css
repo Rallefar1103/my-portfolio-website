@@ -87,8 +87,8 @@
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10%);
-    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    transform: translateY(20%);
+    transition: opacity 0.3s, visibility 2s, transform 0.3s; 
 }
 
 .project-title {

@@ -14,6 +14,28 @@ import FoodieFriendsBgImg from "../assets/project-details/foodie-friends-bg-img-
 import WasheeBgImg from "../assets/project-details/washee-bg-img-3.jpg";
 import LyriksBgImg from "../assets/project-details/lyriks-bg-img-2.jpg";
 
+// Presentation Images
+
+// Fitness Inspo
+// import FitnessInspoLandingPage from "../assets/project-details/fitness-inspo/fitness-landing-page.png";
+// import FitnessInspoExplorePage from "../assets/project-details/fitness-inspo/explore-exercises.png";
+
+// Tech-Haven
+import TechHavenLandingPage from "../assets/project-details/tech-haven/tech-haven-landing-page.png";
+import TechHavenProductsPage from "../assets/project-details/tech-haven/tech-haven-product-page.png";
+import TechHavenSignInPage from "../assets/project-details/tech-haven/tech-haven-sign-in.png";
+
+// City Travel Planner
+
+// Foodie Friends
+
+// Lyriks
+import LyriksLandingPage from "../assets/project-details/lyriks/lyriks-main-page.png";
+import LyriksArtistPage from "../assets/project-details/lyriks/lyriks-artist-page.png";
+
+// Eco Laundry Assistant
+import WasheeMockUps from "../assets/project-details/washee/washee-mockups.png";
+
 let allProjects = [
   {
     id: "city-travel-planner",
@@ -36,6 +58,11 @@ let allProjects = [
     githubUrl: "https://github.com/Rallefar1103/e-commerce-tech-shop",
     webUrl: "https://e-commerce-tech-shop.payloadcms.app/home",
     youtubeId: "",
+    presentationImages: {
+      first: TechHavenLandingPage,
+      second: TechHavenProductsPage,
+      third: TechHavenSignInPage,
+    },
   },
 
   {
@@ -72,6 +99,9 @@ let allProjects = [
     githubUrl: "",
     webUrl: "",
     youtubeId: "",
+    presentationImages: {
+      first: WasheeMockUps,
+    },
   },
 
   {
@@ -84,6 +114,10 @@ let allProjects = [
     githubUrl: "",
     webUrl: "",
     youtubeId: "",
+    presentationImages: {
+      first: LyriksLandingPage,
+      second: LyriksArtistPage,
+    },
   },
 ];
 

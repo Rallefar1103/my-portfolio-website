@@ -7,6 +7,9 @@ import { useNavigate } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import TechImage from "../../assets/project-details/tech-description-2.jpg";
 
+const mobile = "Mobile Development";
+const mobileAndWeb = "Mobile & Web Development";
+
 const BackButton = () => {
   const navigate = useNavigate();
 
@@ -108,6 +111,47 @@ const ProjectDetails = () => {
             <h2>{descriptionTagline}</h2>
           </div>
         </div>
+      </div>
+
+      <div className="project-presentation">
+        {project.type.includes("Mobile") ? (
+          <>
+            <div className="project-presentation-left">
+              <div className="project-presentation-text-container">
+                <h2>{descriptionTagline}</h2>
+              </div>
+            </div>
+
+            <div className="project-presentation-right-mobile">
+              <img
+                src={project.presentationImages.first}
+                alt="presentation-img"
+                className="project-presentation-image-mobile"
+              />
+              <img
+                src={project.presentationImages.second}
+                alt="presentation-img"
+                className="project-presentation-image-mobile"
+              />
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="project-presentation-left">
+              <img
+                src={project.presentationImages.first}
+                alt="presentation-img"
+                className="project-presentation-image"
+              />
+            </div>
+
+            <div className="project-presentation-right">
+              <div className="project-presentation-text-container">
+                <h2>{descriptionTagline}</h2>
+              </div>
+            </div>
+          </>
+        )}
       </div>
 
       <div className="project-tech">
