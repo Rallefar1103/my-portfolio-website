@@ -264,21 +264,13 @@ const ProjectDetails = () => {
 
       {/* Project Tech Description */}
       <div className="project-tech">
-        <div className="project-tech-left">
-          <div className="project-tech-text-container">
-            <h2>
-              Lets talk <span className="tech-yellow">tech!</span>
-            </h2>
-            <p>{descriptionTechnical}</p>
+        <div className="tech-details-content">
+          <div className="tech-title-container">
+            <h1 className="tech-title">
+              Lets talk
+              <span className="title-yellow"> Tech!</span>
+            </h1>
           </div>
-        </div>
-
-        <div className="project-tech-right">
-          <img
-            src={TechImage}
-            alt="background-img"
-            className="project-tech-bg-image"
-          />
         </div>
       </div>
     </>
