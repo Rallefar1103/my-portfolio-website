@@ -6,7 +6,9 @@ import { allSkills, projectManagementSkills } from "../../data/skillsData";
 const Skills = () => {
   return (
     <section id="skills">
-      <h2 className="skills-title">What I do</h2>
+      <h2 className="skills-title">
+        <span className="skills-yellow">Skills</span> I Bring
+      </h2>
       <div className="skills-description-container">
         <p>
           Specialized in full-stack development, I take great pride in

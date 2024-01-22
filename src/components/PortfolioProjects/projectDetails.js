@@ -7,9 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import TechImage from "../../assets/project-details/tech-description-2.jpg";
 
-const mobile = "Mobile Development";
-const mobileAndWeb = "Mobile & Web Development";
-
 const BackButton = () => {
   const navigate = useNavigate();
 
@@ -17,6 +14,125 @@ const BackButton = () => {
     <button onClick={() => navigate(-1)} className="back-button">
       <IoMdArrowRoundBack size="1.5em" /> Back
     </button>
+  );
+};
+
+const OneMockupView = ({ descriptionOne, imageOne }) => {
+  return (
+    <div className="project-mockups">
+      <div className="project-mockups-left">
+        <div className="project-mockups-text-container">
+          <h2>{descriptionOne}</h2>
+        </div>
+      </div>
+
+      <div className="project-mockups-right">
+        <img src={imageOne} alt="mockup-img" className="project-mockup-image" />
+      </div>
+    </div>
+  );
+};
+
+const TwoMockupsView = ({
+  imageOne,
+  imageTwo,
+  descriptionOne,
+  descriptionTwo,
+}) => {
+  return (
+    <>
+      <div className="project-mockups">
+        <div className="project-mockups-left">
+          <div className="project-mockups-text-container">
+            <h2>{descriptionOne}</h2>
+          </div>
+        </div>
+
+        <div className="project-mockups-right">
+          <img
+            src={imageOne}
+            alt="mockup-img"
+            className="project-mockup-image"
+          />
+        </div>
+      </div>
+      <div className="project-mockups">
+        <div className="project-two-mockups-left">
+          <img
+            src={imageTwo}
+            alt="mockup-img"
+            className="project-mockup-image"
+          />
+        </div>
+
+        <div className="project-two-mockups-right">
+          <div className="project-mockups-text-container">
+            <h2>{descriptionTwo}</h2>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const ThreeMockupsView = ({
+  descriptionOne,
+  imageOne,
+  descriptionTwo,
+  imageTwo,
+  descriptionThree,
+  imageThree,
+}) => {
+  return (
+    <>
+      <div className="project-mockups">
+        <div className="project-mockups-left">
+          <div className="project-mockups-text-container">
+            <h2>{descriptionOne}</h2>
+          </div>
+        </div>
+
+        <div className="project-mockups-right">
+          <img
+            src={imageOne}
+            alt="mockup-img"
+            className="project-mockup-image"
+          />
+        </div>
+      </div>
+
+      <div className="project-mockups">
+        <div className="project-two-mockups-left">
+          <img
+            src={imageTwo}
+            alt="mockup-img"
+            className="project-mockup-image"
+          />
+        </div>
+
+        <div className="project-two-mockups-right">
+          <div className="project-mockups-text-container">
+            <h2>{descriptionTwo}</h2>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-mockups">
+        <div className="project-three-mockups-left">
+          <div className="project-mockups-text-container">
+            <h2>{descriptionThree}</h2>
+          </div>
+        </div>
+
+        <div className="project-three-mockups-right">
+          <img
+            src={imageThree}
+            alt="mockup-img"
+            className="project-mockup-image"
+          />
+        </div>
+      </div>
+    </>
   );
 };
 
@@ -52,6 +168,10 @@ const ProjectDetails = () => {
   };
 
   let projectName = project.name;
+
+  console.log(
+    `Number of presentation images for ${project.name} is: ${project.presentationImages.length}`
+  );
 
   if (!project) {
     return <div>Project not found</div>;
@@ -97,6 +217,7 @@ const ProjectDetails = () => {
         </div>
       </div>
 
+      {/* Project Tagline */}
       <div className="project-screens">
         <div className="project-screens-left">
           <img
@@ -113,47 +234,35 @@ const ProjectDetails = () => {
         </div>
       </div>
 
-      <div className="project-presentation">
-        {project.type.includes("Mobile") ? (
-          <>
-            <div className="project-presentation-left">
-              <div className="project-presentation-text-container">
-                <h2>{descriptionTagline}</h2>
-              </div>
-            </div>
+      {/* Project Mockups */}
+      {project.presentationImages.length === 1 && (
+        <OneMockupView
+          descriptionOne={descriptionTagline}
+          imageOne={project.presentationImages[0].image}
+        />
+      )}
 
-            <div className="project-presentation-right-mobile">
-              <img
-                src={project.presentationImages.first}
-                alt="presentation-img"
-                className="project-presentation-image-mobile"
-              />
-              <img
-                src={project.presentationImages.second}
-                alt="presentation-img"
-                className="project-presentation-image-mobile"
-              />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="project-presentation-left">
-              <img
-                src={project.presentationImages.first}
-                alt="presentation-img"
-                className="project-presentation-image"
-              />
-            </div>
+      {project.presentationImages.length === 2 && (
+        <TwoMockupsView
+          descriptionOne={descriptionTagline}
+          imageOne={project.presentationImages[0].image}
+          descriptionTwo={descriptionTagline}
+          imageTwo={project.presentationImages[1].image}
+        />
+      )}
 
-            <div className="project-presentation-right">
-              <div className="project-presentation-text-container">
-                <h2>{descriptionTagline}</h2>
-              </div>
-            </div>
-          </>
-        )}
-      </div>
+      {project.presentationImages.length === 3 && (
+        <ThreeMockupsView
+          descriptionOne={descriptionTagline}
+          imageOne={project.presentationImages[0].image}
+          descriptionTwo={descriptionTagline}
+          imageTwo={project.presentationImages[1].image}
+          descriptionThree={descriptionTagline}
+          imageThree={project.presentationImages[2].image}
+        />
+      )}
 
+      {/* Project Tech Description */}
       <div className="project-tech">
         <div className="project-tech-left">
           <div className="project-tech-text-container">

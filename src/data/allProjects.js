@@ -58,11 +58,13 @@ let allProjects = [
     githubUrl: "https://github.com/Rallefar1103/e-commerce-tech-shop",
     webUrl: "https://e-commerce-tech-shop.payloadcms.app/home",
     youtubeId: "",
-    presentationImages: {
-      first: TechHavenLandingPage,
-      second: TechHavenProductsPage,
-      third: TechHavenSignInPage,
-    },
+    presentationImages: [
+      {
+        image: TechHavenLandingPage,
+      },
+      { image: TechHavenProductsPage },
+      { image: TechHavenSignInPage },
+    ],
   },
 
   {
@@ -99,9 +101,11 @@ let allProjects = [
     githubUrl: "",
     webUrl: "",
     youtubeId: "",
-    presentationImages: {
-      first: WasheeMockUps,
-    },
+    presentationImages: [
+      {
+        image: WasheeMockUps,
+      },
+    ],
   },
 
   {
@@ -114,10 +118,12 @@ let allProjects = [
     githubUrl: "",
     webUrl: "",
     youtubeId: "",
-    presentationImages: {
-      first: LyriksLandingPage,
-      second: LyriksArtistPage,
-    },
+    presentationImages: [
+      {
+        image: LyriksLandingPage,
+      },
+      { image: LyriksArtistPage },
+    ],
   },
 ];
 
