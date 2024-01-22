@@ -137,6 +137,7 @@
   
   .description {
     font-size: 1vw;
+    font-weight: 200;
   }
   
 
@@ -233,15 +234,10 @@
   
 }
 
-.project-screens-text-container h2 {
-  font-size: 2vw; 
-  color: #fff;
-}
-
 .project-screens-text-container p {
-  font-size: 1vw; 
+  font-size: 2vw; 
   color: white; 
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .portfolio-footer-yellow {

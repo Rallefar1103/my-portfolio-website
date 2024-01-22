@@ -18,22 +18,21 @@ const BackButton = () => {
 };
 
 const ProjectDetails = () => {
+  let { projectId } = useParams();
+  const { pathname } = useLocation();
   const [projectDescription, setProjectDescription] = useState("");
-  let { projectId } = useParams(); // This will match the :projectId in your route
+  const [projectTagline, setProjectTagline] = useState("");
+  const [projectTechnicalDescription, setProjectTechnicalDescription] =
+    useState("");
 
   const project = allProjects.find((p) => p.id === projectId);
-
-  const { pathname } = useLocation();
-
-  const description =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   useEffect(() => {
-    const projectDescriptionPath = `/project-descriptions/${projectId}.md`;
+    const projectDescriptionPath = `/project-descriptions/${projectId}.txt`;
 
     fetch(projectDescriptionPath)
       .then((response) => {
@@ -42,12 +41,35 @@ const ProjectDetails = () => {
         }
         return response.text();
       })
-      .then((markdown) => {
-        setProjectDescription(marked(markdown));
+      .then((text) => {
+        // Split the text by lines
+        const lines = text.split("\n");
+
+        // Initialize content collectors
+        let currentHeader = "";
+        let content = {
+          Description: "",
+          Tagline: "",
+          Technical: "",
+        };
+
+        // Process each line
+        lines.forEach((line) => {
+          if (line.match(/^(Description|Tagline|Technical)$/)) {
+            currentHeader = line; // Set the current header
+          } else if (currentHeader && line.trim() !== "") {
+            content[currentHeader] += line.trim() + " ";
+          }
+        });
+
+        // Set the state with the processed content
+        setProjectDescription(content.Description.trim());
+        setProjectTagline(content.Tagline.trim());
+        setProjectTechnicalDescription(content.Technical.trim());
       })
-      .catch((error) => {
-        console.error("Failed to fetch project description:", error);
-      });
+      .catch((error) =>
+        console.error("Failed to fetch project description:", error)
+      );
   }, [projectId]);
 
   const extractFirstWord = (string) => {
@@ -88,10 +110,7 @@ const ProjectDetails = () => {
               </div>
 
               <div className="description-container">
-                <p
-                  className="description"
-                  dangerouslySetInnerHTML={{ __html: projectDescription }}
-                />
+                <p className="description">{projectDescription} </p>
               </div>
               <div className="buttons-container">
                 <button className="open-project-btn">Go to website</button>
@@ -113,14 +132,7 @@ const ProjectDetails = () => {
 
         <div className="project-screens-right">
           <div className="project-screens-text-container">
-            <h2>Let's Build Something Together!</h2>
-            <p>
-              I'm all about delivering high quality results and enhancing team
-              dynamics with my expertise. If you're looking for a dedicated and
-              skilled engineer to help move projects forward,{" "}
-              <span className="bold-white">let's</span>{" "}
-              <span className="portfolio-footer-yellow">talk.</span>
-            </p>
+            <h2>{projectTagline}</h2>
           </div>
         </div>
       </div>
@@ -128,14 +140,8 @@ const ProjectDetails = () => {
       <div className="project-tech">
         <div className="project-tech-left">
           <div className="project-tech-text-container">
-            <h2>Let's Build Something Together!</h2>
-            <p>
-              I'm all about delivering high quality results and enhancing team
-              dynamics with my expertise. If you're looking for a dedicated and
-              skilled engineer to help move projects forward,{" "}
-              <span className="bold-white">let's</span>{" "}
-              <span className="portfolio-footer-yellow">talk.</span>
-            </p>
+            <h2>Lets talk tech!</h2>
+            <p>{projectTechnicalDescription}</p>
           </div>
         </div>
 
