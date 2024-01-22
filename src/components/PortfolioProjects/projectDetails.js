@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { marked } from "marked";
-import allProjects from "../../data/allProjects";
+
+import { allProjects, projectDescriptions } from "../../data/allProjects";
 import "./projectDetails.css";
 import { useNavigate } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
@@ -20,57 +20,29 @@ const BackButton = () => {
 const ProjectDetails = () => {
   let { projectId } = useParams();
   const { pathname } = useLocation();
-  const [projectDescription, setProjectDescription] = useState("");
-  const [projectTagline, setProjectTagline] = useState("");
-  const [projectTechnicalDescription, setProjectTechnicalDescription] =
-    useState("");
+  const [descriptionHeader, setDescriptionHeader] = useState("");
+  const [descriptionBody, setDescriptionBody] = useState("");
+  const [descriptionTagline, setDescriptionTagline] = useState("");
+  const [descriptionTechnical, setDescriptionalTechnical] = useState("");
 
   const project = allProjects.find((p) => p.id === projectId);
+  const description = projectDescriptions.find((p) => p.id === projectId);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   useEffect(() => {
-    const projectDescriptionPath = `/project-descriptions/${projectId}.txt`;
-
-    fetch(projectDescriptionPath)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.text();
-      })
-      .then((text) => {
-        // Split the text by lines
-        const lines = text.split("\n");
-
-        // Initialize content collectors
-        let currentHeader = "";
-        let content = {
-          Description: "",
-          Tagline: "",
-          Technical: "",
-        };
-
-        // Process each line
-        lines.forEach((line) => {
-          if (line.match(/^(Description|Tagline|Technical)$/)) {
-            currentHeader = line; // Set the current header
-          } else if (currentHeader && line.trim() !== "") {
-            content[currentHeader] += line.trim() + " ";
-          }
-        });
-
-        // Set the state with the processed content
-        setProjectDescription(content.Description.trim());
-        setProjectTagline(content.Tagline.trim());
-        setProjectTechnicalDescription(content.Technical.trim());
-      })
-      .catch((error) =>
-        console.error("Failed to fetch project description:", error)
-      );
-  }, [projectId]);
+    setDescriptionHeader(description.descriptionHeader);
+    setDescriptionBody(description.descriptionBody);
+    setDescriptionTagline(description.tagline);
+    setDescriptionalTechnical(description.technicalDescription);
+  }, [
+    description.descriptionHeader,
+    description.descriptionBody,
+    description.tagline,
+    description.technicalDescription,
+  ]);
 
   const extractFirstWord = (string) => {
     return string.split(" ")[0];
@@ -110,7 +82,8 @@ const ProjectDetails = () => {
               </div>
 
               <div className="description-container">
-                <p className="description">{projectDescription} </p>
+                <h3>{descriptionHeader}</h3>
+                <p className="description">{descriptionBody} </p>
               </div>
               <div className="buttons-container">
                 <button className="open-project-btn">Go to website</button>
@@ -132,7 +105,7 @@ const ProjectDetails = () => {
 
         <div className="project-screens-right">
           <div className="project-screens-text-container">
-            <h2>{projectTagline}</h2>
+            <h2>{descriptionTagline}</h2>
           </div>
         </div>
       </div>
@@ -141,7 +114,7 @@ const ProjectDetails = () => {
         <div className="project-tech-left">
           <div className="project-tech-text-container">
             <h2>Lets talk tech!</h2>
-            <p>{projectTechnicalDescription}</p>
+            <p>{descriptionTechnical}</p>
           </div>
         </div>
 

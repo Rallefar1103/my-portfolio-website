@@ -1,9 +1,0 @@
-Description
-Foodie Friends is more than an app; it's a social dining revolution. Swipe right on intriguing restaurants, and when someone nearby shares your interest, we'll link you up for a meal out. It's about new flavors, new friendships, and shared culinary adventures in your area. Join the community where food meets friendship, and dining out turns into a delightful social experience.
-
-Tagline
-Dine, Meet, Repeat: Socialize with Taste
-
-
-Technical
-Tech Tech Tech

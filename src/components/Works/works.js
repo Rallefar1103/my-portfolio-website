@@ -1,13 +1,9 @@
 import React from "react";
 import "./works.css";
-import allProjects from "../../data/allProjects";
+import { allProjects } from "../../data/allProjects";
 import { Link } from "react-router-dom";
 
 const Works = () => {
-  const _openWebAddress = (url) => {
-    window.open(url, "_blank");
-  };
-
   return (
     <section id="works">
       <h2 className="title">

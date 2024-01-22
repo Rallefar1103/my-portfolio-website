@@ -134,6 +134,10 @@
     border-radius: 20px;
     padding: 1vw;
   }
+
+  .description-container h3 {
+    margin-bottom: 2vh;
+  }
   
   .description {
     font-size: 1vw;

@@ -87,4 +87,66 @@ let allProjects = [
   },
 ];
 
-export default allProjects;
+let projectDescriptions = [
+  {
+    id: "city-travel-planner",
+    descriptionHeader:
+      "Embark on unforgettable urban adventures with the AI City Travel Planner!",
+    descriptionBody:
+      "This innovative web application revolutionizes city exploration by tailoring itineraries to your unique preferences. Enter your trip duration, budget, desired destinations, dining choices, and attractions, and our AI system skillfully crafts a personalized journey. Experience a new way of travel planning, where technology meets your travel aspirations, making every city visit uniquely yours.",
+    tagline: "Explore Cities Smartly with AI-Powered Itineraries",
+    technicalDescription: "Tech tech tech",
+  },
+
+  {
+    id: "tech-haven",
+    descriptionHeader:
+      "Tech Haven is more than just a webshop; it's an experience for tech enthusiasts!",
+    descriptionBody:
+      "Our carefully curated collection showcases the finest and most innovative technology products. With an emphasis on sleek design and high functionality, Tech Haven is the ultimate destination for discovering groundbreaking gadgets. Dive into a world where each item promises to transform your tech lifestyle.",
+    tagline: "Where Future Tech Finds You",
+    technicalDescription: "Tech Tech Tech",
+  },
+
+  {
+    id: "fitness-inspiration",
+    descriptionHeader:
+      "Transform your fitness journey with our Fitness Inspiration Website!",
+    descriptionBody:
+      "Packed with over 1000 exercises and instructional videos, this platform is your gateway to crafting the perfect workout plan. Whether you're a beginner or a seasoned athlete, our vast library offers fresh ideas to keep your routines exciting and effective. Get inspired, stay motivated, and unleash your fitness potential!",
+    tagline: "Transform Workouts, Ignite Motivation",
+    technicalDescription: "Tech Tech Tech",
+  },
+
+  {
+    id: "foodie-friends",
+    descriptionHeader:
+      "Foodie Friends is more than an app; it's a social dining sensation!",
+    descriptionBody:
+      "Swipe right on intriguing restaurants, and when someone nearby shares your interest, we'll link you up for a meal out. It's about new flavors, new friendships, and shared culinary adventures in your area. Join the community where food meets friendship, and dining out turns into a delightful social experience.",
+    tagline: "Dine, Meet, Repeat: Socialize with Taste",
+    technicalDescription: "Tech Tech Tech",
+  },
+
+  {
+    id: "washee",
+    descriptionHeader:
+      "Embrace eco-friendly living with the Eco Laundry Assistant!",
+    descriptionBody:
+      "This smartphone application guides you on the optimal times to do your laundry, based on wind energy availability in the grid. Save money and reduce your carbon footprint by syncing your laundry schedule with green energy peaks. It's not just about clean clothes; it's about a cleaner planet.",
+    tagline: "Eco-Friendly Laundry, One Load at a Time",
+    technicalDescription: "Tech Tech Tech",
+  },
+
+  {
+    id: "lyriks",
+    descriptionHeader:
+      "Enter the world of Lyriks, where music discovery takes a front seat.",
+    descriptionBody:
+      "Our state-of-the-art web application offers an immersive experience to explore new and popular music across genres. Filter, find, and fall in love with sounds that resonate with your soul. Lyriks isn't just a music player; it's a journey through the world of melody, rhythm, and beyond.",
+    tagline: "Where Every Beat Tells a Story",
+    technicalDescription: "Tech Tech Tech",
+  },
+];
+
+export { allProjects, projectDescriptions };
