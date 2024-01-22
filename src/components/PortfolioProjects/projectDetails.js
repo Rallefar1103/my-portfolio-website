@@ -113,7 +113,9 @@ const ProjectDetails = () => {
       <div className="project-tech">
         <div className="project-tech-left">
           <div className="project-tech-text-container">
-            <h2>Lets talk tech!</h2>
+            <h2>
+              Lets talk <span className="tech-yellow">tech!</span>
+            </h2>
             <p>{descriptionTechnical}</p>
           </div>
         </div>

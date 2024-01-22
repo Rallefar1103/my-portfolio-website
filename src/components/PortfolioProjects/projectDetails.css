@@ -294,9 +294,6 @@
 }
 
 
-
-
-
 .project-tech-text-container {
   border-radius: 20px;
   padding: 2vw;
@@ -314,6 +311,11 @@
   font-size: 1vw; 
   color: white; 
   font-weight: 200;
+}
+
+.tech-yellow {
+  font-size: 2.4vw; 
+    color: yellow ;
 }
 
 
