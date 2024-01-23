@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 const Works = () => {
   return (
     <section id="works">
-      <h2 className="title">
-        <span className="portfolioYellow">Portfolio</span>
+      <h2 className="portfolio-title">
+        <span className="portfolio-yellow">Portfolio</span>
       </h2>
-      <p className="intro">
+      <p className="portfolio-intro">
         Selection of my 25+ software projects in web, mobile, and more. To see a
-        full archive of all my projects press the "See all projects" button
+        full archive of all my projects press the{" "}
+        <span className="all-projects-purple">See all projects</span> button
         below.
       </p>
 

@@ -7,17 +7,22 @@
     margin-bottom: 15vh;
 }
 
-.title {
+.portfolio-title {
     margin-bottom: 1vw;
     font-size: 3vw;
 }
 
-.portfolioYellow {
+.portfolio-yellow {
     color: yellow;
 }
 
+.all-projects-purple {
+    color: #9237a9; 
+    font-weight: 500;
+}
 
-.intro {
+
+.portfolio-intro {
     font-weight: 300;
     font-size: 1.2vw;
     max-width: 55vw;
@@ -159,12 +164,12 @@
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
     }
 
-    .title {
+    .portfolio-title {
         margin-bottom: 1vw;
         font-size: 4.5vw;
     }
     
-    .intro {
+    .portfolio-intro {
         font-weight: 300;
         font-size: 1.7vw;
         max-width: 70vw;
@@ -177,12 +182,12 @@
         grid-template-columns: 1fr; /* 1 column for mobile */
     }
 
-    .title {
+    .portfolio-title {
         margin-bottom: 1vw;
         font-size: 5vw;
     }
     
-    .intro {
+    .portfolio-intro {
         font-weight: 300;
         font-size: 2vw;
         max-width: 65vw;
@@ -208,12 +213,12 @@
         gap: 3.2vh;
     }
 
-    .title {
+    .portfolio-title {
         margin-bottom: 1vw;
         font-size: 8.5vw;
     }
     
-    .intro {
+    .portfolio-intro {
         font-weight: 300;
         font-size: 3.2vw;
         max-width: 100%;
