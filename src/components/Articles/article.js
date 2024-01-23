@@ -18,17 +18,17 @@ const Article = (props) => {
   return (
     <div className="article">
       <div className="article-left">
-        <div className="article-date">{date}</div>
+        <p className="article-date">{date}</p>
       </div>
 
       <a href={link}>
         <div className="article-right">
-          <div className="article-title">{title}</div>
-          <div className="article-teaser">{teaserText}</div>
+          <h3 className="article-title">{title}</h3>
+          <p className="article-teaser">{teaserText}</p>
           <div className="article-link">
             Read Article{" "}
             <FontAwesomeIcon
-              className="icon"
+              className="article-icon"
               style={{ fontSize: "10px" }}
               icon={faChevronRight}
             />

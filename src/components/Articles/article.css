@@ -1,5 +1,8 @@
 .article {
-	display:flex
+	display:flex;
+    flex-direction: row;
+    width: 50vw;
+
 }
 
 .article a {
@@ -13,42 +16,54 @@
     justify-content: center;
 }
 
+.article-left p {
+    font-size: 1vw;
+}
+
+
+
 .article-right {
     flex-basis: 80%;
     min-width: 300px;
     mix-blend-mode: normal;
-    border-radius: 25px;
+    border-radius: 20px;
     opacity: 0.6;
     padding: 20px;
     flex-direction: column;
     text-align: left;
 }
 
+
+.article-right h3 {
+	color: #fff7f7;
+	font-size: 1vw;
+	font-weight: 600;
+}
+
+.article-right p {
+    color: #fff7f7;
+	font-size: 0.8vw;
+	font-weight: 300;
+}
+.article-link {
+    padding-top: 2vh;
+    color:yellow;
+    font-size: 0.7vw;
+}
+
+.article-icon {
+    padding-bottom: 1.5px;
+    height: 1vh;
+    width: 1vh;
+}
+
 .article-right:hover {
 	background: transparent;
 	opacity: 1;
     border: 2px solid #9237a9; 
+
 }
 
-.article-title {
-	color: #fff7f7;
-	font-size: 16px;
-	font-weight: 600;
-}
-
-.article-teaser {
-    color: #fff7f7;
-	padding-top: 10px;
-	font-size: 12px;
-	font-weight: 480;
-	line-height: 25px;
-}
-
-.article-link {
-    padding-top: 10px;
-    color:yellow;
-}
-
-.icon {
-    padding-bottom: 1.5px;
+.article-right h3:hover {
+    font-weight: 800;
 }

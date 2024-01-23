@@ -11,15 +11,17 @@
     padding: 0; 
 }
 
-.blogYellow {
-    color: yellow;
-}
-
-.headerTitle {
-    font-size: 3rem;
+.blog-header {
+    font-size: 3vw;
     text-align: center;
     justify-content: center;
 }
+
+.blog-yellow {
+    color: yellow;
+}
+
+
 
 /* Media query for tablets */
 @media (max-width: 768px) {

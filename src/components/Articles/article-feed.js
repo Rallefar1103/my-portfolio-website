@@ -6,9 +6,9 @@ import allArticles from "../../data/all-articles";
 const Articles = () => {
   return (
     <section id="articles">
-      <h2 className="headerTitle">
+      <h2 className="blog-header">
         {" "}
-        My Tech <span className="blogYellow">Blog</span>{" "}
+        My Tech <span className="blog-yellow">Blog</span>{" "}
       </h2>
       <div className="articles-wrapper">
         {allArticles.map((article, index) => (
