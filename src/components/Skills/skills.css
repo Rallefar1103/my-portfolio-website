@@ -83,7 +83,7 @@
     padding-bottom: 2vh;
 }
 
-.tech-stack-list {
+.skills-tech-stack-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 10vw)); 
   grid-gap: 1.5vw; 
@@ -92,16 +92,18 @@
   padding: 1vw; 
 }
 
-.skill-card-tech-icon {
-  height: 5vw; 
-  width: 5vw; 
-  max-height: 50px;
-  max-width: 50px; 
+.skill-card-tech-icon-container {
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.skill-card-tech-icon-container img {
+  height: 100%; 
+  width: 100%; 
   object-fit: cover;
 }
 
-/* Project Management */
-
+/* ------  Project Management -------- */
 .project-management-card {
     width: 65vw; 
     display: flex;
@@ -116,28 +118,12 @@
    
 }
 
-.logo-title-container {
+.pm-logo-title-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
     width: 60vw;
-}
-
-.text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 50vw;
-    text-align: left;
-}
-
-.text-container h2 {
-    font-size: 2vw; 
-}
-
-.text-container p {
-    font-weight: 200;
 }
 
 .project-man-img {
@@ -146,7 +132,26 @@
     margin-right: 3vw;
 }
 
-.white-horizontal-bar {
+.pm-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50vw;
+    text-align: left;
+}
+
+.pm-text-container h2 {
+    font-size: 2vw; 
+}
+
+.pm-text-container p {
+    font-weight: 200;
+    font-size: 0.9vw;
+}
+
+
+
+.pm-white-horizontal-bar {
     height: 0.5vh; 
     background-color: white;
     width: 60vw; 
@@ -154,7 +159,7 @@
     margin-bottom: 4vh; 
 }
 
-.proj-man-tech-stack-list {
+.pm-tech-stack-list {
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -162,7 +167,7 @@
     margin-left: 3vw;
 }
 
-.icon-text-container {
+.pm-icon-text-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -171,12 +176,13 @@
     text-align: left;
 }
 
-.icon-text-container p {
+.pm-icon-text-container p {
     margin-bottom: 1vh;
+    font-size: 0.8vw;
     font-weight: 300;
 }
 
-.proj-tech-icon {
+.pm-tech-icon{
     height: 5vw; 
     width: 5vw; 
     max-height: 50px;
@@ -274,7 +280,7 @@
     }
 
     /* Project Management Card */
-    .proj-man-tech-stack-list {
+    .pm-tech-stack-list {
         width: 60vw;
         display: flex;
         flex-direction: column;
@@ -283,16 +289,16 @@
     }
     
 
-    .text-container h2 {
+    .pm-text-container h2 {
         font-size: 2vw; 
     }
     
-    .text-container p {
+    .pm-text-container p {
         font-weight: 200;
         font-size: 1.5vw;
     }
     
-    .icon-text-container {
+    .pm-icon-text-container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -301,7 +307,7 @@
         text-align: left;
     }
     
-    .icon-text-container p {
+    .pm-icon-text-container p {
         margin-bottom: 1vh;
         font-weight: 300;
         font-size: 1.5vw;
@@ -318,11 +324,9 @@
         max-width: 80vw; 
     }
   
-    .project-management-card {
-        width: 90vw;
-    }
+   
 
-    .tech-stack-list {
+    .skills-tech-stack-list {
         display: grid;
         grid-template-columns: repeat(3, minmax(auto, 10vw)); 
         grid-gap: 1.5vw; 
@@ -360,12 +364,12 @@
         width: 80vw;
     }
 
-    .logo-title-container {
+    .pm-logo-title-container {
         width: 75vw;
         padding-left: 5vw;
     }
 
-    .proj-man-tech-stack-list {
+    .pm-tech-stack-list {
         width: 60vw;
         display: flex;
         flex-direction: column;
@@ -373,16 +377,16 @@
         margin-left: 0;
     }
     
-    .text-container h2 {
+    .pm-text-container h2 {
         font-size: 3vw; 
     }
     
-    .text-container p {
+    .pm-text-container p {
         font-weight: 200;
         font-size: 2vw;
     }
     
-    .icon-text-container {
+    .pm-icon-text-container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -391,7 +395,7 @@
         text-align: left;
     }
     
-    .icon-text-container p {
+    .pm-icon-text-container p {
         margin-bottom: 1vh;
         font-weight: 300;
         font-size: 2vw;
@@ -422,7 +426,7 @@
     }
   
    
-    .tech-stack-list {
+    .skills-tech-stack-list {
         display: grid;
         grid-template-columns: repeat(3, minmax(auto, 10vw)); 
         grid-gap: 1.5vw; 
@@ -464,7 +468,7 @@
     }
 
     
-    .proj-man-tech-stack-list {
+    .pm-tech-stack-list {
         width: 60vw;
         display: flex;
         flex-direction: column;
@@ -497,7 +501,7 @@
     }
   
    
-    .tech-stack-list {
+    .skills-tech-stack-list {
         display: grid;
         grid-template-columns: repeat(3, minmax(auto, 10vw)); 
         align-items: center;
@@ -544,13 +548,13 @@
         width: 100%;
     }
 
-    .logo-title-container {
+    .pm-logo-title-container {
         width: 100%;
         padding-left: 2vw;
     }
 
     
-    .proj-man-tech-stack-list {
+    .pm-tech-stack-list {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -558,16 +562,16 @@
         margin-left: 6vw;
     }
 
-    .text-container h2 {
+    .pm-text-container h2 {
         font-size: 5vw; 
     }
     
-    .text-container p {
+    .pm-text-container p {
         font-weight: 200;
         font-size: 3vw;
     }
 
-    .white-horizontal-bar {
+    .pm-white-horizontal-bar {
         height: 0.2vh; 
         background-color: white;
         width: 70vw; 
@@ -575,7 +579,7 @@
         margin-bottom: 2vh; 
     }
     
-    .icon-text-container {
+    .pm-icon-text-container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -584,13 +588,13 @@
         text-align: left;
     }
     
-    .icon-text-container p {
+    .pm-icon-text-container p {
         margin-bottom: 1vh;
         font-weight: 300;
         font-size: 2.5vw;
     }
 
-    .proj-tech-icon {
+    .pm-tech-icon {
         height: 6vw; 
         width: 6vw; 
     }

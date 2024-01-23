@@ -11,10 +11,10 @@ const Skills = () => {
       </h2>
       <div className="skills-description-container">
         <p>
-          Specialized in full-stack development, I take great pride in
-          architecting and developing large web- and smartphone applications
-          with a focus on highly scalable solutions that align closely with
-          business requirements, goals and objectives.
+          Driven by an entrepreneurial passion for innovation, I specialize in
+          full-stack development with a focus on architecting and building
+          large-scale web and smartphone applications that align closely with
+          business requirements and goals
         </p>
       </div>
 
@@ -32,14 +32,11 @@ const Skills = () => {
               <p>{skill.description}</p>
               <div class="white-horizontal-bar-skill-card"></div>
               <h3> Proficient Tech Stack </h3>
-              <div className="tech-stack-list">
+              <div className="skills-tech-stack-list">
                 {skill.tech.map((tech, index) => (
-                  <img
-                    src={tech}
-                    alt="ts"
-                    className="skill-card-tech-icon"
-                    key={index}
-                  />
+                  <div class="skill-card-tech-icon-container">
+                    <img src={tech} alt="ts" key={index} />
+                  </div>
                 ))}
               </div>
             </div>
@@ -48,13 +45,13 @@ const Skills = () => {
       </div>
 
       <div className="project-management-card">
-        <div className="logo-title-container">
+        <div className="pm-logo-title-container">
           <img
             src={ProjectManIcon}
             alt="project-management"
             className="project-man-img"
           />
-          <div className="text-container">
+          <div className="pm-text-container">
             <h2>Project Management</h2>
             <p>
               I thrive when I can blend my technical expertise with business
@@ -65,14 +62,14 @@ const Skills = () => {
           </div>
         </div>
 
-        <div class="white-horizontal-bar"></div>
-        <div className="proj-man-tech-stack-list">
+        <div class="pm-white-horizontal-bar"></div>
+        <div className="pm-tech-stack-list">
           {projectManagementSkills.map((tech, index) => (
-            <div className="icon-text-container">
+            <div className="pm-icon-text-container">
               <img
                 src={tech.icon}
                 alt="ts"
-                className="proj-tech-icon"
+                className="pm-tech-icon"
                 key={index}
               />
               <p> {tech.description} </p>
