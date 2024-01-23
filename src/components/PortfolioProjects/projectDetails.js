@@ -21,17 +21,18 @@ const extractFirstWord = (string) => {
   return string.split(" ")[0];
 };
 
-const OneMockupView = ({ descriptionOne, imageOne }) => {
+const OneMockupView = ({ header, description, image }) => {
   return (
     <div className="project-mockups">
       <div className="project-mockups-left">
         <div className="project-mockups-text-container">
-          <h2>{descriptionOne}</h2>
+          <h2>{header}</h2>
+          <p>{description}</p>
         </div>
       </div>
 
       <div className="project-mockups-right">
-        <img src={imageOne} alt="mockup-img" className="project-mockup-image" />
+        <img src={image} alt="mockup-img" className="project-mockup-image" />
       </div>
     </div>
   );
@@ -40,15 +41,16 @@ const OneMockupView = ({ descriptionOne, imageOne }) => {
 const TwoMockupsView = ({
   imageOne,
   imageTwo,
-  descriptionOne,
-  descriptionTwo,
+  appetizer,
+  header,
+  description,
 }) => {
   return (
     <>
       <div className="project-mockups">
         <div className="project-mockups-left">
           <div className="project-mockups-text-container">
-            <h2>{descriptionOne}</h2>
+            <h2>{appetizer}</h2>
           </div>
         </div>
 
@@ -71,7 +73,8 @@ const TwoMockupsView = ({
 
         <div className="project-two-mockups-right">
           <div className="project-mockups-text-container">
-            <h2>{descriptionTwo}</h2>
+            <h2>{header}</h2>
+            <p>{description}</p>
           </div>
         </div>
       </div>
@@ -80,11 +83,11 @@ const TwoMockupsView = ({
 };
 
 const ThreeMockupsView = ({
-  descriptionOne,
+  appetizer,
+  header,
+  description,
   imageOne,
-  descriptionTwo,
   imageTwo,
-  descriptionThree,
   imageThree,
 }) => {
   return (
@@ -92,7 +95,7 @@ const ThreeMockupsView = ({
       <div className="project-mockups">
         <div className="project-mockups-left">
           <div className="project-mockups-text-container">
-            <h2>{descriptionOne}</h2>
+            <h2>{appetizer}</h2>
           </div>
         </div>
 
@@ -116,7 +119,8 @@ const ThreeMockupsView = ({
 
         <div className="project-two-mockups-right">
           <div className="project-mockups-text-container">
-            <h2>{descriptionTwo}</h2>
+            <h2>{header}</h2>
+            <p>{description}</p>
           </div>
         </div>
       </div>
@@ -124,7 +128,8 @@ const ThreeMockupsView = ({
       <div className="project-mockups">
         <div className="project-three-mockups-left">
           <div className="project-mockups-text-container">
-            <h2>{descriptionThree}</h2>
+            <h2>{header}</h2>
+            <p>{description}</p>
           </div>
         </div>
 
@@ -182,35 +187,35 @@ const ProjectDetailsRevisedLook = ({
 const ProjectDetails = () => {
   let { projectId } = useParams();
   const { pathname } = useLocation();
+
   const [descriptionHeader, setDescriptionHeader] = useState("");
-  const [descriptionBody, setDescriptionBody] = useState("");
+  const [descriptionAppetizer, setDescriptionAppetizer] = useState("");
+  const [description, setDescription] = useState("");
   const [descriptionTagline, setDescriptionTagline] = useState("");
   const [descriptionTechnical, setDescriptionalTechnical] = useState("");
 
   const project = allProjects.find((p) => p.id === projectId);
-  const description = projectDescriptions.find((p) => p.id === projectId);
+  const projectDescription = projectDescriptions.find(
+    (p) => p.id === projectId
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   useEffect(() => {
-    setDescriptionHeader(description.descriptionHeader);
-    setDescriptionBody(description.descriptionBody);
-    setDescriptionTagline(description.tagline);
-    setDescriptionalTechnical(description.technicalDescription);
+    setDescriptionHeader(projectDescription.descriptionHeader);
+    setDescriptionAppetizer(projectDescription.appetizer);
+    setDescription(projectDescription.description);
+    setDescriptionTagline(projectDescription.tagline);
+    setDescriptionalTechnical(projectDescription.technicalDescription);
   }, [
-    description.descriptionHeader,
-    description.descriptionBody,
-    description.tagline,
-    description.technicalDescription,
+    projectDescription.descriptionHeader,
+    projectDescription.appetizer,
+    projectDescription.description,
+    projectDescription.tagline,
+    projectDescription.technicalDescription,
   ]);
-
-  let projectName = project.name;
-
-  console.log(
-    `Number of presentation images for ${project.name} is: ${project.presentationImages.length}`
-  );
 
   if (!project) {
     return <div>Project not found</div>;
@@ -218,79 +223,41 @@ const ProjectDetails = () => {
 
   return (
     <>
-      {/* <div className="project-details-container">
-        <div className="side-bar">
-          <BackButton />
-        </div>
-        <div className="details-content">
-          <div className="title-container">
-            <h1 className="title">
-              {" "}
-              <span className="title-yellow">
-                {" "}
-                {extractFirstWord(projectName)}{" "}
-              </span>{" "}
-              {projectName.substring(extractFirstWord(projectName).length)}
-            </h1>
-          </div>
-          <div className="lower-details">
-            <div className="tag-description-wrapper">
-              <div className="tags-wrapper">
-                {project.stack.map((tag, index) => (
-                  <div className="tag-container" key={index}>
-                    <p className="tag">{tag}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="description-container">
-                <h3>{descriptionHeader}</h3>
-                <p className="description">{descriptionBody} </p>
-              </div>
-              <div className="buttons-container">
-                <button className="open-project-btn">Go to website</button>
-                <button className="open-project-btn">Go to GitHub</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <ProjectDetailsRevisedLook
         backgroundImage={project.backgroundImage}
         title={project.name}
         tags={project.stack}
         tagline={descriptionTagline}
       />
-
       {/* Project Mockups */}
       {project.presentationImages.length === 1 && (
         <OneMockupView
-          descriptionOne={descriptionTagline}
-          imageOne={project.presentationImages[0].image}
+          header={descriptionHeader}
+          description={description}
+          image={project.presentationImages[0].image}
         />
       )}
 
       {project.presentationImages.length === 2 && (
         <TwoMockupsView
-          descriptionOne={descriptionTagline}
+          appetizer={descriptionAppetizer}
+          header={descriptionHeader}
           imageOne={project.presentationImages[0].image}
-          descriptionTwo={descriptionTagline}
+          description={description}
           imageTwo={project.presentationImages[1].image}
         />
       )}
 
       {project.presentationImages.length === 3 && (
         <ThreeMockupsView
-          descriptionOne={descriptionTagline}
+          appetizer={descriptionAppetizer}
+          header={descriptionHeader}
           imageOne={project.presentationImages[0].image}
-          descriptionTwo={descriptionTagline}
+          description={description}
           imageTwo={project.presentationImages[1].image}
-          descriptionThree={descriptionTagline}
           imageThree={project.presentationImages[2].image}
         />
       )}
-
       {/* Project Tech Description */}
       <div className="project-tech">
         <div className="tech-details-content">
