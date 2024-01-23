@@ -33,7 +33,7 @@ const Navbar = () => {
           <button className="email-btn">
             <img src={GmailIcon} alt="Email" className="email-link-icon" />
           </button>
-          Contact Me
+          <p>Contact Me</p>
         </div>
       </a>
 
