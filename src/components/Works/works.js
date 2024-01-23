@@ -16,9 +16,9 @@ const Works = () => {
         below.
       </p>
 
-      <div className="projects">
+      <div className="portfolio-projects-grid">
         {allProjects.map((project, index) => (
-          <div className="project-container" key={index}>
+          <div className="pf-project-container" key={index}>
             <div className="project-image-container">
               <img
                 src={project.image}
@@ -26,12 +26,12 @@ const Works = () => {
                 className="project-image"
               />
             </div>
-            <div className="project-info-container">
+            <div className="pf-project-info-container">
               <p className="project-title">{project.name}</p>
               <p className="project-label">{project.type}</p>
 
               <Link to={`/projects/${project.id}`}>
-                <button type="button" className="link-button">
+                <button type="button" className="pf-link-button">
                   Learn more
                 </button>
               </Link>

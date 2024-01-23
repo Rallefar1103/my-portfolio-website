@@ -29,7 +29,7 @@
     margin-bottom: 4vh;
 }
 
-.projects {
+.portfolio-projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
@@ -39,7 +39,7 @@
 
 
 /* Container */
-.project-container {
+.pf-project-container {
     background-color: rgb(50, 50, 50);
     border-radius: 20px;
     overflow: hidden;
@@ -68,7 +68,7 @@
     
 }
 
-.project-container:hover .project-info-container {
+.pf-project-container:hover .pf-project-info-container {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -76,7 +76,7 @@
 
 
 
-.project-info-container {
+.pf-project-info-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -97,7 +97,7 @@
 }
 
 .project-title {
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 600;
     color: white;
 }
@@ -108,17 +108,18 @@
     margin-bottom: 2vh;
 }
 
-.project-container:hover {
+.pf-project-container:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
 }
 
-.link-button {
+.pf-link-button {
     padding-top: 1vh;
     padding-left: 2vw;
     padding-bottom: 1vh;
     padding-right: 2vw;
     border: 2px solid white; 
     border-radius: 20px;
+    font-size: 1.2vh;
     color: white; 
     background-color: transparent;
     cursor: pointer; 
@@ -127,7 +128,7 @@
     transition: background-color 0.3s;
 }
 
-.link-button:hover {
+.pf-link-button:hover {
     background-color: #faf9f7; 
     color: black;
 }
@@ -160,7 +161,7 @@
 
 /* Responsive adjustments with media queries */
 @media (max-width: 1200px) {
-    .projects {
+    .portfolio-projects-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
     }
 
@@ -178,7 +179,7 @@
 }
 
 @media (max-width: 768px) {
-    .projects {
+    .portfolio-projects-grid {
         grid-template-columns: 1fr; /* 1 column for mobile */
     }
 
@@ -208,7 +209,7 @@
 }
 
 @media (max-width: 480px) {
-    .projects {
+    .portfolio-projects-grid {
         grid-template-columns: 1fr; /* 1 column for mobile */
         gap: 3.2vh;
     }
