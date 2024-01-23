@@ -1,6 +1,6 @@
 import "./project";
 import CityTravelPlannerImg from "../assets/city-travel-planner-project-img.jpg";
-import FitnessInspirationImg from "../assets/fitness-inspo-project-img.jpg";
+import CamperProjectImage from "../assets/camper-project-image.jpg";
 import TechHavenImg from "../assets/tech-haven-project-img.jpg";
 import FoodieFriendsImg from "../assets/foodie-friends-project-img.jpg";
 import WasheeImg from "../assets/washee-img.png";
@@ -9,23 +9,24 @@ import LyriksImg from "../assets/lyriks-project-img.jpg";
 // Background Images
 import CityTravelPlannerBgImg from "../assets/project-details/city-travel-planner-bg-img-3.jpg";
 import TechHavenBgImg from "../assets/project-details/tech-haven-bg-img-2.jpg";
-import FitnessInspoBgImg from "../assets/project-details/fitness-inspo-bg-img-2.jpg";
+import CamperBackgroundImage from "../assets/project-details/camper/camper-details-image.jpg";
 import FoodieFriendsBgImg from "../assets/project-details/foodie-friends-bg-img-3.jpg";
 import WasheeBgImg from "../assets/project-details/washee-bg-img-3.jpg";
 import LyriksBgImg from "../assets/project-details/lyriks-bg-img-2.jpg";
 
 // Presentation Images
 
-// Fitness Inspo
-// import FitnessInspoLandingPage from "../assets/project-details/fitness-inspo/fitness-landing-page.png";
-// import FitnessInspoExplorePage from "../assets/project-details/fitness-inspo/explore-exercises.png";
+// Camping
+import CamperLandingPage from "../assets/project-details/camper/camper-landing-yellow-bg.png";
+import CamperFeaturePage from "../assets/project-details/camper/camper-feature-dark-bg.png";
 
 // Tech-Haven
-import TechHavenLandingPage from "../assets/project-details/tech-haven/tech-haven-landing-page.png";
+import TechHavenLandingPage from "../assets/project-details/tech-haven/tech-haven-landing-page-dark-bg.png";
 import TechHavenProductsPage from "../assets/project-details/tech-haven/tech-haven-product-page.png";
 import TechHavenSignInPage from "../assets/project-details/tech-haven/tech-haven-sign-in.png";
 
 // City Travel Planner
+import CTPLandingPage from "../assets/project-details/city-travel-planner/ctp-landing-page.png";
 
 // Foodie Friends
 
@@ -47,6 +48,7 @@ let allProjects = [
     githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
     webUrl: "",
     youtubeId: "",
+    presentationImages: [{ image: CTPLandingPage }],
   },
   {
     id: "tech-haven",
@@ -68,15 +70,19 @@ let allProjects = [
   },
 
   {
-    id: "fitness-inspiration",
-    name: "Fitness Inspiration",
+    id: "camper-travel-app",
+    name: "Camping Guide",
     type: "Web Development",
-    image: FitnessInspirationImg,
-    backgroundImage: FitnessInspoBgImg,
-    stack: ["React", "JavaScript", "RapidAPI", "Material UI"],
+    image: CamperProjectImage,
+    backgroundImage: CamperBackgroundImage,
+    stack: ["React", "Next.js", "Tailwind", "Typescript"],
     githubUrl: "https://github.com/Rallefar1103/fitness-app",
     webUrl: "https://fitness-inspo-club.netlify.app/",
     youtubeId: "",
+    presentationImages: [
+      { image: CamperLandingPage },
+      { image: CamperFeaturePage },
+    ],
   },
 
   {
@@ -149,7 +155,7 @@ let projectDescriptions = [
   },
 
   {
-    id: "fitness-inspiration",
+    id: "camper-travel-app",
     descriptionHeader:
       "Transform your fitness journey with our Fitness Inspiration Website!",
     descriptionBody:
