@@ -26,7 +26,7 @@ const IntroRevised = () => {
           professional experience working as a software engineer including two
           years as a tech-startup founder.
         </p>
-        <div className="social-links">
+        <div className="intro-social-links">
           <a
             href="https://www.linkedin.com/in/rasmus-henriksen-a5b660109/"
             rel="noopener noreferrer"

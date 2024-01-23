@@ -10,8 +10,9 @@ const Works = () => {
         <span className="portfolioYellow">Portfolio</span>
       </h2>
       <p className="intro">
-        Click on 'Learn more' to read about the project, check out the tech
-        stack, browse the GitHub repository, and see a demo video.
+        Selection of my 25+ software projects in web, mobile, and more. To see a
+        full archive of all my projects press the "See all projects" button
+        below.
       </p>
 
       <div className="projects">

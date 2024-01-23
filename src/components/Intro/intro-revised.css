@@ -31,6 +31,10 @@
     
     margin-left: 2vw;
   }
+
+  .intro-content h2 {
+    font-size: 1.2vw;
+  }
   
   .hello {
     font-size: 3vw; /* Use viewport width units for font size */
@@ -47,15 +51,17 @@
     font-weight: normal;
     margin-top: 1rem;
   }
+
   
-  .social-links {
+  
+  .intro-social-links {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 4vh;
   }
   
-  .social-links img {
-    height: 2.5rem; /* Smaller social icons */
-    margin-right: 1rem;
+  .intro-social-links img {
+    height: 4vh; /* Smaller social icons */
+    margin-right: 0.8vw;
   }
   
   .profile-picture-container {

@@ -154,7 +154,7 @@ const ProjectDetailsRevisedLook = ({
   return (
     <div className="first-screen-wrapper">
       <div className="first-screen-left">
-        {/* <BackButton /> */}
+        <BackButton />
         <img
           src={backgroundImage}
           alt="background-img"
