@@ -18,7 +18,7 @@ const IntroRevised = () => {
       />
       <div className="intro-content">
         <h1 className="hello">
-          Hi! <br /> I'm <span className="name">Rasmus</span>
+          Hi! 👋 <br /> I'm <span className="name">Rasmus</span>
         </h1>
         <h2>Full-Stack Software Engineer</h2>
         <p className="intro-description">
