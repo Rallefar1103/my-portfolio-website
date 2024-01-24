@@ -30,11 +30,11 @@ const Skills = () => {
               <h2>{skill.title}</h2>
 
               <p>{skill.description}</p>
-              <div class="white-horizontal-bar-skill-card"></div>
+              <div className="white-horizontal-bar-skill-card"></div>
               <h3> Proficient Tech Stack </h3>
               <div className="skills-tech-stack-list">
                 {skill.tech.map((tech, index) => (
-                  <div class="skill-card-tech-icon-container">
+                  <div className="skill-card-tech-icon-container">
                     <img src={tech} alt="ts" key={index} />
                   </div>
                 ))}
@@ -62,7 +62,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div class="pm-white-horizontal-bar"></div>
+        <div className="pm-white-horizontal-bar"></div>
         <div className="pm-tech-stack-list">
           {projectManagementSkills.map((tech, index) => (
             <div className="pm-icon-text-container">

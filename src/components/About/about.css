@@ -23,6 +23,7 @@
     z-index: 0; 
     top: -0.5%;
     left: 14%;
+    filter: drop-shadow(0px 2px 4px rgb(226, 225, 219))
   }
   
   .about-image {
