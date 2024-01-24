@@ -1,5 +1,6 @@
 import Navbar from "./components/NavBar/navbar";
 import Intro from "./components/Intro/intro";
+import About from "./components/About/about";
 import Skills from "./components/Skills/skills";
 import Works from "./components/Works/works";
 import Articles from "./components/Articles/article-feed";
@@ -23,6 +24,7 @@ function App() {
           element={
             <>
               <IntroRevised />
+              <About />
               <Skills />
               <Works />
               <Articles />
