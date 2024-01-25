@@ -18,14 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1vw;
-    border-radius: 20px;
+    padding: 1.2vw;
+    border-radius: 22px;
     height: 2vh;
     color: black;
 }
 
 .email-btn-wrapper p {
-    font-size: 0.7vw;
+    font-size: 1.1vw;
 }
 
 .email-btn {
@@ -34,8 +34,8 @@
 
 .email-link-icon {
     object-fit: cover;
-    height: 1vw;
-    width: 1vw;
+    height: 1.3vw;
+    width: 1.3vw;
     margin-right: 0.5vw;
     margin-top: 0.5vh;
    
@@ -43,7 +43,7 @@
 
 .desktopMenuListItem {
     margin: 1rem;
-    font-size: 1vw;
+    font-size: 1.3vw;
     font-weight: 800;
     cursor: pointer;
 }
