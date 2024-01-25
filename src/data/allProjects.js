@@ -156,6 +156,8 @@ let projectDescriptions = [
       "Dive into a world where each item promises to transform your tech lifestyle. With Tech Haven, visionary tech meets practical magic. Our mission is to ignite your imagination with gadgets that push the boundaries of what's possible.",
 
     tagline: "Ignite Your Imagination, Unleash Innovation",
+
+    bonusText: "This is the bonus text",
     technicalDescription: "Tech Tech Tech",
   },
 

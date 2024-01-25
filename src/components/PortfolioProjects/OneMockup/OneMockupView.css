@@ -1,0 +1,59 @@
+.project-mockups {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 90vh;
+    margin-top: 2vh;
+  }
+
+
+.project-mockups-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 90vh;
+    width: 50vw;
+  }
+  
+  .project-mockups-right {
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    justify-content: center;
+    padding-right: 1vw; 
+  }
+  
+  .project-one-mockup-text-container {
+    border-radius: 20px;
+    padding: 2vw;
+    margin-bottom: 2vw; 
+    margin-left: 2vw;
+    width: 40vw;
+  }
+
+  .project-one-mockup-text-container h2 {
+    font-size: 2vw;
+    margin-bottom: 2vh;
+  }
+
+  .project-one-mockup-text-container p {
+    font-size: 1.2vw;
+    font-weight: 200;
+  }
+
+  
+  
+  .project-mockup-image {
+    width: 90%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 
+    6px 0 15px -5px #F54B41,
+    12px 0 15px -5px #2585BE,
+    2px 0 15px -5px #F9DBC1;
+  }
+  
