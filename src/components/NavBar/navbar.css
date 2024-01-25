@@ -1,6 +1,5 @@
 .navbar {
     background: transparent;
-   
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,18 +32,14 @@
     border: none;
 }
 
-
-
 .email-link-icon {
     object-fit: cover;
-    height: 1.7rem;
-    width: 1.7rem;
+    height: 1vw;
+    width: 1vw;
     margin-right: 0.5vw;
     margin-top: 0.5vh;
    
 }
-
-
 
 .desktopMenuListItem {
     margin: 1rem;
@@ -67,7 +62,6 @@
 }
 
 
-
 .navMenu {
     position: absolute;
     top: 4rem;
@@ -82,14 +76,120 @@
     border-radius: 1rem;
 }
 
-@media screen and (max-width:720px) {
-    .mobMenu {
+.mobileMenu {
+    display: none; 
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9); 
+    z-index: 30;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  
+  .mobileMenu a {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .mobileMenu a:hover {
+    color: yellow; /* Change color to yellow on hover */
+  }
+  
+  .closeMenu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 8vw;
+    cursor: pointer;
+  }
+
+@media screen and (max-width:768px) {
+.desktopMenuListItem {
+    margin: 1rem;
+    font-size: 1.7vw;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.email-btn-wrapper {
+    background: white;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    border-radius: 20px;
+    height: 2vh;
+    color: black;
+}
+
+.email-btn-wrapper p {
+    font-size: 1.5vw;
+}
+
+.email-btn {
+    border: none;
+}
+
+.email-link-icon {
+    object-fit: cover;
+    height: 1.5vw;
+    width: 1.5vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vh;
+   
+}
+
+}
+
+@media screen and (max-width: 425px) {
+    .mobileMenu {
         display: flex;
     }
-    .desktopMenu {
+    .hamburger-btn {
+        margin-top: 2vh;
+        display: block;
+        border: none;
+        height: 8vw;
+         width: 8vw;
+
+      }
+      .menu-icon {
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+      }
+      .desktopMenu {
         display: none;
+      }
+      .mobileMenu {
+        display: flex;
+      }
+      .email-btn-wrapper {
+       display: none;
     }
-    .desktopMenuBtn {
-        display: none;
-    }
+  
+
+    
+    
 }
