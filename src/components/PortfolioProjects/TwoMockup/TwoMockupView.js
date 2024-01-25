@@ -8,7 +8,7 @@ const TwoMockupView = ({ imageTwo, appetizer }) => {
           <img
             src={imageTwo}
             alt="mockup-img"
-            className="project-mockup-image"
+            className="project-two-mockup-image"
           />
         </div>
 

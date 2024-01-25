@@ -34,3 +34,13 @@
     font-size: 1.2vw;
     font-weight: 300;
   }
+
+  .project-two-mockup-image {
+    width: 90%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 
+    5px 0px 10px #864297
+  }
+  

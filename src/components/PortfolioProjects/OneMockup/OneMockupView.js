@@ -11,7 +11,7 @@ const OneMockupView = ({ header, description, image }) => {
       </div>
 
       <div className="project-mockups-right">
-        <img src={image} alt="mockup-img" className="project-mockup-image" />
+        <img src={image} alt="mockup-img" className="project-one-mockup-image" />
       </div>
     </div>
   );

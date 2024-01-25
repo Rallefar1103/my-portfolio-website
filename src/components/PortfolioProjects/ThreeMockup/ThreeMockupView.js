@@ -14,7 +14,7 @@ const ThreeMockupView = ({ header, imageThree }) => {
           <img
             src={imageThree}
             alt="mockup-img"
-            className="project-mockup-image"
+            className="project-three-mockup-image"
           />
         </div>
       </div>
