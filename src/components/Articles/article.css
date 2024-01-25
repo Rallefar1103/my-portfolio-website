@@ -67,3 +67,74 @@
 .article-right h3:hover {
     font-weight: 800;
 }
+
+@media (max-width: 425px) {
+    .article {
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .article a {
+        text-decoration: none;
+    }
+    
+    .article-left {
+        min-width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .article-left p {
+        font-size: 3vw;
+    }
+    
+    .article-right {
+        flex-basis: 80%;
+        mix-blend-mode: normal;
+        border-radius: 20px;
+        opacity: 0.6;
+        padding: 5vw;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    
+    .article-right h3 {
+        color: #fff7f7;
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+    
+    .article-right p {
+        color: #fff7f7;
+        font-size: 2.4vw;
+        font-weight: 300;
+    }
+    .article-link {
+        padding-top: 2vh;
+        color:yellow;
+        font-size: 2.5vw;
+        justify-content: start;
+        align-items: start;
+        display: flex;
+    }
+    
+    .article-icon {
+        height: 1.7vh;
+        width: 1.7vh;
+        padding-left: 0.5vw;
+    }
+    
+    .article-right:hover {
+        background: transparent;
+        opacity: 1;
+        border: 2px solid #9237a9; 
+    
+    }
+    
+    .article-right h3:hover {
+        font-weight: 800;
+    }
+}

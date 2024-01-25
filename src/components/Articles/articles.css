@@ -23,16 +23,23 @@
 
 
 
-/* Media query for tablets */
-@media (max-width: 768px) {
-    .articles-wrapper {
-        padding-left: 0.5rem; /* Adjust the value for tablet screens */
+@media (max-width: 425px) {
+    #articles {
+        margin: 0 auto;
+        margin-bottom:5vh;
+        width: 100vw;
+        max-width: 60rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Align items to the start (left) */
+        justify-content: center;
+        text-align: center;
+        padding-left: 2vw;
     }
-}
-
-/* Media query for mobile devices */
-@media (max-width: 480px) {
-    .articles-wrapper {
-        padding-left: 0; /* Adjust the value for mobile screens */
+    
+    .blog-header {
+        font-size: 10vw;
+        text-align: center;
+        justify-content: center;
     }
 }

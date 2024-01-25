@@ -27,11 +27,7 @@ const Article = (props) => {
           <p className="article-teaser">{teaserText}</p>
           <div className="article-link">
             Read Article{" "}
-            <FontAwesomeIcon
-              className="article-icon"
-              style={{ fontSize: "10px" }}
-              icon={faChevronRight}
-            />
+            <FontAwesomeIcon className="article-icon" icon={faChevronRight} />
           </div>
         </div>
       </a>
