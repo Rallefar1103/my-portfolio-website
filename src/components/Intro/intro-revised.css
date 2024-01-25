@@ -187,7 +187,7 @@
     }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 425px) {
 
     #intro {
       position: relative; 
@@ -202,44 +202,54 @@
   
     .intro-content {
       position: absolute; 
-      top: 25%; 
+      top: 35%; 
       left: 10%; 
       max-width: 80vw; 
-  
       color: white;
       box-sizing: border-box; 
       text-align: left; 
-     
     }
 
     .profile-picture-container {
-      width: 50vw; 
-      height: 50vw;
-      top: 0; 
-      left: 50%;
       transform: translateX(-50%); 
       align-self: center; 
       margin-top: 5vw;
+      display: flex;
+      justify-content: center;
+     
     }
 
     .profile-picture {
-      width: 60vw; /* Scale with the viewport width */
-      height: 60vw; /* Maintain the aspect ratio */
+      width: 70vw; /* Scale with the viewport width */
+      height: 70vw; /* Maintain the aspect ratio */
    
     }
   
     .hello {
-      font-size: 5vw; /* Adjust the font size of the text */
+      font-size: 8vw; /* Adjust the font size of the text */
     } 
+
+    .intro-content h2 {
+      font-size: 4vw;
+    }
   
     .intro-description {
-      font-size: 3vw; /* Adjust the font size of the text */
+      font-size: 3.4vw; /* Adjust the font size of the text */
       
+    }
+
+    .intro-social-links {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 7vh;
     }
   
     .social-links img {
       height: 8vw; /* Adjust social icons size */
       max-height: 50px; /* Set a max size for the icons */
+    
     }
   }
 
