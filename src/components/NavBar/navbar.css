@@ -123,7 +123,8 @@
     cursor: pointer;
   }
 
-@media screen and (max-width:768px) {
+  /* Laptop */
+@media screen and (max-width:1024px) {
 .desktopMenuListItem {
     margin: 1rem;
     font-size: 1.7vw;

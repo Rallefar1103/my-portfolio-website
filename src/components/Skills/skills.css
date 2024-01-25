@@ -10,7 +10,7 @@
 }
 
 .skills-title {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-bottom: 2vh;
 }
 
@@ -21,6 +21,7 @@
 .skills-description-container {
     max-width: 55vw;
     font-size: 1.2vw;
+    font-weight: 300;
     margin-bottom: 5vh;
 }
 
@@ -34,7 +35,7 @@
 
 .skill-card {
     flex: 1;
-    max-width: calc(33.33% - 4vw); /* Three items per row minus gap */
+    max-width: calc(33.33%); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,8 +43,8 @@
     border-radius: 1vw;
     padding: 4vh;
     transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0.5vw 1vw rgba(255, 255, 255, 0.1);
+    border: 1.4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0.5vw 0.7vw rgba(255, 255, 255, 0.1);
 }
 
 .skill-card:hover {
@@ -51,8 +52,8 @@
 }
 
 .skill-card-img {
-    height: 6.5vw;
-    width: 6.5vw;
+    height: 6vw;
+    width: 6vw;
     margin-bottom: 2vh;
 }
 
@@ -66,8 +67,8 @@
 }
 
 .skill-card-text p {
-    font-size: 0.9vw; 
-    font-weight: 300;
+    font-size: 1.1vw; 
+    font-weight: 200;
     padding-bottom: 3vh;
 }
 
@@ -79,7 +80,7 @@
 }
 
 .skill-card-text h3 {
-    font-size: 1vw; 
+    font-size: 1.2vw; 
     padding-bottom: 2vh;
 }
 
@@ -93,8 +94,8 @@
 }
 
 .skill-card-tech-icon-container {
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 3vw;
+    width: 3vw;
 }
 
 .skill-card-tech-icon-container img {
@@ -105,7 +106,7 @@
 
 /* ------  Project Management -------- */
 .project-management-card {
-    width: 65vw; 
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +124,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    width: 60vw;
+    width: 90%;
 }
 
 .project-man-img {
@@ -136,17 +137,17 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 50vw;
+    width: 80%;
     text-align: left;
 }
 
 .pm-text-container h2 {
-    font-size: 2vw; 
+    font-size: 2.5vw; 
 }
 
 .pm-text-container p {
-    font-weight: 200;
-    font-size: 0.9vw;
+    font-weight: 300    ;
+    font-size: 1.1vw;
 }
 
 
@@ -154,17 +155,16 @@
 .pm-white-horizontal-bar {
     height: 0.5vh; 
     background-color: white;
-    width: 60vw; 
+    width: 90%; 
     margin-top: 4vh;
     margin-bottom: 4vh; 
 }
 
 .pm-tech-stack-list {
-    width: 60vw;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-left: 3vw;
 }
 
 .pm-icon-text-container {
@@ -172,14 +172,14 @@
     flex-direction: row;
     align-items: center;
     justify-content:start;
-    width: 50vw;
+    width: 90%;
     text-align: left;
 }
 
 .pm-icon-text-container p {
     margin-bottom: 1vh;
-    font-size: 0.9vw;
-    font-weight: 300;
+    font-size: 1.1vw;
+    font-weight: 200;
 }
 
 .pm-tech-icon{
@@ -237,6 +237,7 @@
 
 
 @media screen and (max-width: 1024px) {
+    
     .skills-title {
         font-size: 4.5vw;
         margin-bottom: 2vh;
@@ -248,12 +249,21 @@
         margin-bottom: 5vh;
     }
 
+    .skills-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2vw;
+        width: 100%;
+    }
+
     .skill-card {
-        max-width: calc(50% - 4vw); 
+        max-width:62%; 
     }
 
     .skill-card-text {
-        width: 35vw;
+        width: 80%;
     }
 
     .skill-card-text h2 {
@@ -275,9 +285,37 @@
     }
     
     .skill-card-text h3 {
-        font-size: 1.4vw; 
+        font-size: 1.8vw; 
         padding-bottom: 2vh;
     }
+
+ 
+    .skills-tech-stack-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 20vw)); 
+        align-items: center;
+        justify-content: center;
+        grid-gap: 2.4vw; 
+        height: 30vh;
+        width: 100%;
+      }
+
+       
+    .skill-card-tech-icon-container {
+        height: 4vw;
+        width: 4vw;
+    }
+
+
+    .skill-card-tech-icon-container img {
+        height: 100%; 
+        width: 100%; 
+        object-fit: cover;
+    }
+
+
+
+
 
     /* Project Management Card */
     .pm-tech-stack-list {

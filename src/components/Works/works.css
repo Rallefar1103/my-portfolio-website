@@ -9,7 +9,7 @@
 
 .portfolio-title {
     margin-bottom: 1vw;
-    font-size: 3vw;
+    font-size: 3.6vw;
 }
 
 .portfolio-yellow {
@@ -24,7 +24,7 @@
 
 .portfolio-intro {
     font-weight: 300;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     max-width: 55vw;
     margin-bottom: 4vh;
 }
@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
-    width: 80vw; 
+    width: 100%; 
     margin: 0 auto;
 }
 
@@ -72,8 +72,6 @@
     transform: translateY(0);
 }
 
-
-
 .pf-project-info-container {
     position: absolute;
     top: 0;
@@ -95,13 +93,13 @@
 }
 
 .project-title {
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     font-weight: 600;
     color: white;
 }
 
 .project-label {
-    font-size: 0.8vw;
+    font-size: 1.1vw;
     color: rgba(255, 255, 255, 0.787); 
     margin-bottom: 2vh;
 }
@@ -117,7 +115,7 @@
     padding-right: 2vw;
     border: 2px solid white; 
     border-radius: 20px;
-    font-size: 1.2vh;
+    font-size: 1vw;
     color: white; 
     background-color: transparent;
     cursor: pointer; 
@@ -174,6 +172,15 @@
         max-width: 70vw;
         margin-bottom: 4vh;
     }
+}
+
+@media (max-width: 1024px) {
+    .all-projects-button {
+        font-size: 1.5vw;
+    }
+    
+ 
+    
 }
 
 @media (max-width: 768px) {
