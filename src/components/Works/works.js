@@ -10,14 +10,14 @@ const Works = () => {
         <span className="portfolio-yellow">Portfolio</span>
       </h2>
       <p className="portfolio-intro">
-        Selection of my 25+ software projects in web, mobile, and more. To see a
-        full archive of all my projects press the{" "}
-        <span className="all-projects-purple">See all projects</span> button
+        Selection of my 20+ software projects in web, mobile, and more. To see
+        more of my projects press the{" "}
+        <span className="all-projects-purple">See more projects</span> button
         below.
       </p>
 
       <div className="portfolio-projects-grid">
-        {allProjects.map((project, index) => (
+        {allProjects.slice(0, 6).map((project, index) => (
           <div className="pf-project-container" key={index}>
             <div className="project-image-container">
               <img
@@ -41,7 +41,7 @@ const Works = () => {
       </div>
       <Link to={`/all-projects`}>
         <button type="button" className="all-projects-button">
-          See all projects
+          See more projects
         </button>
       </Link>
     </section>

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import "./ProjectDetailsRevisedLook.css";
 
-const BackButton = () => {
+export const BackButton = () => {
   const navigate = useNavigate();
 
   return (

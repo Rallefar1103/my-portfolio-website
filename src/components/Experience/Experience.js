@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LevelUp from "../../assets/experience/level-up.png";
-import AbstractYellowBlob from "../../assets/experience/yellow-blob2.png";
+import AbstractWhiteBlob from "../../assets/experience/white-blob2.svg";
 import { experiences } from "../../data/allExperiences";
 import "./Experience.css";
 
@@ -90,7 +90,7 @@ const Experience = () => {
       <div className="experience-right">
         <img src={LevelUp} alt="experience-img" className="experience-image" />
         <img
-          src={AbstractYellowBlob}
+          src={AbstractWhiteBlob}
           alt="yellow-blob"
           className="abstract-yellow-blob"
         />

@@ -13,8 +13,16 @@ import CamperBackgroundImage from "../assets/project-details/camper/camper-detai
 import FoodieFriendsBgImg from "../assets/project-details/foodie-friends-bg-img-3.jpg";
 import WasheeBgImg from "../assets/project-details/washee-bg-img-3.jpg";
 import LyriksBgImg from "../assets/project-details/lyriks-bg-img-2.jpg";
-
-// Presentation Images
+import QuantumSimBgImg from "../assets/allProjectsPage/quantum-sim-img.jpg";
+import GroupHubBgImg from "../assets/allProjectsPage/grouphub-img.jpg";
+import AStepBgImg from "../assets/allProjectsPage/astep-img.jpg";
+import CO2BgImg from "../assets/allProjectsPage/co2-sensing-img.jpg";
+import GCodeBgImg from "../assets/allProjectsPage/g-code-img.jpg";
+import JFreeChartBgImg from "../assets/allProjectsPage/jfree-charts-img.jpg";
+import LoRaBgImg from "../assets/allProjectsPage/LoRa-img.jpg";
+import TTRegApp from "../assets/allProjectsPage/turftank-reg-img.jpg";
+import GroupShareBgImg from "../assets/groupshare-img.jpg";
+import GroupShareImg from "../assets/groupshare-details-img.jpg";
 
 // Camping
 import CamperLandingPage from "../assets/project-details/camper/camper-landing-yellow-bg.png";
@@ -38,6 +46,18 @@ import LyriksArtistPage from "../assets/project-details/lyriks/lyriks-artist-pag
 import WasheeMockUps from "../assets/project-details/washee/washee-mockups.png";
 
 let allProjects = [
+  {
+    id: "group-share",
+    name: "Group Share",
+    type: "Mobile Development",
+    image: GroupShareBgImg,
+    backgroundImage: GroupShareImg,
+    stack: ["React Native", "Typescript", "Node", "Cloud"],
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    webUrl: "",
+    youtubeId: "",
+    presentationImages: [{ image: CTPLandingPage }],
+  },
   {
     id: "city-travel-planner",
     name: "AI City Travel Planner",
@@ -130,6 +150,72 @@ let allProjects = [
       },
       { image: LyriksArtistPage },
     ],
+  },
+
+  // All Projects Page
+  {
+    id: "quantum-simulator",
+    name: "Quantum Computer Simulator",
+    type: "Desktop Development",
+    image: QuantumSimBgImg,
+    backgroundImage: QuantumSimBgImg,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+  },
+  {
+    id: "grouphub",
+    name: "GroupHub Learning Platform",
+    type: "Web Development",
+    image: GroupHubBgImg,
+    backgroundImage: GroupHubBgImg,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+  },
+  {
+    id: "turf-tank-reg-app",
+    name: "Robot Registration Application",
+    type: "Mobile Development",
+    image: TTRegApp,
+    backgroundImage: TTRegApp,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+  },
+  {
+    id: "jfree-chart",
+    name: "JFreeChart Java Library",
+    type: "Open Source",
+    image: JFreeChartBgImg,
+    backgroundImage: JFreeChartBgImg,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+  },
+  {
+    id: "co2-sensing",
+    name: "CO2-Sensing Application",
+    type: "Mobile Development",
+    image: CO2BgImg,
+    backgroundImage: CO2BgImg,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+  },
+  {
+    id: "astep",
+    name: "ML Traffic Optimization",
+    type: "Microservice Web Application",
+    image: AStepBgImg,
+    backgroundImage: AStepBgImg,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+  },
+  {
+    id: "gcode",
+    name: "Optimized G-code",
+    type: "Compiler",
+    image: GCodeBgImg,
+    backgroundImage: GCodeBgImg,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+  },
+  {
+    id: "lora",
+    name: "LoRa Over The Air",
+    type: "Web Development",
+    image: LoRaBgImg,
+    backgroundImage: LoRaBgImg,
+    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
   },
 ];
 

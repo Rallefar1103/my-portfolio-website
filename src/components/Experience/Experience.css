@@ -62,17 +62,16 @@
 
   .abstract-yellow-blob {
     position: absolute;
-    width: 80%; 
-    height: 75%;
+    width: 40vw; 
+    height: 40vw;
     object-fit: cover; 
     z-index: 0; 
-    top: -8%;
-    right: 3%;
+    top: -24%;
+    right: -6%;
     filter: drop-shadow(0px 2px 5px rgb(226, 225, 219));
   }
   
   
-
   /* Experience Card */
   .experience-card {
     display:flex;

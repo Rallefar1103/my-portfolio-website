@@ -1,0 +1,373 @@
+#allProjects {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 5%;
+    margin-bottom: 5vh;
+   
+}
+
+.background-image-allprojects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: fill; 
+    z-index: -1; 
+}
+
+.allProjects-intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50vh;
+    width: 65%;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.intro-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    justify-content: center;
+    height: 50vh;
+    width: 50vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.intro-profile-image {
+    border-radius: 50%;
+    width: 60%;
+    height: 65%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.intro-container-right {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: start; 
+    justify-content: center;
+    margin-right: 2vw;
+    
+}
+
+.all-projects-intro-text-container {
+    text-align: left;
+}
+
+.all-projects-intro-text-container h2{
+   font-size: 2.1vw;
+}
+
+.all-projects-intro-text-container h3{
+    font-size: 1.2vw;
+}
+
+.buttons-row-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: start;
+    margin-right: 2vw;
+}
+
+.get-in-touch {
+    padding-top: 1vh;
+    padding-left: 1.3vw;
+    padding-bottom: 1vh;
+    padding-right: 1.3vw;
+    border: 2px solid #9237a9; 
+    border-radius: 20px;
+    font-size: 0.85vw;
+    color: white; 
+    background-color: transparent;
+    cursor: pointer; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    color: yellow;
+}
+
+
+.get-in-touch:hover {
+    background-color: #faf9f7; 
+    color: black;
+    border: 2px white;
+}
+
+
+
+
+.portfolio-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+
+/* Container */
+.pf-project-container {
+    background-color: rgb(50, 50, 50);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Responsive width */
+    transition: box-shadow 0.3s;
+    height: 0; /* Set to 0 to use padding-bottom for aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.project-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.project-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 20px;/* Keep the rounded corners */
+    border: 1px solid #2E1E41; 
+}
+
+.pf-project-container:hover .pf-project-info-container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.pf-project-info-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2E1E41;
+    opacity: 0.8;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: opacity 0.3s, visibility 2s, transform 0.3s; 
+}
+
+.project-title {
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: white;
+}
+
+.project-label {
+    font-size: 1.1vw;
+    color: rgba(255, 255, 255, 0.787); 
+    margin-bottom: 2vh;
+}
+
+.pf-project-container:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+}
+
+.pf-link-button {
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    padding-right: 2vw;
+    border: 2px solid white; 
+    border-radius: 20px;
+    font-size: 1vw;
+    color: white; 
+    background-color: transparent;
+    cursor: pointer; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pf-link-button:hover {
+    background-color: #faf9f7; 
+    color: black;
+}
+
+.all-projects-button {
+    margin-top: 4vh;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    padding-right: 2vw;
+    border: 2px solid  #9237a9; 
+    border-radius: 25px;
+    color: white; 
+    background-color: transparent;
+    cursor: pointer; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 0.5vw #9237a9; 
+    font-size: 1.1vw;
+}
+
+.all-projects-button:hover {
+    background-color: #faf9f7; 
+    color: black;
+}
+
+
+
+
+/* Responsive adjustments with media queries */
+@media (max-width: 1200px) {
+    .portfolio-projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    .portfolio-title {
+        margin-bottom: 1vw;
+        font-size: 4.5vw;
+    }
+    
+    .portfolio-intro {
+        font-weight: 300;
+        font-size: 1.7vw;
+        max-width: 70vw;
+        margin-bottom: 4vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .all-projects-button {
+        font-size: 1.5vw;
+    }
+    
+ 
+    
+}
+
+@media (max-width: 768px) {
+    .portfolio-projects-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+
+    .portfolio-title {
+        margin-bottom: 1vw;
+        font-size: 5vw;
+    }
+    
+    .portfolio-intro {
+        font-weight: 300;
+        font-size: 2vw;
+        max-width: 65vw;
+        margin-bottom: 4vh;
+    }
+
+    .project-title {
+        font-size: 2.4vw;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .project-label {
+        font-size: 1.6vw;
+        color: rgba(255, 255, 255, 0.787); 
+        margin-bottom: 2vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .portfolio-title {
+        margin-bottom: 1vh;
+        font-size: 10vw;
+    }
+    
+    .portfolio-intro {
+        font-weight: 300;
+        font-size: 3.5vw;
+        max-width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .portfolio-projects-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+        gap: 3.2vh;
+        margin-left: 0;
+    }
+
+    .pf-project-container {
+        background-color: rgb(50, 50, 50);
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        transition: box-shadow 0.3s;
+        width: 90vw;
+        height: 35vh;
+    }
+    
+    .project-image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        border-radius: 20px;/* Keep the rounded corners */
+        border: 1px solid #2E1E41; 
+    }
+
+    .project-title {
+        font-size: 5vw;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .project-label {
+        font-size: 3.2vw;
+        color: rgba(255, 255, 255, 0.787); 
+        margin-bottom: 2vh;
+    }
+
+    .pf-link-button {
+        border-radius: 15px;
+        font-size: 1.5vh;
+    }
+    
+    .all-projects-button {
+        margin-top: 4vh;
+        padding-top: 1.2vh;
+        padding-left: 2.1vw;
+        padding-bottom: 1.4vh;
+        padding-right: 2.1vw;
+        border: 2px solid  #9237a9; 
+        border-radius: 20px;
+       
+        font-size: 4vw;
+    }
+    
+}
