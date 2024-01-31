@@ -50,7 +50,8 @@
   }
 
   .experience-image {
-    width: 55%;
+    margin-left: 2vw;
+    width: 70%;
     height: 70%;
     border-radius: 40px;
     z-index: 1;
@@ -65,8 +66,8 @@
     height: 75%;
     object-fit: cover; 
     z-index: 0; 
-    top: -4%;
-    right: 5%;
+    top: -8%;
+    right: 3%;
     filter: drop-shadow(0px 2px 5px rgb(226, 225, 219));
   }
   

@@ -19,7 +19,7 @@ let experiences = [
     logo: ShopdayLogo,
     timeFrame: "2017-2019",
     responsibilities:
-      "As a co-founder of Shopday, a tech startup designed to empower physical retailers with a digital tool to increase in-store customer traffic,  my strategic vision and hands-on approach in product development were key to understanding and integrating user preferences and market needs, enabling us to rapidly grow our user base from 0 to 3,000. Over our two-year journey, Shopday expanded its reach to 100 customers across three cities. My leadership extended across a multidisciplinary team comprising three software engineers and a sales professional, guiding product development and market entry strategies. In addition to steering product and strategy, I managed daily operations, such as customer support and investor relations",
+      "As a co-founder of Shopday, a tech startup designed to empower physical retailers with a digital tool to increase in-store customer traffic,  my strategic vision and hands-on approach in product development were key to understanding and integrating user preferences and market needs, enabling us to rapidly grow our user base from 0 to 3,000. Over our two-year journey, Shopday expanded its reach to 100 customers across three cities. My leadership extended across a multidisciplinary team comprising three software engineers and a sales professional, guiding product development and market entry strategies",
     techTags: ["React Native", "React", "JavaScript", "Startup", "Leadership"],
   },
 ];

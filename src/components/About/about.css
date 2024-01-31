@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: row;
     height: 90vh;
+    margin-bottom: 10vh;
   }
   
   .about-left {

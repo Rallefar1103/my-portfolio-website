@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DoWhatYouLove from "../../assets/experience/level-up.png";
+import LevelUp from "../../assets/experience/level-up.png";
 import AbstractYellowBlob from "../../assets/experience/yellow-blob2.png";
 import { experiences } from "../../data/allExperiences";
 import "./Experience.css";
@@ -88,11 +88,7 @@ const Experience = () => {
       </div>
 
       <div className="experience-right">
-        <img
-          src={DoWhatYouLove}
-          alt="experience-img"
-          className="experience-image"
-        />
+        <img src={LevelUp} alt="experience-img" className="experience-image" />
         <img
           src={AbstractYellowBlob}
           alt="yellow-blob"
