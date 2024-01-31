@@ -23,10 +23,11 @@ const About = () => {
           <p>
             As a tech enthusiast and creator at heart, I launched my first
             startup in 2017, and from there jumped into a Computer Science
-            degree while working professionally as a software engineer. With a
-            Master's from UCLA under my belt, I'm geared up for the next big
-            challenge, eager to learn more, and contribute with my skills to
-            drive innovation <span className="forward-yellow">forward!</span>
+            degree while working professionally as a software engineer for three
+            and a half years. With a Master's from UCLA under my belt, I'm
+            geared up for the next big challenge, eager to learn more, and
+            contribute with my skills to drive innovation{" "}
+            <span className="forward-yellow">forward!</span>
           </p>
         </div>
       </div>

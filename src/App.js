@@ -11,6 +11,7 @@ import "./app.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import IntroRevised from "./components/Intro/intro-revised";
 import ProjectDetails from "./components/PortfolioProjects/projectDetails";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
             <>
               <IntroRevised />
               <About />
+              <Experience />
               <Skills />
               <Works />
               <Articles />
