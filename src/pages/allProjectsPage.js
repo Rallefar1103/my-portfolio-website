@@ -33,12 +33,24 @@ const AllProjectsPage = () => {
             <h3>Full-Stack Software Engineer</h3>
           </div>
           <div className="buttons-row-container">
-            <button type="button" className="get-in-touch">
-              Get in touch
-            </button>
-            <button type="button" className="get-in-touch">
-              GitHub
-            </button>
+            <a
+              href="mailto:rasmus.henriksen@live.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button type="button" className="get-in-touch">
+                Get in touch
+              </button>
+            </a>
+            <a
+              href="https://github.com/Rallefar1103?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button type="button" className="get-in-touch">
+                GitHub
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -55,9 +67,15 @@ const AllProjectsPage = () => {
             <div className="pf-project-info-container">
               <p className="project-title">{project.name}</p>
               <p className="project-label">{project.type}</p>
-              <button type="button" className="pf-link-button">
-                GitHub
-              </button>
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="pf-link-button">
+                  GitHub
+                </button>
+              </a>
             </div>
           </div>
         ))}

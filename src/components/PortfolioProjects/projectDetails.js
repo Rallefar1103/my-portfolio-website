@@ -108,6 +108,32 @@ const ProjectDetails = () => {
               <span className="title-yellow"> Tech!</span>
             </h1>
           </div>
+          <div className="tech-call-to-action">
+            <p>
+              If you have any questions regarding this project, feel free to
+              reach me directly or check out the GitHub page!
+            </p>
+          </div>
+          <div className="buttons-row-container">
+            <a
+              href="mailto:rasmus.henriksen@live.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button type="button" className="get-in-touch">
+                Get in touch
+              </button>
+            </a>
+            <a
+              href="https://github.com/Rallefar1103?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button type="button" className="get-in-touch">
+                GitHub
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </>

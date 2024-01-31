@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     padding: 5vh 5%;
-    margin-bottom: 15vh;
+    margin-bottom: 20vh;
 }
 
 .portfolio-title {
@@ -25,7 +25,7 @@
 .portfolio-intro {
     font-weight: 300;
     font-size: 1.4vw;
-    max-width: 55vw;
+    max-width: 62vw;
     margin-bottom: 4vh;
 }
 

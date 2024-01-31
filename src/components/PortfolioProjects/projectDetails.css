@@ -1,10 +1,4 @@
 
-
-
-
-  
-
-
   .buttons-container {
     flex-direction: row;
     display: flex;
@@ -62,9 +56,10 @@
   display: flex;
   justify-content: start;
   flex-direction: column;
-  width: 50;
+  width: 50vw;
   height: 100vh;
   padding-left: 2vw;
+
 }
 
 .tech-title-container {
@@ -75,20 +70,22 @@
 
 .tech-title {
   font-size: 4vw; 
-    margin-bottom: 1rem;
+}
+
+.tech-call-to-action {
+  align-self: flex-start;
+  margin-top: 2vh;
+  margin-right: 5vw;
+  text-align: left;
+  width: 75%;
+  margin-bottom: 1vh;
+}
+
+.tech-call-to-action p {
+  font-size: 1.1vw;
 }
 
 
 
 
-  
-  @media (max-width: 768px) {
-    .info-sections {
-      flex-direction: column; /* Stack the info blocks on smaller screens */
-    }
-  
-    .open-project-btn {
-      width: 100%; /* Full-width button on smaller screens */
-    }
-  }
   

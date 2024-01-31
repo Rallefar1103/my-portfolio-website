@@ -53,7 +53,7 @@ let allProjects = [
     image: GroupShareBgImg,
     backgroundImage: GroupShareImg,
     stack: ["React Native", "Typescript", "Node", "Cloud"],
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/group-share",
     webUrl: "",
     youtubeId: "",
     presentationImages: [{ image: CTPLandingPage }],
@@ -96,7 +96,7 @@ let allProjects = [
     image: CamperProjectImage,
     backgroundImage: CamperBackgroundImage,
     stack: ["React", "Next.js", "Tailwind", "Typescript"],
-    githubUrl: "https://github.com/Rallefar1103/fitness-app",
+    githubUrl: "https://github.com/Rallefar1103/camping-app",
     webUrl: "https://fitness-inspo-club.netlify.app/",
     youtubeId: "",
     presentationImages: [
@@ -112,7 +112,7 @@ let allProjects = [
     image: FoodieFriendsImg,
     backgroundImage: FoodieFriendsBgImg,
     stack: ["React Native", "JavaScript", "Firestore", "APIs"],
-    githubUrl: "",
+    githubUrl: "https://github.com/Rallefar1103/Foodie-Friends-UCLA",
     webUrl: "",
     youtubeId: "",
   },
@@ -124,7 +124,7 @@ let allProjects = [
     image: WasheeImg,
     backgroundImage: WasheeBgImg,
     stack: ["Flutter", "Dart", "Django", "Python"],
-    githubUrl: "",
+    githubUrl: "https://github.com/Rallefar1103/Bachelor-s-Project---Washee",
     webUrl: "",
     youtubeId: "",
     presentationImages: [
@@ -141,7 +141,7 @@ let allProjects = [
     image: LyriksImg,
     backgroundImage: LyriksBgImg,
     stack: ["React", "JavaScript", "Tailwind", "Redux"],
-    githubUrl: "",
+    githubUrl: "https://github.com/Rallefar1103/spotify-two-point-O",
     webUrl: "",
     youtubeId: "",
     presentationImages: [
@@ -159,7 +159,7 @@ let allProjects = [
     type: "Desktop Development",
     image: QuantumSimBgImg,
     backgroundImage: QuantumSimBgImg,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/Quantum-Computer-Simulator",
   },
   {
     id: "grouphub",
@@ -167,7 +167,7 @@ let allProjects = [
     type: "Web Development",
     image: GroupHubBgImg,
     backgroundImage: GroupHubBgImg,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/GroupHub-platform",
   },
   {
     id: "turf-tank-reg-app",
@@ -175,7 +175,7 @@ let allProjects = [
     type: "Mobile Development",
     image: TTRegApp,
     backgroundImage: TTRegApp,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/TurfTank_registration_app",
   },
   {
     id: "jfree-chart",
@@ -183,7 +183,7 @@ let allProjects = [
     type: "Open Source",
     image: JFreeChartBgImg,
     backgroundImage: JFreeChartBgImg,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/jfreechartdlf",
   },
   {
     id: "co2-sensing",
@@ -191,7 +191,7 @@ let allProjects = [
     type: "Mobile Development",
     image: CO2BgImg,
     backgroundImage: CO2BgImg,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/CO2-Sensing-Application",
   },
   {
     id: "astep",
@@ -199,7 +199,7 @@ let allProjects = [
     type: "Microservice Web Application",
     image: AStepBgImg,
     backgroundImage: AStepBgImg,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/TNMWeighterDailyTrucksCount",
   },
   {
     id: "gcode",
@@ -207,7 +207,7 @@ let allProjects = [
     type: "Compiler",
     image: GCodeBgImg,
     backgroundImage: GCodeBgImg,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/Optimized-G-code",
   },
   {
     id: "lora",
@@ -215,7 +215,7 @@ let allProjects = [
     type: "Web Development",
     image: LoRaBgImg,
     backgroundImage: LoRaBgImg,
-    githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
+    githubUrl: "https://github.com/Rallefar1103/LoRa-OTA-Firmware",
   },
 ];
 
