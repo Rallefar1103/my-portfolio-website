@@ -25,7 +25,7 @@
 }
 
 .email-btn-wrapper p {
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 .email-btn {
@@ -43,7 +43,7 @@
 
 .desktopMenuListItem {
     margin: 1rem;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     font-weight: 800;
     cursor: pointer;
 }

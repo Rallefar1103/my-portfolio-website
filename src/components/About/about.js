@@ -5,7 +5,7 @@ import AbstractShapePNG from "../../assets/about/white-bg-2.png";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <div className="about-left">
         <img
           src={AbstractShapePNG}

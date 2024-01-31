@@ -75,7 +75,7 @@ const ExperienceCard = ({ Company }) => {
 
 const Experience = () => {
   return (
-    <div className="experience-container">
+    <div className="experience-container" id="experience">
       <div className="experience-left">
         <div className="experience-text-container">
           <h2>

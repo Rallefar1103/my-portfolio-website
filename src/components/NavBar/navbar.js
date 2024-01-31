@@ -31,6 +31,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="desktopMenu">
         <NavLink to="intro">Home</NavLink>
+        <NavLink to="about">About</NavLink>
+        <NavLink to="experience">Experience</NavLink>
         <NavLink to="skills">Skills</NavLink>
         <NavLink to="works">Portfolio</NavLink>
         <NavLink to="articles">Articles</NavLink>
@@ -44,6 +46,8 @@ const Navbar = () => {
             X
           </button>
           <NavLink to="intro">Home</NavLink>
+          <NavLink to="about">About</NavLink>
+          <NavLink to="experience">Experience</NavLink>
           <NavLink to="skills">Skills</NavLink>
           <NavLink to="works">Portfolio</NavLink>
           <NavLink to="articles">Articles</NavLink>
