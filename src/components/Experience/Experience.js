@@ -54,12 +54,6 @@ const ExperienceCard = ({ Company }) => {
           <div className="responsibilities-contaner">
             <p>{responsibilities}</p>
           </div>
-
-          <div className="company-logo-column">
-            <div className="company-logo-container">
-              <img src={logo} alt="company-logo" className="company-image" />
-            </div>
-          </div>
         </div>
         <div className="company-tech-tags">
           {experience.techTags.map((tag, index) => (

@@ -79,6 +79,7 @@
       align-items: center;
       flex-direction: row;
       height: 90vh;
+      margin-bottom: 5vh;
     }
     
     .about-left {
@@ -106,7 +107,7 @@
     
     .about-image {
       position: relative;
-      width:45%;
+      width:55%;
       height: 45%;
       object-fit: cover;
       filter: drop-shadow(0px 2px 5px rgb(226, 225, 219))
@@ -153,6 +154,29 @@
     
   }
 
+  /* ---- TABLET ---- */
+  @media (max-width: 768px) {
+    
+    .about-right p {
+      font-size: 2vw; 
+      font-weight: 300;
+    }
+
+    .forward-yellow {
+      color: yellow;
+      font-size: 2.2vw;
+      font-weight: 500;
+    }
+
+    .about-image {
+      position: relative;
+      width: 65%;
+      height: 45%;
+      object-fit: cover;
+      filter: drop-shadow(0px 2px 5px rgb(226, 225, 219))
+    }
+  }
+
   
   @media (max-width: 425px){
     .about-container {
@@ -160,7 +184,7 @@
       align-items: center;
       flex-direction: column;
       height: 90vh;
-      margin-bottom: 5vh;
+      margin-bottom: 30vh;
     }
     
     .about-left {
@@ -175,10 +199,10 @@
     
     .about-abstract-shape {
       position: absolute;
-      width: 100%; 
+      width: 90%; 
       height: 100%;
-      top: -4%;
-      left: -3%;
+      top: -1%;
+      left: -1%;
       object-fit: cover; 
       z-index: 0; 
       align-items: center;

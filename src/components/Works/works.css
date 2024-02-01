@@ -190,7 +190,7 @@
 
     .portfolio-title {
         margin-bottom: 1vw;
-        font-size: 5vw;
+        font-size: 7vw;
     }
     
     .portfolio-intro {
@@ -210,6 +210,10 @@
         font-size: 1.6vw;
         color: rgba(255, 255, 255, 0.787); 
         margin-bottom: 2vh;
+    }
+
+    .all-projects-button {
+        font-size: 2vw;
     }
 }
 
@@ -281,10 +285,9 @@
         padding-left: 2.1vw;
         padding-bottom: 1.4vh;
         padding-right: 2.1vw;
-        border: 2px solid  #9237a9; 
+        border: 1px solid  #9237a9; 
         border-radius: 20px;
-       
-        font-size: 4vw;
+        font-size: 2vw;
     }
     
 }

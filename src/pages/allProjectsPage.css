@@ -43,11 +43,12 @@
 
 .intro-profile-image {
     border-radius: 50%;
-    width: 60%;
-    height: 65%;
+    width: 70%;
+    height: 72%;
     object-fit: cover;
     border: 3px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 1vw;
 }
 
 .intro-container-right {
@@ -212,34 +213,19 @@
     color: black;
 }
 
-.all-projects-button {
-    margin-top: 4vh;
-    padding-top: 1vh;
-    padding-left: 2vw;
-    padding-bottom: 1vh;
-    padding-right: 2vw;
-    border: 2px solid  #9237a9; 
-    border-radius: 25px;
-    color: white; 
-    background-color: transparent;
-    cursor: pointer; 
-    text-decoration: none; 
-    font-weight: bold;
-    transition: background-color 0.3s;
-    box-shadow: 0 0 0.5vw #9237a9; 
-    font-size: 1.1vw;
-}
-
-.all-projects-button:hover {
-    background-color: #faf9f7; 
-    color: black;
-}
-
-
-
 
 /* Responsive adjustments with media queries */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
+
+    .intro-profile-image {
+        border-radius: 50%;
+        width: 80%;
+        height: 70%;
+        object-fit: cover;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        margin-right: 1vw;
+    }
     .portfolio-projects-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
     }
@@ -258,15 +244,180 @@
 }
 
 @media (max-width: 1024px) {
-    .all-projects-button {
-        font-size: 1.5vw;
+    .allProjects-intro-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 40vh;
+        width: 90vw;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
     }
     
- 
+    .intro-container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        height: 100%;
+        width: 60%;
+    }
     
+    .intro-profile-image {
+        width: 66%;
+        height: 80%;
+    }
+    
+    .intro-container-right {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: start; 
+        justify-content: center;
+        margin-left: 2vw;
+    }
+    
+    .all-projects-intro-text-container {
+        text-align: left;
+    }
+    
+    .all-projects-intro-text-container h2{
+       font-size: 3.5vw;
+    }
+    
+    .all-projects-intro-text-container h3{
+        font-size: 2vw;
+    }
+    
+    .buttons-row-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-right: 2vw;
+    }
+    
+    .get-in-touch {
+        padding-top: 1vh;
+        padding-left: 1.3vw;
+        padding-bottom: 1vh;
+        padding-right: 1.3vw;
+        border: 2px solid #9237a9; 
+        border-radius: 20px;
+        font-size: 1.4vw;
+        color: white; 
+        background-color: transparent;
+        cursor: pointer; 
+        text-decoration: none; 
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-top: 1vh;
+        margin-right: 1vw;
+        color: yellow;
+    }
+    
+    
+    .get-in-touch:hover {
+        background-color: #faf9f7; 
+        color: black;
+        border: 2px white;
+    }
+
 }
 
+
 @media (max-width: 768px) {
+    .allProjects-intro-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 40vh;
+        width: 90vw;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    
+    .intro-container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        height: 100%;
+        width: 70%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .intro-profile-image {
+        border-radius: 50%;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .intro-container-right {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: start; 
+        justify-content: center;
+        margin-left: 2vw;
+        
+    }
+    
+    .all-projects-intro-text-container {
+        text-align: left;
+    }
+    
+    .all-projects-intro-text-container h2{
+       font-size: 4vw;
+    }
+    
+    .all-projects-intro-text-container h3{
+        font-size: 2.5vw;
+    }
+    
+    .buttons-row-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-right: 2vw;
+    }
+    
+    .get-in-touch {
+        padding-top: 1vh;
+        padding-left: 1.3vw;
+        padding-bottom: 1vh;
+        padding-right: 1.3vw;
+        border: 2px solid #9237a9; 
+        border-radius: 20px;
+        font-size: 1.7vw;
+        color: white; 
+        background-color: transparent;
+        cursor: pointer; 
+        text-decoration: none; 
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-top: 1vh;
+        margin-right: 3vw;
+        color: yellow;
+    }
+    
+    
+    .get-in-touch:hover {
+        background-color: #faf9f7; 
+        color: black;
+        border: 2px white;
+    }
+
+
     .portfolio-projects-grid {
         grid-template-columns: 1fr; /* 1 column for mobile */
     }
@@ -284,19 +435,128 @@
     }
 
     .project-title {
-        font-size: 2.4vw;
+        font-size: 3vw;
         font-weight: 600;
         color: white;
     }
     
     .project-label {
-        font-size: 1.6vw;
+        font-size: 1.9vw;
         color: rgba(255, 255, 255, 0.787); 
         margin-bottom: 2vh;
+    }
+    .pf-link-button {
+        padding-top: 1vh;
+        padding-left: 2vw;
+        padding-bottom: 1vh;
+        padding-right: 2vw;
+        border: 2px solid white; 
+        border-radius: 20px;
+        font-size: 1.7vw;
+        color: white; 
+        background-color: transparent;
+        cursor: pointer; 
+        text-decoration: none; 
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    .pf-link-button:hover {
+        background-color: #faf9f7; 
+        color: black;
     }
 }
 
 @media (max-width: 425px) {
+
+    .allProjects-intro-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 40vh;
+        width: 90vw;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    
+    .intro-container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        height: 100%;
+        width: 70%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .intro-profile-image {
+        border-radius: 50%;
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .intro-container-right {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: start; 
+        justify-content: center;
+        margin-left: 2vw;
+        
+    }
+    
+    .all-projects-intro-text-container {
+        text-align: left;
+    }
+    
+    .all-projects-intro-text-container h2{
+       font-size: 4vw;
+    }
+    
+    .all-projects-intro-text-container h3{
+        font-size: 2.5vw;
+    }
+    
+    .buttons-row-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-right: 2vw;
+    }
+    
+    .get-in-touch {
+        padding-top: 1vh;
+        padding-left: 1.3vw;
+        padding-bottom: 1vh;
+        padding-right: 1.3vw;
+        border: 2px solid #9237a9; 
+        border-radius: 20px;
+        font-size: 2.3vw;
+        color: white; 
+        background-color: transparent;
+        cursor: pointer; 
+        text-decoration: none; 
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-top: 1vh;
+        margin-right: 3vw;
+        color: yellow;
+    }
+    
+    
+    .get-in-touch:hover {
+        background-color: #faf9f7; 
+        color: black;
+        border: 2px white;
+    }
+
     .portfolio-title {
         margin-bottom: 1vh;
         font-size: 10vw;
