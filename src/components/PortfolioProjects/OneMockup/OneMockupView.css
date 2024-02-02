@@ -39,12 +39,17 @@
     margin-bottom: 2vh;
   }
 
-  .project-one-mockup-text-container p {
-    font-size: 1.2vw;
-    font-weight: 200;
+  .the-challenge {
+    font-size: 0.8vw;
+    font-weight: 300;
+    margin-bottom: 1.2vh;
+    letter-spacing: 5px;
   }
 
-  
+  .challenge-description {
+    font-size: 1.1vw;
+    font-weight: 200;
+  }
   
   .project-one-mockup-image {
     width: 90%;

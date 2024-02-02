@@ -34,6 +34,10 @@
     width: 40vw;
   }
 
+  .project-three-mockups-text-container h2 {
+    font-size: 1vw;
+  }
+
   .project-three-mockup-image {
     width: 90%;
     height: 80vh;

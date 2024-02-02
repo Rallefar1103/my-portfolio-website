@@ -12,12 +12,12 @@ const ProjectDetails = () => {
   let { projectId } = useParams();
   const { pathname } = useLocation();
 
-  const [descriptionHeader, setDescriptionHeader] = useState("");
-  const [descriptionAppetizer, setDescriptionAppetizer] = useState("");
-  const [description, setDescription] = useState("");
-  const [descriptionTagline, setDescriptionTagline] = useState("");
-  const [descriptionBonus, setdescriptionBonus] = useState("");
-  const [descriptionTechnical, setDescriptionalTechnical] = useState("");
+  const [slogan, setSlogan] = useState("");
+  const [challenge, setChallenge] = useState("");
+  const [challengeDescription, setChallengeDescription] = useState("");
+  const [solution, setSolution] = useState("");
+  const [solutionDescription, setSolutionDescription] = useState("");
+  const [extraText, setExtraText] = useState("");
 
   const project = allProjects.find((p) => p.id === projectId);
   const projectDescription = projectDescriptions.find(
@@ -29,19 +29,19 @@ const ProjectDetails = () => {
   }, [pathname]);
 
   useEffect(() => {
-    setDescriptionHeader(projectDescription.descriptionHeader);
-    setDescriptionAppetizer(projectDescription.appetizer);
-    setDescription(projectDescription.description);
-    setDescriptionTagline(projectDescription.tagline);
-    setdescriptionBonus(projectDescription.bonusText);
-    setDescriptionalTechnical(projectDescription.technicalDescription);
+    setSlogan(projectDescription.slogan);
+    setChallenge(projectDescription.challenge);
+    setChallengeDescription(projectDescription.challengeDescription);
+    setSolution(projectDescription.solution);
+    setSolutionDescription(projectDescription.solutionDescription);
+    setExtraText(projectDescription.extraText);
   }, [
-    projectDescription.descriptionHeader,
-    projectDescription.appetizer,
-    projectDescription.description,
-    projectDescription.tagline,
-    projectDescription.bonusText,
-    projectDescription.technicalDescription,
+    projectDescription.slogan,
+    projectDescription.challenge,
+    projectDescription.challengeDescription,
+    projectDescription.solution,
+    projectDescription.solutionDescription,
+    projectDescription.extraText,
   ]);
 
   if (!project) {
@@ -54,13 +54,13 @@ const ProjectDetails = () => {
         backgroundImage={project.backgroundImage}
         title={project.name}
         tags={project.stack}
-        tagline={descriptionTagline}
+        tagline={slogan}
       />
       {/* Project Mockups */}
       {project.presentationImages.length === 1 && (
         <OneMockupView
-          header={descriptionHeader}
-          description={description}
+          challenge={challenge}
+          challengeDescription={challengeDescription}
           image={project.presentationImages[0].image}
         />
       )}
@@ -68,15 +68,13 @@ const ProjectDetails = () => {
       {project.presentationImages.length === 2 && (
         <>
           <OneMockupView
-            header={descriptionHeader}
-            description={description}
+            challenge={challenge}
+            challengeDescription={challengeDescription}
             image={project.presentationImages[0].image}
           />
           <TwoMockupView
-            appetizer={descriptionAppetizer}
-            header={descriptionHeader}
-            imageOne={project.presentationImages[0].image}
-            description={description}
+            solution={solution}
+            solutionDescription={solutionDescription}
             imageTwo={project.presentationImages[1].image}
           />
         </>
@@ -85,16 +83,17 @@ const ProjectDetails = () => {
       {project.presentationImages.length === 3 && (
         <>
           <OneMockupView
-            header={descriptionHeader}
-            description={description}
+            challenge={challenge}
+            challengeDescription={challengeDescription}
             image={project.presentationImages[0].image}
           />
           <TwoMockupView
-            appetizer={descriptionAppetizer}
+            solution={solution}
+            solutionDescription={solutionDescription}
             imageTwo={project.presentationImages[1].image}
           />
           <ThreeMockupView
-            header={descriptionBonus}
+            extraText={extraText}
             imageThree={project.presentationImages[2].image}
           />
         </>

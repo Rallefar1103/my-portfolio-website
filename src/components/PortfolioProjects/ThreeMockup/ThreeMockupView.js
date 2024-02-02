@@ -1,12 +1,12 @@
 import "./ThreeMockupView.css";
 
-const ThreeMockupView = ({ header, imageThree }) => {
+const ThreeMockupView = ({ extraText, imageThree }) => {
   return (
     <>
       <div className="project-mockups">
         <div className="project-three-mockups-left">
           <div className="project-three-mockups-text-container">
-            <h2>{header}</h2>
+            <h2>{extraText}</h2>
           </div>
         </div>
 

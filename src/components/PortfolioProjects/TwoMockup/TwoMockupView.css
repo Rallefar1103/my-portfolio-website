@@ -31,8 +31,8 @@
   }
 
   .project-two-mockups-text-container h2 {
-    font-size: 1.2vw;
-    font-weight: 300;
+    font-size: 2vw;
+    margin-bottom: 2vh;
   }
 
   .project-two-mockup-image {
@@ -44,3 +44,14 @@
     5px 0px 10px #864297
   }
   
+.solution {
+  font-size: 0.8vw;
+  font-weight: 300;
+  margin-bottom: 1.2vh;
+  letter-spacing: 5px;
+}
+
+.solution-description {
+  font-size: 1.1vw;
+  font-weight: 200;
+}

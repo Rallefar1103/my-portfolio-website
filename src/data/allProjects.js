@@ -49,7 +49,8 @@ import LyriksArtistPage from "../assets/project-details/lyriks/lyriks-artist-pag
 
 // Eco Laundry Assistant
 import WasheeMockUps from "../assets/project-details/washee/washee-mockups.png";
-
+import WasheeTimeSlots from "../assets/project-details/washee/washee-timeslots-page.png";
+import WasheeSmartphone from "../assets/project-details/washee/jonas-leupe-8pCtwj37VB4-unsplash.jpg";
 let allProjects = [
   {
     id: "group-share",
@@ -144,7 +145,13 @@ let allProjects = [
     youtubeId: "",
     presentationImages: [
       {
+        image: WasheeTimeSlots,
+      },
+      {
         image: WasheeMockUps,
+      },
+      {
+        image: WasheeSmartphone,
       },
     ],
   },
@@ -247,84 +254,98 @@ let allProjects = [
 
 let projectDescriptions = [
   {
+    id: "group-share",
+    slogan: "",
+    challenge: "LINKS AND IMAGES GET LOST IN GROUP CHATS",
+    challengeDescription:
+      "Group chat apps are not designed to navigate links, images or other sorts of data you share with your friends, resulting in them getting lost over time",
+    solution: "SMARTPHONE APP DESIGNED TO SHARE WITH YOUR FRIENDS",
+    solutionDescription:
+      "Group Share is designed to make a group with your friends, but instead of providing a chat service, we provide a crisp and easy interface to keep track of everything you share",
+    extraText:
+      "With Group Share, staying up to date on every recommendation has never been easier!",
+  },
+
+  {
     id: "city-travel-planner",
-    descriptionHeader:
+    slogan:
       "Embark on unforgettable urban adventures with the AI City Travel Planner!",
-    appetizer:
-      "This innovative web application revolutionizes city exploration by tailoring itineraries to your unique preferences. Enter your trip duration, budget, desired destinations, dining choices, and attractions, and our AI system skillfully crafts a personalized journey. ",
-    description:
-      "Experience a new way of travel planning, where technology meets your travel aspirations, making every city visit uniquely yours. Venture beyond the beaten path as AI City Travel Planner becomes your personal digital concierge. Seamlessly integrating technology with spontaneity, every trip becomes a story worth telling.",
-    tagline: "Explore Cities Smartly with AI-Powered Itineraries",
-    challenge: "Tech tech tech",
-    solution: "Solution",
+    challenge: "TOO MANY TRAVEL SITES",
+    challengeDescription:
+      "Navigating through a plethora of travel sites can be overwhelming, making the quest for the perfect urban experience a daunting task.",
+    solution: "TRAVEL SITES AND AI IN ONE PLACE",
+    solutionDescription:
+      "By integrating top travel sites with innovative AI, we bring personalized travel planning right to your fingertips",
+    extraText:
+      "Our AI City Travel Planner offers a curated urban adventure, streamlined for discovery and simplicity",
   },
 
   {
     id: "tech-haven",
-    descriptionHeader:
-      "Tech Haven is more than just a webshop; it's an experience for tech enthusiasts!",
-    appetizer:
-      "Our carefully curated collection showcases the finest and most innovative technology products. With an emphasis on sleek design and high functionality, Tech Haven is the ultimate destination for discovering groundbreaking gadgets. ",
-    description:
-      "Dive into a world where each item promises to transform your tech lifestyle. With Tech Haven, visionary tech meets practical magic. Our mission is to ignite your imagination with gadgets that push the boundaries of what's possible.",
+    slogan:
+      "Tech Haven is more than just a webshop, it's an experience for tech enthusiasts!",
 
-    tagline: "Ignite Your Imagination, Unleash Innovation",
-
-    bonusText: "This is the bonus text",
-    challenge: "Tech tech tech",
-    solution: "Solution",
+    challenge: "TECH WEBSHOPS ARE CLUTTERED",
+    challengeDescription:
+      "Today's online tech marketplaces are often overcomplicated, making finding your next gadget feel like searching for a needle in a haystack",
+    solution: "USER-CENTRIC TECH MARKETPLACE",
+    solutionDescription:
+      "Tech Haven presents a sleek, minimalist approach, allowing you to find, compare, and purchase the latest tech with ease",
+    extraText:
+      "Experience the joy of tech shopping with an interface designed for clarity, speed, and an intuitive journey",
   },
 
   {
     id: "camper-travel-app",
-    descriptionHeader:
-      "Transform your fitness journey with our Fitness Inspiration Website!",
-    appetizer:
-      "Packed with over 1000 exercises and instructional videos, this platform is your gateway to crafting the perfect workout plan. Whether you're a beginner or a seasoned athlete, our vast library offers fresh ideas to keep your routines exciting and effective. ",
-    description:
-      "Elevate your fitness ethos with our platform as your digital personal trainer, nutritionist, and motivator—all rolled into one. Step into the realm of peak performance and holistic well-being with Fitness Inspiration. Get inspired, stay motivated, and unleash your fitness potential!",
-    tagline: "Transform Workouts, Ignite Motivation",
-    challenge: "Tech tech tech",
-    solution: "Solution",
-  },
+    slogan: "Where Open Roads and Freedom Meet",
 
-  {
-    id: "foodie-friends",
-    descriptionHeader:
-      "Foodie Friends is more than an app - it's a social dining sensation!",
-    appetizer:
-      "Swipe right on intriguing restaurants, and when someone nearby shares your interest, we'll link you up for a meal out. It's about new flavors, new friendships, and shared culinary adventures in your area. ",
-    description:
-      "Join the community where food meets friendship, and dining out turns into a delightful social experience. Foodie Friends is your ticket to a world of culinary discovery, where each meal is an opportunity for connection and adventure.",
-    tagline: "Dine, Meet, Repeat: Socialize with Taste",
-    challenge: "Tech tech tech",
-    solution: "Solution",
+    challenge: "THERE IS NO TRAVEL SITE FOR CAMPERS",
+    challengeDescription:
+      "The nomadic spirit of camping is often hindered by a lack of dedicated online resources that understand and cater to the unique needs of camper enthusiasts",
+    solution: "All-IN-ONE CAMPSITE PLATFORM",
+    solutionDescription:
+      "Our Camper Travel App provides a streamlined, user-friendly platform that connects campers to camp-friendly sites, routes, and communities, making the planning part of the adventure just as enjoyable",
+    extraText:
+      "Embark on your next escapade with confidence, as our app guides you to the best camping experiences, tailored to your preferences and vehicle specifications",
   },
-
   {
     id: "washee",
-    descriptionHeader:
-      "Embrace eco-friendly living with the Eco Laundry Assistant!",
-    appetizer:
-      "This smartphone application guides you on the optimal times to do your laundry, based on wind energy availability in the grid. Save money and reduce your carbon footprint by syncing your laundry schedule with green energy peaks. ",
-    description:
-      "By leveraging real-time data and predictive analytics, the Eco Laundry Assistant ensures that eco-conscious living is not only beneficial for the world but also convenient for your lifestyle. It's not just about clean clothes; it's about a cleaner planet. The Eco Laundry Assistant is where responsibility meets innovation, empowering you to make a difference with every load.",
-    tagline: "Eco-Friendly Laundry, One Load at a Time",
-    challenge: "Tech tech tech",
-    solution: "Solution",
+    slogan: "Embrace eco-friendly living with the Eco Laundry Assistant!",
+
+    challenge: "DON'T STRESS THE GRID DURING PEAK HOURS",
+    challengeDescription:
+      "Managing laundry during peak hours strains resources and your wallet, with little regard for environmental impact",
+    solution: "BOOKING SYSTEM WITH ECO-FAVORABLE TIMES",
+    solutionDescription:
+      "Our Eco Laundry Assistant promotes off-peak usage through a smart booking system, balancing convenience and sustainability",
+    extraText:
+      "Join the eco-friendly revolution, where each load of laundry contributes to a greener tomorrow",
   },
 
   {
     id: "lyriks",
     descriptionHeader:
       "Enter the world of Lyriks, where music discovery takes a front seat.",
-    appetizer:
-      "Our state-of-the-art web application offers an immersive experience to explore new and popular music across genres. Filter, find, and fall in love with sounds that resonate with your soul. ",
-    description:
-      "Lyriks isn't just a music player; it's a journey through the world of melody, rhythm, and beyond. Delve into the symphony of the digital age with Lyriks, where every click leads to a new musical horizon. It's not just about listening—it's about experiencing the soundtrack of your life in full harmony.",
-    tagline: "Where Every Beat Tells a Story",
-    challenge: "Tech tech tech",
-    solution: "Solution",
+    challenge: "SPOTIFY IS HARD TO NAVIGATE",
+    challengeDescription:
+      "Finding new music on existing platforms can be a labyrinthine experience, deterring even the most avid music lovers",
+    solution: "EASY-TO-NAVIGATE WEB APP",
+    solutionDescription:
+      "Lyriks offers a user-friendly interface that puts discovery, organization, and enjoyment at the forefront of your music experience",
+    extraText:
+      "Dive into a world where your next favorite song is just a click away, and the journey to it is as harmonious as the music itself",
+  },
+  {
+    id: "jetset",
+    slogan: "First class comfort in your carry-on",
+    challenge: "NO TRAVEL KIT SUBSCRIPTION SERVICE",
+    challengeDescription:
+      "Travel enthusiasts lack a dedicated service that combines the convenience of a subscription service with the necessity of hight quality travel kits",
+    solution: "JETSET FREQUENT FLYER PROGRAM",
+    solutionDescription:
+      "Our Frequent Flyer Program is the first of its kind, offering a subscription-based luxury travel kit service tailored for the avid travele",
+    extraText:
+      "Elevate your travel game with JetSet, where every trip is an opportunity to indulge in comfort and convenience",
   },
 ];
 

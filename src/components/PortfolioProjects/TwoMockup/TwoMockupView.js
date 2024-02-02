@@ -1,6 +1,6 @@
 import "./TwoMockupView.css";
 
-const TwoMockupView = ({ imageTwo, appetizer }) => {
+const TwoMockupView = ({ solution, solutionDescription, imageTwo }) => {
   return (
     <>
       <div className="project-mockups">
@@ -14,7 +14,9 @@ const TwoMockupView = ({ imageTwo, appetizer }) => {
 
         <div className="project-two-mockups-right">
           <div className="project-two-mockups-text-container">
-            <h2>{appetizer}</h2>
+            <p className="solution">THE SOLUTION</p>
+            <h2>{solution}</h2>
+            <p className="solution-description">{solutionDescription}</p>
           </div>
         </div>
       </div>
