@@ -1,8 +1,10 @@
 import "./project";
 import CityTravelPlannerImg from "../assets/city-travel-planner-project-img.jpg";
+import GroupShareImg from "../assets/groupshare-details-img.jpg";
 import CamperProjectImage from "../assets/camper-project-image.jpg";
 import TechHavenImg from "../assets/tech-haven-project-img.jpg";
 import FoodieFriendsImg from "../assets/foodie-friends-project-img.jpg";
+import JetSetImg from "../assets/project-details/jetset/jetset-img.jpg";
 import WasheeImg from "../assets/washee-img.png";
 import LyriksImg from "../assets/lyriks-project-img.jpg";
 
@@ -15,6 +17,7 @@ import WasheeBgImg from "../assets/project-details/washee-bg-img-3.jpg";
 import LyriksBgImg from "../assets/project-details/lyriks-bg-img-2.jpg";
 import QuantumSimBgImg from "../assets/allProjectsPage/quantum-sim-img.jpg";
 import GroupHubBgImg from "../assets/allProjectsPage/grouphub-img.jpg";
+import JetSetBgImg from "../assets/project-details/jetset/modern-woman-private-jet copy.jpg";
 import AStepBgImg from "../assets/allProjectsPage/astep-img.jpg";
 import CO2BgImg from "../assets/allProjectsPage/co2-sensing-img.jpg";
 import GCodeBgImg from "../assets/allProjectsPage/g-code-img.jpg";
@@ -22,7 +25,6 @@ import JFreeChartBgImg from "../assets/allProjectsPage/jfree-charts-img.jpg";
 import LoRaBgImg from "../assets/allProjectsPage/LoRa-img.jpg";
 import TTRegApp from "../assets/allProjectsPage/turftank-reg-img.jpg";
 import GroupShareBgImg from "../assets/groupshare-img.jpg";
-import GroupShareImg from "../assets/groupshare-details-img.jpg";
 
 // Camping
 import CamperLandingPage from "../assets/project-details/camper/camper-landing-yellow-bg.png";
@@ -36,7 +38,10 @@ import TechHavenSignInPage from "../assets/project-details/tech-haven/tech-haven
 // City Travel Planner
 import CTPLandingPage from "../assets/project-details/city-travel-planner/ctp-landing-page.png";
 
-// Foodie Friends
+// Jetset
+import JetsetLandingPage from "../assets/project-details/jetset/jetset-mockup1.png";
+import JetsetFFP from "../assets/project-details/jetset/jetset-mockup2.png";
+import JetsetSubPlan from "../assets/project-details/jetset/jetset-mockup3.png";
 
 // Lyriks
 import LyriksLandingPage from "../assets/project-details/lyriks/lyriks-main-page.png";
@@ -57,6 +62,28 @@ let allProjects = [
     webUrl: "",
     youtubeId: "",
     presentationImages: [{ image: CTPLandingPage }],
+  },
+  {
+    id: "jetset",
+    name: "Jetset",
+    type: "Web Development",
+    image: JetSetImg,
+    backgroundImage: JetSetBgImg,
+    stack: ["React", "Next.js", "TypeScript", "Tailwind"],
+    githubUrl: "https://github.com/Rallefar1103/jetset",
+    webUrl: "",
+    youtubeId: "",
+    presentationImages: [
+      {
+        image: JetsetLandingPage,
+      },
+      {
+        image: JetsetFFP,
+      },
+      {
+        image: JetsetSubPlan,
+      },
+    ],
   },
   {
     id: "city-travel-planner",
@@ -103,18 +130,6 @@ let allProjects = [
       { image: CamperLandingPage },
       { image: CamperFeaturePage },
     ],
-  },
-
-  {
-    id: "foodie-friends",
-    name: "Foodie Friends",
-    type: "Mobile Development",
-    image: FoodieFriendsImg,
-    backgroundImage: FoodieFriendsBgImg,
-    stack: ["React Native", "JavaScript", "Firestore", "APIs"],
-    githubUrl: "https://github.com/Rallefar1103/Foodie-Friends-UCLA",
-    webUrl: "",
-    youtubeId: "",
   },
 
   {
@@ -178,6 +193,17 @@ let allProjects = [
     githubUrl: "https://github.com/Rallefar1103/TurfTank_registration_app",
   },
   {
+    id: "foodie-friends",
+    name: "Foodie Friends",
+    type: "Mobile Development",
+    image: FoodieFriendsImg,
+    backgroundImage: FoodieFriendsBgImg,
+    stack: ["React Native", "JavaScript", "Firebase", "Firestore"],
+    githubUrl: "https://github.com/Rallefar1103/jetset",
+    webUrl: "",
+    youtubeId: "",
+  },
+  {
     id: "jfree-chart",
     name: "JFreeChart Java Library",
     type: "Open Source",
@@ -229,7 +255,8 @@ let projectDescriptions = [
     description:
       "Experience a new way of travel planning, where technology meets your travel aspirations, making every city visit uniquely yours. Venture beyond the beaten path as AI City Travel Planner becomes your personal digital concierge. Seamlessly integrating technology with spontaneity, every trip becomes a story worth telling.",
     tagline: "Explore Cities Smartly with AI-Powered Itineraries",
-    technicalDescription: "Tech tech tech",
+    challenge: "Tech tech tech",
+    solution: "Solution",
   },
 
   {
@@ -244,7 +271,8 @@ let projectDescriptions = [
     tagline: "Ignite Your Imagination, Unleash Innovation",
 
     bonusText: "This is the bonus text",
-    technicalDescription: "Tech Tech Tech",
+    challenge: "Tech tech tech",
+    solution: "Solution",
   },
 
   {
@@ -256,7 +284,8 @@ let projectDescriptions = [
     description:
       "Elevate your fitness ethos with our platform as your digital personal trainer, nutritionist, and motivator—all rolled into one. Step into the realm of peak performance and holistic well-being with Fitness Inspiration. Get inspired, stay motivated, and unleash your fitness potential!",
     tagline: "Transform Workouts, Ignite Motivation",
-    technicalDescription: "Tech Tech Tech",
+    challenge: "Tech tech tech",
+    solution: "Solution",
   },
 
   {
@@ -268,7 +297,8 @@ let projectDescriptions = [
     description:
       "Join the community where food meets friendship, and dining out turns into a delightful social experience. Foodie Friends is your ticket to a world of culinary discovery, where each meal is an opportunity for connection and adventure.",
     tagline: "Dine, Meet, Repeat: Socialize with Taste",
-    technicalDescription: "Tech Tech Tech",
+    challenge: "Tech tech tech",
+    solution: "Solution",
   },
 
   {
@@ -280,7 +310,8 @@ let projectDescriptions = [
     description:
       "By leveraging real-time data and predictive analytics, the Eco Laundry Assistant ensures that eco-conscious living is not only beneficial for the world but also convenient for your lifestyle. It's not just about clean clothes; it's about a cleaner planet. The Eco Laundry Assistant is where responsibility meets innovation, empowering you to make a difference with every load.",
     tagline: "Eco-Friendly Laundry, One Load at a Time",
-    technicalDescription: "Tech Tech Tech",
+    challenge: "Tech tech tech",
+    solution: "Solution",
   },
 
   {
@@ -292,7 +323,8 @@ let projectDescriptions = [
     description:
       "Lyriks isn't just a music player; it's a journey through the world of melody, rhythm, and beyond. Delve into the symphony of the digital age with Lyriks, where every click leads to a new musical horizon. It's not just about listening—it's about experiencing the soundtrack of your life in full harmony.",
     tagline: "Where Every Beat Tells a Story",
-    technicalDescription: "Tech Tech Tech",
+    challenge: "Tech tech tech",
+    solution: "Solution",
   },
 ];
 
