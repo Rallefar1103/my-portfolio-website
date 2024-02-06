@@ -21,7 +21,7 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: end; 
+    align-items: flex-end; 
     justify-content: center;
     padding-right: 1vw; 
   }
@@ -35,7 +35,7 @@
   }
 
   .project-three-mockups-text-container h2 {
-    font-size: 1vw;
+    font-size: 1.6vw;
   }
 
   .project-three-mockup-image {
@@ -47,3 +47,54 @@
     -5px 0px 10px #c9b5cf;
   }
   
+  @media (max-width: 425px)  {
+    .project-mockups {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+    }
+  
+    .project-three-mockups-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      height: 40vh;
+      width: 100vw;
+    }
+    
+    .project-three-mockups-right {
+      width: 95vw;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; 
+      justify-content: center;
+      margin-bottom: 10vh;
+    
+    }
+    
+    .project-three-mockups-text-container {
+      border-radius: 20px;
+      padding: 2vw;
+      margin-bottom: 2vw; 
+      margin-left: 2vw;
+      width: 65vw;
+    }
+  
+    .project-three-mockups-text-container h2 {
+      font-size: 5vw;
+    }
+  
+    .project-three-mockup-image {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 
+      -2px 0px 10px #c9b5cf;
+    }
+    
+  }

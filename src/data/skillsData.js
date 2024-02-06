@@ -21,7 +21,7 @@ let allSkills = [
     title: "Web Development",
     icon: WebDevIcon,
     description:
-      "When building products for the web I'm all about bringing together the best of both front and back-end worlds. My go-to tools are React, Next.js, TypeScript/JavaScript, and Node.js. I'm also pretty handy with Python, GraphQL, REST, and MongoDB, not to mention designing APIs that just work.",
+      "When building products for the web I'm all about bringing together the best of both front and back-end worlds. My go-to tools are React, Next.js, TypeScript & JavaScript, and Node.js. I'm also pretty handy with Python, GraphQL, REST, and MongoDB, not to mention designing APIs that just work.",
     tech: [
       "/icons/typescript.png",
       "/icons/nextjs-icon-dark-background.png",

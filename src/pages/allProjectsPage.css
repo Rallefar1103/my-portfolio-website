@@ -33,7 +33,7 @@
 .intro-container-left {
     display: flex;
     flex-direction: column;
-    align-items: end; 
+    align-items: flex-end; 
     justify-content: center;
     height: 50vh;
     width: 50vw;
@@ -57,7 +57,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: start; 
+    align-items: flex-start; 
     justify-content: center;
     margin-right: 2vw;
     
@@ -80,7 +80,7 @@
     position: relative;
     flex-direction: row;
     align-items: center; 
-    justify-content: start;
+    justify-content: flex-start;
     margin-right: 2vw;
 }
 
@@ -275,7 +275,7 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: start; 
+        align-items: flex-start; 
         justify-content: center;
         margin-left: 2vw;
     }
@@ -366,7 +366,7 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: start; 
+        align-items: flex-start; 
         justify-content: center;
         margin-left: 2vw;
         
@@ -506,7 +506,7 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: start; 
+        align-items: flex-start; 
         justify-content: center;
         margin-left: 2vw;
         

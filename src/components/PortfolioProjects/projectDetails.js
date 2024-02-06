@@ -119,7 +119,7 @@ const ProjectDetails = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button type="button" className="get-in-touch">
+              <button type="button" className="get-in-touch-project-details">
                 Get in touch
               </button>
             </a>
@@ -128,7 +128,7 @@ const ProjectDetails = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button type="button" className="get-in-touch">
+              <button type="button" className="get-in-touch-project-details">
                 GitHub
               </button>
             </a>

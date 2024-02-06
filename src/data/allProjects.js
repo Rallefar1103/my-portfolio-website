@@ -1,6 +1,6 @@
 import "./project";
 import CityTravelPlannerImg from "../assets/city-travel-planner-project-img.jpg";
-import GroupShareImg from "../assets/groupshare-details-img.jpg";
+import GroupShareImg from "../assets/group-share-friend-group.jpg";
 import CamperProjectImage from "../assets/camper-project-image.jpg";
 import TechHavenImg from "../assets/tech-haven-project-img.jpg";
 import FoodieFriendsImg from "../assets/foodie-friends-project-img.jpg";
@@ -25,6 +25,11 @@ import JFreeChartBgImg from "../assets/allProjectsPage/jfree-charts-img.jpg";
 import LoRaBgImg from "../assets/allProjectsPage/LoRa-img.jpg";
 import TTRegApp from "../assets/allProjectsPage/turftank-reg-img.jpg";
 import GroupShareBgImg from "../assets/groupshare-img.jpg";
+
+// Group Share
+import MockupOne from "../assets/project-details/group-share/mockup-one.png";
+import MockupTwo from "../assets/project-details/group-share/mockup-two.png";
+import MockupThree from "../assets/project-details/group-share/mockup-three.png";
 
 // Camping
 import CamperLandingPage from "../assets/project-details/camper/camper-landing-yellow-bg.png";
@@ -62,7 +67,11 @@ let allProjects = [
     githubUrl: "https://github.com/Rallefar1103/group-share",
     webUrl: "",
     youtubeId: "",
-    presentationImages: [{ image: CTPLandingPage }],
+    presentationImages: [
+      { image: MockupOne },
+      { image: MockupTwo },
+      { image: MockupThree },
+    ],
   },
   {
     id: "jetset",
@@ -255,11 +264,11 @@ let allProjects = [
 let projectDescriptions = [
   {
     id: "group-share",
-    slogan: "",
+    slogan: "Sharing Made Easy",
     challenge: "LINKS AND IMAGES GET LOST IN GROUP CHATS",
     challengeDescription:
       "Group chat apps are not designed to navigate links, images or other sorts of data you share with your friends, resulting in them getting lost over time",
-    solution: "SMARTPHONE APP DESIGNED TO SHARE WITH YOUR FRIENDS",
+    solution: "SMARTPHONE APP DESIGNED TO EASILY SHARE WITH YOUR FRIENDS",
     solutionDescription:
       "Group Share is designed to make a group with your friends, but instead of providing a chat service, we provide a crisp and easy interface to keep track of everything you share",
     extraText:
@@ -345,7 +354,7 @@ let projectDescriptions = [
     solutionDescription:
       "Our Frequent Flyer Program is the first of its kind, offering a subscription-based luxury travel kit service tailored for the avid travele",
     extraText:
-      "Elevate your travel game with JetSet, where every trip is an opportunity to indulge in comfort and convenience",
+      "Elevate your travel game with Jetset, where every trip is an opportunity to indulge in comfort and convenience",
   },
 ];
 

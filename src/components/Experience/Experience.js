@@ -77,7 +77,7 @@ const Experience = () => {
           </h2>
         </div>
         {experiences.map((job, index) => (
-          <ExperienceCard Company={job.company} />
+          <ExperienceCard Company={job.company} key={job.id} />
         ))}
       </div>
 
