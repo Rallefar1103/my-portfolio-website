@@ -81,12 +81,6 @@
     
   }
 
-  .experience-card:hover {
-    opacity: 10;
-    background: #010B1B;
-    border: 2px solid #9237a9; 
-  }
-
   .card-left {
     display: flex;
     flex-direction: column;
@@ -238,11 +232,7 @@
       font-size: 0.8vw;
     }
 
-    .experience-card:hover {
-      opacity: 10;
-      background: #010B1B;
-      border: 1px solid #9237a9; 
-    }
+   
   }
 
   @media (max-width: 1024px) {
@@ -316,12 +306,7 @@
       
     }
   
-    .experience-card:hover {
-      opacity: 10;
-      background: #010B1B;
-      border: 1px solid #9237a9; 
-    }
-  
+ 
     .card-left {
       display: flex;
       flex-direction: column;
@@ -469,10 +454,7 @@
       background: transparent;
     }
   
-    .experience-card:hover {
-      display: none;
-    }
-  
+   
     .card-left {
       display: flex;
       flex-direction: column;
@@ -648,10 +630,6 @@
       margin-left: 1vw;
       margin-right: 1vw;
       background: transparent;
-    }
-  
-    .experience-card:hover {
-      display: none;
     }
   
     .card-left {

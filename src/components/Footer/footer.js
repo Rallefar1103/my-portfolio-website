@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="icon-link-wrapper">
             <img src={ResumeIcon} alt="mail" className="footer-icon" />
             <a
-              href="https://docs.google.com/document/d/1KRfPIXxqUX_IVMoVGpZelYMUXTWruaEPB-gnazVb4to/export?format=pdf"
+              href="https://docs.google.com/document/d/15kWobjG5aHBm7mDrcYSNG64Y91Mf8E8j3qsD0P3oc20/export?format=pdf"
               download="Henriksen-Resume-24.pdf"
             >
               {" "}

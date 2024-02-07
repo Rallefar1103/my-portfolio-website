@@ -124,7 +124,7 @@ const ProjectDetails = () => {
               </button>
             </a>
             <a
-              href="https://github.com/Rallefar1103?tab=repositories"
+              href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
             >

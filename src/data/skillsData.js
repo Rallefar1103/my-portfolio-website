@@ -43,7 +43,7 @@ let allSkills = [
     tech: [
       "/icons/aws.png",
       "/icons/docker.png",
-      "/icons/azure.png",
+      "/icons/jenkins.png",
       "/icons/github.png",
       "/icons/bitrise.png",
       "/icons/supabase.png",

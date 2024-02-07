@@ -12,9 +12,8 @@ import LyriksImg from "../assets/lyriks-project-img.jpg";
 import CityTravelPlannerBgImg from "../assets/project-details/city-travel-planner-bg-img-3.jpg";
 import TechHavenBgImg from "../assets/project-details/tech-haven-bg-img-2.jpg";
 import CamperBackgroundImage from "../assets/project-details/camper/camper-details-image.jpg";
-import FoodieFriendsBgImg from "../assets/project-details/foodie-friends-bg-img-3.jpg";
+
 import WasheeBgImg from "../assets/project-details/washee-bg-img-3.jpg";
-import LyriksBgImg from "../assets/project-details/lyriks-bg-img-2.jpg";
 import QuantumSimBgImg from "../assets/allProjectsPage/quantum-sim-img.jpg";
 import GroupHubBgImg from "../assets/allProjectsPage/grouphub-img.jpg";
 import JetSetBgImg from "../assets/project-details/jetset/modern-woman-private-jet copy.jpg";
@@ -42,7 +41,6 @@ import TechHavenSignInPage from "../assets/project-details/tech-haven/tech-haven
 
 // City Travel Planner
 import CTPLandingPage from "../assets/project-details/city-travel-planner/ctp-landing-page.png";
-import MockupOneCTP from "../assets/project-details/city-travel-planner/mockup-one.png";
 import MockupTwoCTP from "../assets/project-details/city-travel-planner/mockup-two.png";
 import MockupThreeCTP from "../assets/project-details/city-travel-planner/mockup-three.png";
 
@@ -50,10 +48,6 @@ import MockupThreeCTP from "../assets/project-details/city-travel-planner/mockup
 import JetsetLandingPage from "../assets/project-details/jetset/jetset-mockup1.png";
 import JetsetFFP from "../assets/project-details/jetset/jetset-mockup2.png";
 import JetsetSubPlan from "../assets/project-details/jetset/jetset-mockup3.png";
-
-// Lyriks
-import LyriksLandingPage from "../assets/project-details/lyriks/lyriks-main-page.png";
-import LyriksArtistPage from "../assets/project-details/lyriks/lyriks-artist-page.png";
 
 // Eco Laundry Assistant
 import WasheeMockUps from "../assets/project-details/washee/washee-mockups.png";
@@ -104,7 +98,7 @@ let allProjects = [
     type: "Web Development",
     image: CityTravelPlannerImg,
     backgroundImage: CityTravelPlannerBgImg,
-    stack: ["React", "Typescript", "Node", "AI", "Microservices"],
+    stack: ["React", "Typescript", "Node", "Docker", "Microservices"],
     githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
     webUrl: "",
     youtubeId: "",
@@ -177,17 +171,10 @@ let allProjects = [
     name: "Music Player",
     type: "Web Development",
     image: LyriksImg,
-    backgroundImage: LyriksBgImg,
     stack: ["React", "JavaScript", "Tailwind", "Redux"],
     githubUrl: "https://github.com/Rallefar1103/spotify-two-point-O",
     webUrl: "",
     youtubeId: "",
-    presentationImages: [
-      {
-        image: LyriksLandingPage,
-      },
-      { image: LyriksArtistPage },
-    ],
   },
 
   // All Projects Page
@@ -220,7 +207,6 @@ let allProjects = [
     name: "Foodie Friends",
     type: "Mobile Development",
     image: FoodieFriendsImg,
-    backgroundImage: FoodieFriendsBgImg,
     stack: ["React Native", "JavaScript", "Firebase", "Firestore"],
     githubUrl: "https://github.com/Rallefar1103/jetset",
     webUrl: "",
