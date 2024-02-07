@@ -7,12 +7,12 @@ let allSkills = [
     title: "Mobile Development",
     icon: MobileDevIcon,
     description:
-      "When it comes to mobile apps, I'm your guy for creating something that works smoothly across platforms. Using React Native and Flutter, I build apps that feel native no matter the OS. And with Firestore & Firebase in my toolkit, I make sure the development process is as sleek as the user experience.",
+      "When it comes to mobile apps, I'm your go-to for seamless, cross-platform experiences. React Native and Flutter are my magic wands, crafting apps that not only feel native on any OS but also dazzle users with their responsiveness and intuitive design. With Firestore and Firebase in my arsenal, I ensure that both the development process and user experience are top-notch, integrating real-time data syncing and robust backend services effortlessly",
     tech: [
       "/icons/atom.png",
       "/icons/js.png",
       "/icons/flutter.png",
-      "/icons/dart.png",
+      "/icons/apple.png",
       "/icons/firebase.png",
       "/icons/android.png",
     ],
@@ -21,7 +21,7 @@ let allSkills = [
     title: "Web Development",
     icon: WebDevIcon,
     description:
-      "When building products for the web I'm all about bringing together the best of both front and back-end worlds. My go-to tools are React, Next.js, TypeScript & JavaScript, and Node.js. I'm also pretty handy with Python, GraphQL, REST, and MongoDB, not to mention designing APIs that just work.",
+      "In the world of web development, I love blending the art of frontend with the complexities of backend. React and Next.js are my go-tos for crafting interactive and modern interfaces, spiced up with TypeScript and JavaScript. To complement this, I leverage Node.js for robust server-side operations and integrate GraphQL and MongoDB for enhanced scalability and data flexibility",
     tech: [
       "/icons/typescript.png",
       "/icons/nextjs-icon-dark-background.png",
@@ -31,7 +31,7 @@ let allSkills = [
       "/icons/graphql-logo.png",
       "/icons/leaf.png",
       "/icons/python.png",
-      "/icons/mui.png",
+      "/icons/tailwind.svg",
     ],
   },
 
@@ -39,7 +39,7 @@ let allSkills = [
     title: "Cloud & CI/CD",
     icon: CloudIcon,
     description:
-      "I love making projects that are scalable, well tested, and where integration is a breeze. In the cloud, I focus my time on AWS and Supabase making them my current favorites. For CI/CD, I always turn to tools like Docker, Azure DevOps, Bitrise, and GitHub Actions to keep the dev process smooth, robust, and speedy.",
+      "I'm all about crafting projects that scale gracefully, boast solid testing, and integrate effortlessly. My cloud playgrounds of choice are AWS and Supabase, which I leverage to their fullest to power up projects with top reliability and flexibility. When it's time for CI/CD, Docker, Bitrise, GitHub Actions, and now MongoDB Atlas, with its cloud prowess, are my go-tos. These tools streamline my development workflow, ensuring robustness and efficiency",
     tech: [
       "/icons/aws.png",
       "/icons/docker.png",
