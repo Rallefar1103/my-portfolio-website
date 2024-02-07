@@ -87,7 +87,7 @@
 }
 
 .tech-title-container {
-  align-self: flex-flex-start; 
+  align-self: flex-start; 
   margin-top: 10vh; 
   margin-right: 5vw; 
 }
@@ -97,7 +97,7 @@
 }
 
 .tech-call-to-action {
-  align-self: flex-flex-start;
+  align-self: flex-start;
   margin-top: 2vh;
   margin-right: 5vw;
   text-align: left;
@@ -179,7 +179,7 @@
 }
 
 .tech-title-container {
-  align-self: flex-flex-start; 
+  align-self: flex-start; 
   margin-top: 10vh; 
   margin-right: 5vw; 
   
@@ -190,7 +190,7 @@
 }
 
 .tech-call-to-action {
-  align-self: flex-flex-start;
+  align-self: flex-start;
   margin-top: 2vh;
   margin-right: 5vw;
   text-align: left;
@@ -210,6 +210,80 @@
   border: 1px solid #9237a9; 
   color: yellow;
   font-size: 3vw;
+  background-color: #010B1B;
+  margin-right: 3vw;
+  border-radius: 15px;
+}
+
+
+.get-in-touch-project-details:hover {
+  background-color: #faf9f7; 
+  color: black;
+  border: 2px white;
+}
+
+}
+
+  
+@media (max-width: 768px) {
+  /* Tech Section */
+.project-tech {
+  background-image: url('../../assets/project-details/tech-section/tech-background-4.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70vh; /* or the height you desire */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.tech-details-content {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 60vw;
+  height: 70vh;
+  padding-left: 4vw;
+
+}
+
+.tech-title-container {
+  align-self: flex-start; 
+  margin-top: 7vh; 
+  margin-right: 5vw; 
+  
+}
+
+.tech-title {
+  font-size: 6vw; 
+}
+
+.tech-call-to-action {
+  align-self: flex-start;
+  margin-top: 2vh;
+  margin-right: 5vw;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 1vh;
+}
+
+.tech-call-to-action p {
+  font-size: 2.2vw;
+}
+
+.get-in-touch-project-details {
+  padding-top: 1vh;
+  padding-left: 2.6vw;
+  padding-bottom: 1vh;
+  padding-right: 2.6vw;
+  border: 1px solid #9237a9; 
+  color: yellow;
+  font-size: 1.8vw;
   background-color: #010B1B;
   margin-right: 3vw;
   border-radius: 15px;

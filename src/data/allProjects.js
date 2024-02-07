@@ -42,6 +42,9 @@ import TechHavenSignInPage from "../assets/project-details/tech-haven/tech-haven
 
 // City Travel Planner
 import CTPLandingPage from "../assets/project-details/city-travel-planner/ctp-landing-page.png";
+import MockupOneCTP from "../assets/project-details/city-travel-planner/mockup-one.png";
+import MockupTwoCTP from "../assets/project-details/city-travel-planner/mockup-two.png";
+import MockupThreeCTP from "../assets/project-details/city-travel-planner/mockup-three.png";
 
 // Jetset
 import JetsetLandingPage from "../assets/project-details/jetset/jetset-mockup1.png";
@@ -105,7 +108,11 @@ let allProjects = [
     githubUrl: "https://github.com/Rallefar1103/travel-planner-project",
     webUrl: "",
     youtubeId: "",
-    presentationImages: [{ image: CTPLandingPage }],
+    presentationImages: [
+      { image: CTPLandingPage },
+      { image: MockupTwoCTP },
+      { image: MockupThreeCTP },
+    ],
   },
   {
     id: "tech-haven",
@@ -267,7 +274,7 @@ let projectDescriptions = [
     slogan: "Sharing Made Easy",
     challenge: "LINKS AND IMAGES GET LOST IN GROUP CHATS",
     challengeDescription:
-      "Group chat apps are not designed to navigate links, images or other sorts of data you share with your friends, resulting in them getting lost over time",
+      "Group chat apps are not designed to store and navigate links, images or other sorts of data you share with your friends, resulting in them getting lost over time",
     solution: "SMARTPHONE APP DESIGNED TO EASILY SHARE WITH YOUR FRIENDS",
     solutionDescription:
       "Group Share is designed to make a group with your friends, but instead of providing a chat service, we provide a crisp and easy interface to keep track of everything you share",
@@ -277,22 +284,20 @@ let projectDescriptions = [
 
   {
     id: "city-travel-planner",
-    slogan:
-      "Embark on unforgettable urban adventures with the AI City Travel Planner!",
+    slogan: "Unforgettable urban adventures",
     challenge: "TOO MANY TRAVEL SITES",
     challengeDescription:
       "Navigating through a plethora of travel sites can be overwhelming, making the quest for the perfect urban experience a daunting task.",
     solution: "TRAVEL SITES AND AI IN ONE PLACE",
     solutionDescription:
-      "By integrating top travel sites with innovative AI, we bring personalized travel planning right to your fingertips",
+      "By integrating top travel sites such as Yelp with innovative AI, we bring personalized travel planning right to your fingertips",
     extraText:
-      "Our AI City Travel Planner offers a curated urban adventure, streamlined for discovery and simplicity",
+      "The AI City Travel Planner offers a curated urban adventure, streamlined for discovery and simplicity",
   },
 
   {
     id: "tech-haven",
-    slogan:
-      "Tech Haven is more than just a webshop, it's an experience for tech enthusiasts!",
+    slogan: "An experience for tech enthusiasts",
 
     challenge: "TECH WEBSHOPS ARE CLUTTERED",
     challengeDescription:
@@ -306,14 +311,14 @@ let projectDescriptions = [
 
   {
     id: "camper-travel-app",
-    slogan: "Where Open Roads and Freedom Meet",
+    slogan: "Where open roads and freedom meet",
 
     challenge: "THERE IS NO TRAVEL SITE FOR CAMPERS",
     challengeDescription:
       "The nomadic spirit of camping is often hindered by a lack of dedicated online resources that understand and cater to the unique needs of camper enthusiasts",
     solution: "All-IN-ONE CAMPSITE PLATFORM",
     solutionDescription:
-      "Our Camper Travel App provides a streamlined, user-friendly platform that connects campers to camp-friendly sites, routes, and communities, making the planning part of the adventure just as enjoyable",
+      "The Camper Travel App provides a streamlined, user-friendly platform that connects campers to camp-friendly sites, routes, and communities, making the planning part of the adventure just as enjoyable",
     extraText:
       "Embark on your next escapade with confidence, as our app guides you to the best camping experiences, tailored to your preferences and vehicle specifications",
   },
@@ -326,7 +331,7 @@ let projectDescriptions = [
       "Managing laundry during peak hours strains resources and your wallet, with little regard for environmental impact",
     solution: "BOOKING SYSTEM WITH ECO-FAVORABLE TIMES",
     solutionDescription:
-      "Our Eco Laundry Assistant promotes off-peak usage through a smart booking system, balancing convenience and sustainability",
+      "The Eco Laundry Assistant promotes off-peak usage through a smart booking system, balancing convenience and sustainability",
     extraText:
       "Join the eco-friendly revolution, where each load of laundry contributes to a greener tomorrow",
   },
@@ -349,10 +354,10 @@ let projectDescriptions = [
     slogan: "First class comfort in your carry-on",
     challenge: "NO TRAVEL KIT SUBSCRIPTION SERVICE",
     challengeDescription:
-      "Travel enthusiasts lack a dedicated service that combines the convenience of a subscription service with the necessity of hight quality travel kits",
+      "Travel enthusiasts lack a dedicated service that combines the convenience of a subscription service with the necessity of hight quality travel-kits",
     solution: "JETSET FREQUENT FLYER PROGRAM",
     solutionDescription:
-      "Our Frequent Flyer Program is the first of its kind, offering a subscription-based luxury travel kit service tailored for the avid travele",
+      "The Frequent Flyer Program is the first of its kind, offering a subscription-based luxury travel-kit service tailored for the avid traveler",
     extraText:
       "Elevate your travel game with Jetset, where every trip is an opportunity to indulge in comfort and convenience",
   },

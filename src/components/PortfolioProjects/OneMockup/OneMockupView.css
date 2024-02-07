@@ -124,6 +124,69 @@
     } 
   
   }
+
+  @media (max-width: 768px)  {
+    .project-mockups {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      margin-top: 2vh;
+    }
+  
+  
+  .project-mockups-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      height: 50vh;
+      width: 100vw;
+    }
+    
+    .project-mockups-right {
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; 
+      justify-content: center;
+    }
+    
+    .project-one-mockup-text-container {
+      padding: 2vw;
+      margin-bottom: 2vw; 
+      margin-left: 2vw;
+      width: 75vw;
+    }
+  
+    .project-one-mockup-text-container h2 {
+      font-size: 3.5vw;
+      margin-bottom: 2vh;
+    }
+  
+    .the-challenge {
+      font-size: 2.5vw;
+      font-weight: 300;
+      margin-bottom: 1.2vh;
+      letter-spacing: 5px;
+    }
+  
+    .challenge-description {
+      font-size: 2.75vw;
+      font-weight: 200;
+    }
+    
+    .project-one-mockup-image {
+      width: 90%;
+      height: 60vh;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 
+      -5px 0px 10px #c9b5cf;
+    } 
+  }   
   
 
  /* ---- MOBILE ---- */
@@ -188,5 +251,4 @@
     box-shadow: 
     -5px 0px 10px #c9b5cf;
   } 
-  
  }

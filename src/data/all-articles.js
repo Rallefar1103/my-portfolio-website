@@ -20,10 +20,8 @@ let allArticles = [
   ),
   new Article(
     "From Concept to Code: A Case Study in Enterprise Software Creation — Hotel Management System",
-    "7 May 2023",
-    `Deployed a Flutter app globally to 2500 customers in 15+ countries, streamlining a once manual robot base station setup into a digital process.
-  Designed and developed sports geometric layouts for games like Soccer, American Football, Lacrosse and many more, strictly adhering to the official rules of sports federations with inch-perfect accuracy for 2500 global customers. 
-  Enhanced the layout engine codebase quality by refactoring classes and methods, reducing lines of code by ≈30% leading to a faster delivery of new layouts.`,
+    "6 Feb 2023",
+    `This is the second article in my series "From Concept to Code" where I guide you through the steps of the software development cycle, drawn from a variety of personal projects and intriguing case studies. In this article we will meet "America Stay," a renowned and, 100% made-up, hospitality chain seeking to develop an integrated hotel management system that streamlines their operations, enhances guest experiences, and improves overall efficiency across their many locations around the US.`,
     "https://github.com/Medium/medium-api-docs"
   ),
 ];
