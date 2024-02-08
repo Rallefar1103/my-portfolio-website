@@ -19,10 +19,10 @@ let allArticles = [
     "https://github.com/Medium/medium-api-docs"
   ),
   new Article(
-    "From Concept to Code: A Case Study in Enterprise Software Creation — Hotel Management System",
-    "6 Feb 2023",
-    `This is the second article in my series "From Concept to Code" where I guide you through the steps of the software development cycle, drawn from a variety of personal projects and intriguing case studies. In this article we will meet "America Stay," a renowned and, 100% made-up, hospitality chain seeking to develop an integrated hotel management system that streamlines their operations, enhances guest experiences, and improves overall efficiency across their many locations around the US.`,
-    "https://github.com/Medium/medium-api-docs"
+    "Why Collaborative Skills Are More Essential Than Solo Coding Brilliance in the Tech Industry",
+    "8 Feb 2023",
+    `Throughout the years I’ve stumbled upon the term a “10x developer”, referring to someone who codes faster, better, and is ten times more productive than your average coder Joe.`,
+    "https://medium.com/@rallefar1103/why-collaborative-skills-are-more-essential-than-solo-coding-brilliance-in-the-tech-industry-8ed1e78b154b"
   ),
 ];
 
