@@ -9,7 +9,6 @@ const ExperienceCard = ({ Company }) => {
 
   const [company, setCompany] = useState("");
   const [website, setWebsite] = useState("");
-  const [logo, setLogo] = useState({});
   const [timeFrame, setTimeFrame] = useState("");
   const [responsibilities, setResponsibilities] = useState("");
   const [title, setTitle] = useState("");
@@ -17,7 +16,6 @@ const ExperienceCard = ({ Company }) => {
   useEffect(() => {
     setCompany(experience.company);
     setWebsite(experience.website);
-    setLogo(experience.logo);
     setTimeFrame(experience.timeFrame);
     setResponsibilities(experience.responsibilities);
     setTitle(experience.title);
@@ -35,15 +33,12 @@ const ExperienceCard = ({ Company }) => {
       <div className="card-left">
         <p>{timeFrame}</p>
       </div>
-      <div className="vertical-line"></div>
       <div className="card-right">
         <div className="company-row">
           <h2>{company}</h2>
-          <div className="vertical-line"></div>
           <h3>{title}</h3>
           {website && (
             <>
-              <div className="vertical-line"></div>
               <a className="company-website" href={website}>
                 <p>Website</p>
               </a>

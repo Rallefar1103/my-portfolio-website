@@ -65,13 +65,8 @@ const Skills = () => {
         <div className="pm-white-horizontal-bar"></div>
         <div className="pm-tech-stack-list">
           {projectManagementSkills.map((tech, index) => (
-            <div className="pm-icon-text-container">
-              <img
-                src={tech.icon}
-                alt="ts"
-                className="pm-tech-icon"
-                key={index}
-              />
+            <div className="pm-icon-text-container" key={index}>
+              <img src={tech.icon} alt="ts" className="pm-tech-icon" />
               <p> {tech.description} </p>
             </div>
           ))}

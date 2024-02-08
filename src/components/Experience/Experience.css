@@ -112,7 +112,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-   padding-left: 0.5vw;
+    padding-left: 0.5vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
@@ -127,6 +127,7 @@
   .company-row h3 {
     font-size: 1.3vw;
     font-weight: 500;
+    padding-top: 0.9vh;
     margin-left: 1vw;
     margin-right: 1vw;
   }
@@ -135,6 +136,7 @@
     color: white;
     font-size: 1vw;
     margin-left: 1vw;
+    padding-top: 1.5vh;
   }
 
   .responsibility-row {
@@ -196,7 +198,7 @@
   }
 
   .company-tag-container {
-    border:  2px solid #9237a9;  
+    border:  1px solid #9237a9;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -583,8 +585,8 @@
       flex-direction: column;
       height: 100vh;
       width: 100vw;
-      margin-bottom: 30vh;
-      margin-top: 15vh;
+      margin-bottom: 50vh;
+      margin-top: 60vh;
     }
   
   
