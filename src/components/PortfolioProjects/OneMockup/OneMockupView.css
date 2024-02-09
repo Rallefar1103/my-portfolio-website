@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    height: 90vh;
+    height: 90dvh;
     margin-top: 2vh;
+    width: 100%;
   }
 
 
@@ -12,119 +13,52 @@
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    height: 90vh;
-    width: 50vw;
+    height: 100%;
+    width: 50%;
   }
   
   .project-mockups-right {
-    width: 50vw;
-    height: 90vh;
+    width: 50%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-end; 
     justify-content: center;
-    padding-right: 1vw; 
+    padding-right: 1rem; 
   }
   
   .project-one-mockup-text-container {
     border-radius: 20px;
-    padding: 2vw;
-    margin-bottom: 2vw; 
-    margin-left: 2vw;
-    width: 40vw;
+    width: 60%;
   }
 
   .project-one-mockup-text-container h2 {
-    font-size: 2vw;
-    margin-bottom: 2vh;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
 
   .the-challenge {
-    font-size: 0.8vw;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 1.2vh;
+    margin-bottom: 1.2rem;
     letter-spacing: 5px;
   }
 
   .challenge-description {
-    font-size: 1.1vw;
+    font-size: 2.2rem;
     font-weight: 200;
   }
   
   .project-one-mockup-image {
-    width: 90%;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 
     -5px 0px 10px #c9b5cf;
   } 
 
-  @media (max-width: 1024px){
-    .project-mockups {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      height: 90vh;
-      margin-top: 2vh;
-    }
   
-  
-  .project-mockups-left {
-      display: flex;
-      flex-direction: column;
-      align-items: center; 
-      justify-content: center;
-      height: 90vh;
-      width: 50vw;
-    }
-    
-    .project-mockups-right {
-      width: 50vw;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end; 
-      justify-content: center;
-      padding-right: 1vw; 
-    }
-    
-    .project-one-mockup-text-container {
-      border-radius: 20px;
-      padding: 2vw;
-      margin-bottom: 2vw; 
-      margin-left: 2vw;
-      width: 40vw;
-    }
-  
-    .project-one-mockup-text-container h2 {
-      font-size: 3vw;
-      margin-bottom: 2vh;
-    }
-  
-    .the-challenge {
-      font-size: 1.3vw;
-      font-weight: 300;
-      margin-bottom: 1.2vh;
-      letter-spacing: 5px;
-    }
-  
-    .challenge-description {
-      font-size: 1.2vw;
-      font-weight: 200;
-    }
-    
-    .project-one-mockup-image {
-      width: 100%;
-      height: 80vh;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 
-      -5px 0px 10px #c9b5cf;
-    } 
-  
-  }
-
   @media (max-width: 768px)  {
     .project-mockups {
       display: flex;
