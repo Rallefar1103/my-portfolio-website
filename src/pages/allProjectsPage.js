@@ -21,11 +21,13 @@ const AllProjectsPage = () => {
       <div className="allProjects-intro-container">
         <BackButton />
         <div className="intro-container-left">
-          <img
-            src={IntroProfilePic}
-            alt="intro-profile-pic"
-            className="intro-profile-image"
-          />
+          <div className="ap-profile-container">
+            <img
+              src={IntroProfilePic}
+              alt="intro-profile-pic"
+              className="intro-profile-image"
+            />
+          </div>
         </div>
         <div className="intro-container-right">
           <div className="all-projects-intro-text-container">
@@ -65,13 +67,9 @@ const AllProjectsPage = () => {
               />
             </div>
             <div className="pf-project-info-container">
-              <p className="project-title">{project.name}</p>
-              <p className="project-label">{project.type}</p>
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <h3>{project.name}</h3>
+              <p>{project.type}</p>
+              <a href={project.githubUrl}>
                 <button type="button" className="pf-link-button">
                   GitHub
                 </button>
