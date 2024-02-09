@@ -21,16 +21,16 @@ const Article = (props) => {
         <p className="article-date">{date}</p>
       </div>
 
-      <a href={link}>
-        <div className="article-right">
+      <div className="article-right">
+        <a href={link}>
           <h3 className="article-title">{title}</h3>
           <p className="article-teaser">{teaserText}</p>
           <div className="article-link">
             Read Article{" "}
             <FontAwesomeIcon className="article-icon" icon={faChevronRight} />
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   );
 };
