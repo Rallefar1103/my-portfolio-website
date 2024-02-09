@@ -27,8 +27,8 @@ const Works = () => {
               />
             </div>
             <div className="pf-project-info-container">
-              <p className="project-title">{project.name}</p>
-              <p className="project-label">{project.type}</p>
+              <h3>{project.name}</h3>
+              <p>{project.type}</p>
 
               <Link to={`/projects/${project.id}`}>
                 <button type="button" className="pf-link-button">
