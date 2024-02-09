@@ -36,12 +36,16 @@ const ExperienceCard = ({ Company }) => {
       <div className="card-right">
         <div className="company-row">
           <h2>{company}</h2>
-          <h3>{title}</h3>
+          <div className="company-title-container">
+            <h3>{title}</h3>
+          </div>
           {website && (
             <>
-              <a className="company-website" href={website}>
-                <p>Website</p>
-              </a>
+              <div className="company-website-container">
+                <a className="company-website" href={website}>
+                  <p>Website</p>
+                </a>
+              </div>
             </>
           )}
         </div>
@@ -77,12 +81,13 @@ const Experience = () => {
       </div>
 
       <div className="experience-right">
-        <img src={LevelUp} alt="experience-img" className="experience-image" />
-        <img
-          src={AbstractWhiteBlob}
-          alt="yellow-blob"
-          className="abstract-yellow-blob"
-        />
+        <div className="experience-images-container">
+          <img
+            src={LevelUp}
+            alt="experience-img"
+            className="experience-image"
+          />
+        </div>
       </div>
     </div>
   );
