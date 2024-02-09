@@ -16,16 +16,19 @@ const IntroRevised = () => {
         alt="Background"
         className="background-image"
       />
-      <div className="intro-content">
-        <h1 className="hello">
-          Hi! 👋 <br /> I'm <span className="name">Rasmus</span>
-        </h1>
-        <h2>Full-Stack Software Engineer</h2>
-        <p className="intro-description">
-          with a M.S. degree in Computer Science from UCLA and five years of
-          professional experience working as a software engineer including two
-          years as a tech-startup founder.
-        </p>
+      <div className="intro-left">
+        <div className="intro-text-container">
+          <h1 className="hello">
+            Hi! 👋 <br /> I'm <span className="name">Rasmus</span>
+          </h1>
+          <h2>Full-Stack Software Engineer</h2>
+          <p className="intro-description">
+            with a M.S. degree in Computer Science from UCLA and five years of
+            professional experience working as a software engineer including two
+            years as a tech-startup founder.
+          </p>
+        </div>
+
         <div className="intro-social-links">
           <a
             href="https://www.linkedin.com/in/rasmus-henriksen-a5b660109/"
@@ -47,8 +50,10 @@ const IntroRevised = () => {
           </a>
         </div>
       </div>
-      <div className="profile-picture-container">
-        <img src={ProfilePic} alt="Profile" className="profile-picture" />
+      <div className="intro-right">
+        <div className="profile-picture-container">
+          <img src={ProfilePic} alt="Profile" className="profile-picture" />
+        </div>
       </div>
     </section>
   );
