@@ -1,10 +1,26 @@
 .experience-container {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    height: 100dvh;
+    flex-direction: column;
+    min-height: 100dvh;
     width: 100%;
     margin-bottom: 30rem;
+  }
+
+  .experience-text-container {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .left-right-container {
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the start */
+    justify-content: flex-start;
+    border: 3px solid yellow;
+    flex-wrap: wrap;
   }
 
 
@@ -12,14 +28,16 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center;
-    height: 100%;
+    justify-content: flex-start;
+    min-height: 100%;
     width: 60%;
+    min-width: 40%;
+   
   }
   
   .experience-right {
     width: 40%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -27,17 +45,13 @@
     justify-content: center;
   }
   
-  .experience-text-container {
-    padding: 1.5rem;
-    width: 100%;
-  }
-
+ 
   .exp-yellow {
     color: yellow;
   }
 
   .experience-text-container h2 {
-    font-size: 7rem;
+    font-size: calc(5rem + 1vw);
   }
 
   .experience-images-container {
@@ -50,11 +64,12 @@
   }
 
   .experience-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: contain;
+    width: auto; /* Adjust width or use 'max-width: 100%;' to contain the image within its parent */
+    height: auto; /* Adjust height or use 'max-height: 100%;' to maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+    object-fit: contain; 
+ 
     filter: drop-shadow(0px 2px 5px rgb(226, 225, 219));
   } 
   
@@ -62,29 +77,30 @@
   
   /* Experience Card */
   .experience-card {
-    display:flex;
+    display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 1.5rem;
-    margin-left: 2rem;
+    height: 100%;
+    padding-top: 1rem; 
+    padding-bottom: 1rem; 
+    margin-bottom: 1rem; 
     background: transparent;
-    
+    border: 3px solid pink;
+  
   }
 
   .card-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    width: 20%;
-    height: 100%;
+    min-width: 20%;
+    min-height: 100%;
     padding-left: 2rem;
   }
 
   .card-left p {
-    font-size: 1.8rem;
+    font-size: calc(1rem + 0.5vw);
     font-weight: 200;
   }
 
@@ -109,7 +125,7 @@
   }
 
   .company-row h2 {
-    font-size: 4rem;
+    font-size: calc(2rem + 1.2vw);
     font-weight: 800;
     color: yellow;
     margin-right: 2rem;
@@ -121,13 +137,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1.5%;
+    padding-bottom: 0.5%;
   }
 
   .company-title-container h3 {
-    font-size: 2.3rem;
+    font-size: calc(0.8rem + 1.2vw);
     font-weight: 500;
-
+   
   }
 
   .company-website-container {
@@ -135,11 +151,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1.7%;
+    padding-bottom: 0.8%;
   }
 
   .company-website-container p {
-    font-size: 1.7rem;
+    font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
     color: rgb(140, 84, 251);
   }
 
@@ -160,7 +176,7 @@
   }
 
   .responsibilities-contaner p {
-    font-size: 1.6rem;
+    font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
     font-weight: 300;
   }
 
@@ -183,200 +199,59 @@
     border-radius: 20px;
     margin-right: 1.4rem;
     box-shadow: 0 0 0.6rem #2E1E41;
-    width: 9rem;
+    width: 12rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
 
   .company-tag-container p {
-    font-size: 1rem;
+    font-size: calc(0.4rem + 0.5vw); /* Responsive font size */
     color: yellow;
     font-weight: 500;
   }
 
-  
-
-  /* ---- MOBILE ---- */
-  @media (max-width: 425px) {
-    .experience-container {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      width: 100vw;
-      margin-bottom: 50vh;
-      margin-top: 60vh;
-    }
-  
-  
-  .experience-left {
-      display: flex;
-      flex-direction: column;
-      align-items: center; 
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-    }
-    
-    .experience-right {
-      display: none;
-    }
-    
-    .experience-text-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 2vh;
-    }
-  
-    .exp-yellow {
-      color: yellow;
-    }
-  
-    .experience-text-container h2 {
-      font-size: 10vw;
-    }
-  
-
-    /* Experience Card */
-    .experience-card {
-      display:flex;
-      flex-direction: row;
-      width: 100vw;
-      border-radius: 20px;
-      padding: 1vw;
-      margin-left: 1vw;
-      margin-right: 1vw;
-      background: transparent;
-    }
-  
-    .card-left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 12%;
-      height: 100%;
-      padding-left: 5vw;
-      
-    }
-  
-    .card-left p {
-      font-size: 3.5vw;
-      font-weight: 200;
-    }
-  
-  
-    .card-right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 90%;
-      height: 100%;
-    }
-  
-    .company-row {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 100vw;
-      padding-left: 3vw;
-      padding-right: 3vw;
-      padding-top: 1vh;
-      padding-bottom: 1vh;
-      margin-right: 10vw;
-    }
-  
-
-    .company-row h2 {
-      font-size: 6vw;
-      margin-right: 2vw;
-      font-weight: 800;
-      color: yellow;
-    }
-  
-    .company-row h3 {
-      font-size: 4vw;
-      font-weight: 500;
-      margin-left: 1vw;
-      margin-right: 1vw;
-    }
-  
-    .company-row p {
-      display: none;
-    }
-  
-    .responsibility-row {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-evenly;
-      width: 100%;
-    }
-  
-    .responsibilities-contaner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 85%;
-    }
-  
-    .responsibilities-contaner p {
-      font-size: 3.4vw;
-      font-weight: 300;
-    }
-  
-    .company-logo-column {
-      display: none;
-      
-    }
-  
-  
+  @media (max-width: 2040px) {
     .company-tech-tags {
       display: grid;
-      grid-template-columns: repeat(3, minmax(auto, 20vw)); 
-      align-items: center;
-      justify-content: center;
-      grid-gap: 2.4vw; 
-    }
-  
-    .company-tag-container {
-      border:  1px solid #9237a9;  
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      border-radius: 20px;
-      margin-right: 1vw;
-      box-shadow: 0 0 0.6vw #2E1E41;
-      width: 20vw;
-      padding-top: 0.5vh;
-      padding-bottom: 0.5vh;
-    }
-  
-    .company-tag-container p {
-      font-size: 2.3vw;
-      color: yellow;
-      font-weight: 500;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 2rem;
+      width: 100%; 
+      margin: 2 auto;
     }
   
   }
 
-  @media (max-width: 1440px) {
+
+  @media (max-width: 1760px) {
     .experience-container {
       display: flex;
       align-items: center;
       flex-direction: column;
-      height: 100vh;
-      width: 100vw;
-      margin-bottom: 30vh;
-      margin-top: 0;
+      height: 100dvh;
+      width: 100%;
+      margin-bottom: 30rem;
+    }
+  
+    .experience-text-container {
+      padding: 1.5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .experience-text-container h2 {
+      font-size: 4.5vw;
+    }
+  
+    .left-right-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
   
   
@@ -384,160 +259,19 @@
       display: flex;
       flex-direction: column;
       align-items: center; 
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-      padding-left: 2vw;
-      padding-right: 2vw;
+      justify-content: flex-start;
+      height: 100%;
+      width: 100%;
     }
     
     .experience-right {
       display: none;
-    }
-    
-    .experience-text-container {
-      width: 95%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 2vh;
     }
   
     .exp-yellow {
       color: yellow;
     }
   
-    .experience-text-container h2 {
-      font-size: 4.5vw;
-    }
-  
-
-    /* Experience Card */
-    .experience-card {
-      display:flex;
-      flex-direction: row;
-      width: 90vw;
-      border-radius: 20px;
-      padding: 2vw;
-      margin-left: 1vw;
-      margin-right: 1vw;
-      background: transparent;
-    }
-  
-    .card-left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 12%;
-      height: 100%;
-      padding-left: 3vw;
-      
-    }
-  
-    .card-left p {
-      font-size: 1.7vw;
-      font-weight: 200;
-    }
-  
-  
-    .card-right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 92%;
-      height: 100%;
-    }
-  
-    .company-row {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-      padding-left: 3vw;
-      padding-top: 1vh;
-      padding-bottom: 1vh;
-    }
-  
-
-    .company-row h2 {
-      font-size: 2.5vw;
-      margin-right: 2vw;
-      font-weight: 800;
-      color: yellow;
-    }
-  
-    .company-row h3 {
-      font-size: 2vw;
-      font-weight: 500;
-      margin-left: 1vw;
-      margin-right: 1vw;
-      padding-bottom: 0.5vh;
-    }
-  
-    .company-row p {
-      display: none;
-    }
-  
-    .responsibility-row {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-evenly;
-      width: 100%;
-    }
-  
-    .responsibilities-contaner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 85%;
-    }
-  
-    .responsibilities-contaner p {
-      font-size: 1.6vw;
-      font-weight: 300;
-    }
-  
-    .company-logo-column {
-      display: none;
-      
-    }
-
-    .company-tech-tags {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(auto, 10vw)); 
-      align-items: center;
-      flex-direction: row;
-      justify-content: flex-start;
-      grid-gap: 1.5vw; 
-      width: 83%;
-    }
-  
-    .company-tag-container {
-      border:  1px solid #9237a9;  
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      border-radius: 20px;
-      margin-right: 1vw;
-      box-shadow: 0 0 0.6vw #2E1E41;
-      width: 10vw;
-      padding-top: 0.5vh;
-      padding-bottom: 0.5vh;
-    }
-  
-    .company-tag-container p {
-      font-size: 1.2vw;
-      color: yellow;
-      font-weight: 500;
-    }
-  
+    
 
   }

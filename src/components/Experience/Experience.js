@@ -69,24 +69,26 @@ const ExperienceCard = ({ Company }) => {
 const Experience = () => {
   return (
     <div className="experience-container" id="experience">
-      <div className="experience-left">
-        <div className="experience-text-container">
-          <h2>
-            Professional <span className="exp-yellow"> Experience</span>
-          </h2>
-        </div>
-        {experiences.map((job, index) => (
-          <ExperienceCard Company={job.company} key={job.id} />
-        ))}
+      <div className="experience-text-container">
+        <h2>
+          Professional <span className="exp-yellow"> Experience</span>
+        </h2>
       </div>
+      <div className="left-right-container">
+        <div className="experience-left">
+          {experiences.map((job, index) => (
+            <ExperienceCard Company={job.company} key={job.id} />
+          ))}
+        </div>
 
-      <div className="experience-right">
-        <div className="experience-images-container">
-          <img
-            src={LevelUp}
-            alt="experience-img"
-            className="experience-image"
-          />
+        <div className="experience-right">
+          <div className="experience-images-container">
+            <img
+              src={LevelUp}
+              alt="experience-img"
+              className="experience-image"
+            />
+          </div>
         </div>
       </div>
     </div>
