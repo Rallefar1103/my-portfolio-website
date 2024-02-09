@@ -25,7 +25,7 @@
   
   .intro-left {
     width: 50%;
-    height: 100%; 
+    min-height: 100%; /* Ensure the container takes up at least the full height */
     color: white;
     display: flex;
     flex-direction: column;
@@ -34,8 +34,8 @@
   }
 
   .intro-text-container {
-    width:80%;
-    height: 40%;
+    width: 80%;
+    min-height: 40%; /* Use min-height to prevent container from becoming too small */
   }
 
 
@@ -66,8 +66,9 @@
     justify-content: flex-start;
     align-items: center;
     width: 80%;
-    margin-top: 1rem;
+    margin-top: 2rem; /* Ensure this margin is sufficient to prevent overlap */
   }
+  
   
   .intro-social-links img {
     height: 4.5vh;
@@ -85,8 +86,7 @@
 
   .profile-picture-container {
     width: 70%;
-    height: 70%;
-    padding-top: 60%;
+    padding-top: 70%; 
     position: relative;
   }
 
@@ -94,15 +94,15 @@
   .profile-picture {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%); 
     border-radius: 50%;
-    width: 90%;
-    height: 95%; 
+    width: 100%; 
+    height: auto; 
     object-fit: cover;
     border: 3px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
-
 
 
   
