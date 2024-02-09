@@ -43,7 +43,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-
+      {/* 
       <div className="project-management-card">
         <div className="pm-logo-title-container">
           <img
@@ -71,7 +71,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
