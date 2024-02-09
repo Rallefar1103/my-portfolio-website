@@ -707,3 +707,122 @@
     
 }
 
+
+
+
+@media screen and (max-width: 1440px) {
+    #skills {
+        margin-bottom: 30vh;
+    }
+    
+    .skills-title {
+        font-size: 5vw;
+        margin-bottom: 2vh;
+    }
+    
+    .skills-description-container {
+        max-width: 70vw;
+        font-size: 1.8vw;
+        margin-bottom: 3vh;
+    }
+
+    .skills-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2vw;
+        width: 100%;
+    }
+
+    .skill-card {
+        max-width: 70%; 
+    }
+
+    .skill-card-text {
+        width: 90%;
+    }
+
+    .skill-card-text h2 {
+        font-size: 2.5vw; 
+        padding-bottom: 1vh;
+    }
+    
+    .skill-card-text p {
+        font-size: 1.8vw; 
+        font-weight: 300;
+        padding-bottom: 3vh;
+    }
+    
+    .white-horizontal-bar-skill-card {
+        height: 0.3vh; 
+        background-color: white;
+        max-width: 40vw;
+        margin-bottom: 2vh; 
+    }
+    
+    .skill-card-text h3 {
+        font-size: 1.9vw; 
+        padding-bottom: 2vh;
+    }
+
+ 
+    .skills-tech-stack-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 20vw)); 
+        align-items: center;
+        justify-content: center;
+        grid-gap: 2vw; 
+        height: 30vh;
+        width: 100%;
+      }
+
+       
+    .skill-card-tech-icon-container {
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+
+
+    .skill-card-tech-icon-container img {
+        height: 100%; 
+        width: 100%; 
+        object-fit: contain;
+    }
+
+
+    /* Project Management Card */
+    .pm-tech-stack-list {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1.5vw;
+    }
+    
+
+    .pm-text-container h2 {
+        font-size: 2vw; 
+        margin-bottom: 1vh;
+    }
+    
+    .pm-text-container p {
+        font-weight: 200;
+        font-size: 1.5vw;
+    }
+    
+    .pm-icon-text-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-start;
+        width: 70vw;
+        text-align: left;
+    }
+    
+    .pm-icon-text-container p {
+        margin-bottom: 1vh;
+        font-weight: 300;
+        font-size: 1.5vw;
+    }
+}

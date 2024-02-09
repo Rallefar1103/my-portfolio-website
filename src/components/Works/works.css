@@ -153,6 +153,38 @@
 }
 
 
+@media (max-width: 1440px) {
+    .portfolio-projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    .portfolio-title {
+        margin-bottom: 1vw;
+        font-size: 5vw;
+    }
+    
+    .portfolio-intro {
+        font-weight: 300;
+        font-size: 1.85vw;
+        max-width: 70vw;
+        margin-bottom: 4vh;
+    }
+
+    .project-title {
+        font-size: 3vw;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .project-label {
+        font-size: 1.9vw;
+        color: rgba(255, 255, 255, 0.787); 
+        margin-bottom: 2vh;
+    }
+}
+
+
+
 
 
 /* Responsive adjustments with media queries */
