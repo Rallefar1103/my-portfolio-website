@@ -41,6 +41,7 @@
     color: #fff7f7;
 	font-size: 1.5rem;
 	font-weight: 300;
+    margin-top: 1em;
 }
 
 
@@ -133,13 +134,11 @@
     }
     
     .article-right:hover {
-        background: transparent;
-        opacity: 1;
-        border: 2px solid #9237a9; 
+        display: none;
     
     }
     
     .article-right h3:hover {
-        font-weight: 800;
+        display: none;
     }
 }

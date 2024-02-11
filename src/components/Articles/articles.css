@@ -11,7 +11,7 @@
 }
 
 .blog-header {
-    font-size: 7rem;
+    font-size: calc(4rem + 1.5vw);
     text-align: center;
     justify-content: center;
     margin-bottom: 2rem;

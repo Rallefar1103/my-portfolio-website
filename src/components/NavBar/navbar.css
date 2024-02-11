@@ -125,6 +125,7 @@
     .mobileMenu {
         display: flex;
     }
+
     .hamburger-btn {
         margin-top: 2vh;
         display: block;
