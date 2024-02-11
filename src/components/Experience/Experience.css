@@ -273,7 +273,7 @@
     }
 
     .company-tag-container p {
-      font-size: calc(0.4rem + 0.5vw); /* Responsive font size */
+      font-size: calc(0.6rem + 0.5vw); /* Responsive font size */
       color: yellow;
       font-weight: 500;
     }

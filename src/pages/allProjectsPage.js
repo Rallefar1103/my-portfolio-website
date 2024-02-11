@@ -56,23 +56,21 @@ const AllProjectsPage = () => {
           </div>
         </div>
       </div>
-      <div className="portfolio-projects-grid">
+      <div className="all-projects-grid">
         {allProjects.map((project, index) => (
-          <div className="pf-project-container" key={index}>
-            <div className="project-image-container">
+          <div className="all-project-container" key={index}>
+            <div className="all-project-image-container">
               <img
                 src={project.image}
                 alt="project"
-                className="project-image"
+                className="all-project-image"
               />
             </div>
-            <div className="pf-project-info-container">
+            <div className="all-project-info-container">
               <h3>{project.name}</h3>
               <p>{project.type}</p>
               <a href={project.githubUrl}>
-                <button type="button" className="pf-link-button">
-                  GitHub
-                </button>
+                <button type="button">GitHub</button>
               </a>
             </div>
           </div>

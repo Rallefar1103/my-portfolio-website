@@ -8,7 +8,7 @@
 }
 
 .portfolio-title {
-    font-size: 7rem;
+    font-size: calc(4rem + 1.5vw)
 }
 
 .portfolio-yellow {
@@ -24,22 +24,23 @@
 .portfolio-intro {
     font-weight: 300;
     font-size: 2rem;
-    width: 60%;
+    min-width: 60%;
     max-width: 80%;
+    width: 50%;
     margin-bottom: 3rem;
 }
 
-.portfolio-projects-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     width: 100%; 
     margin: 0 auto;
-}
+} 
 
 
 /* Container */
-.pf-project-container {
+ .project-container {
     background-color: rgb(50, 50, 50);
     border-radius: 20px;
     overflow: hidden;
@@ -62,17 +63,17 @@
     width: 100%;
     height: 100%; 
     object-fit: cover;
-    border-radius: 20px;/* Keep the rounded corners */
+    border-radius: 20px;
    
 }
 
-.pf-project-container:hover .pf-project-info-container {
+.project-container:hover .project-info-container {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-.pf-project-info-container {
+.project-info-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,30 +93,30 @@
     transition: opacity 0.3s, visibility 2s, transform 0.3s; 
 }
 
-.pf-project-info-container h3  {
+.project-info-container h3  {
     font-size: 2rem;
     font-weight: 600;
     color: white;
 }
 
-.pf-project-info-container p {
+.project-info-container p {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.787); 
     margin-bottom: 2rem;
 }
 
-.pf-project-container:hover {
+.project-container:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
 }
 
-.pf-project-container button {
+.project-info-container button {
     padding-top: 1rem;
     padding-left: 2rem;
     padding-bottom: 1rem;
     padding-right: 2rem;
     border: 2px solid white; 
     border-radius: 20px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: white; 
     background-color: transparent;
     cursor: pointer; 
@@ -124,7 +125,7 @@
     transition: background-color 0.3s;
 }
 
-.pf-project-container button:hover {
+.project-info-container button:hover {
     background-color: #faf9f7; 
     color: black;
 }
@@ -153,22 +154,6 @@
 }
 
 
-@media (max-width: 1440px) {
-    .portfolio-projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-    }
-
-}
-
-
-
-@media (max-width: 1024px) {
-    .portfolio-projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-    }
-
-}
-
 
 
 @media (max-width: 425px) {
@@ -184,13 +169,13 @@
         margin-bottom: 2vh;
     }
 
-    .portfolio-projects-grid {
-        grid-template-columns: 1fr; /* 1 column for mobile */
+    .projects-grid {
+        grid-template-columns: 1fr; 
         gap: 3.2vh;
         margin-left: 0;
     }
 
-    .pf-project-container {
+    .project-container {
         background-color: rgb(50, 50, 50);
         border-radius: 20px;
         overflow: hidden;
@@ -212,26 +197,10 @@
         width: 100%;
         height: 100%; 
         object-fit: cover;
-        border-radius: 20px;/* Keep the rounded corners */
+        border-radius: 20px;
         border: 1px solid #2E1E41; 
     }
 
-    .project-title {
-        font-size: 5vw;
-        font-weight: 600;
-        color: white;
-    }
-    
-    .project-label {
-        font-size: 3.2vw;
-        color: rgba(255, 255, 255, 0.787); 
-        margin-bottom: 2vh;
-    }
-
-    .pf-link-button {
-        border-radius: 15px;
-        font-size: 1.5vh;
-    }
     
     .all-projects-button {
         margin-top: 4vh;
@@ -244,4 +213,17 @@
         font-size: 2vw;
     }
     
-}
+} 
+
+ @media (max-width: 1750px){
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+  
+
+} 

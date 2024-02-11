@@ -16,9 +16,9 @@ const Works = () => {
         below.
       </p>
 
-      <div className="portfolio-projects-grid">
+      <div className="projects-grid">
         {allProjects.slice(0, 6).map((project, index) => (
-          <div className="pf-project-container" key={index}>
+          <div className="project-container" key={index}>
             <div className="project-image-container">
               <img
                 src={project.image}
@@ -26,14 +26,12 @@ const Works = () => {
                 className="project-image"
               />
             </div>
-            <div className="pf-project-info-container">
+            <div className="project-info-container">
               <h3>{project.name}</h3>
               <p>{project.type}</p>
 
               <Link to={`/projects/${project.id}`}>
-                <button type="button" className="pf-link-button">
-                  Learn more
-                </button>
+                <button type="button">Learn more</button>
               </Link>
             </div>
           </div>
