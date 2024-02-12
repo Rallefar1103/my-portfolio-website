@@ -1,6 +1,6 @@
 import React from "react";
 import "./articles.css";
-import Article from "./article";
+import Article from "./Article/article";
 import allArticles from "../../data/all-articles";
 
 const Articles = () => {

@@ -10,7 +10,7 @@ import AbstractBackgroundImage from "../../assets/background/abstract-background
 
 const IntroRevised = () => {
   return (
-    <section id="intro">
+    <section id="intro-revised">
       <img
         src={AbstractBackgroundImage}
         alt="Background"
