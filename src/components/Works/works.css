@@ -198,7 +198,7 @@
         display: grid;
         grid-template-columns: 1fr; 
         gap: 2vh;
-        width: 100;
+        width: 100%;
         height: 100%;
     }
 
@@ -238,6 +238,44 @@
         border: 1px solid  #9237a9; 
         border-radius: 20px;
         font-size: 3vw;
+    }
+
+    
+    .project-info-container h3  {
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    .project-info-container p {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.787); 
+        margin-bottom: 2rem;
+    }
+
+    .project-container:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    }
+
+    .project-info-container button {
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        padding-right: 2rem;
+        border: 2px solid white; 
+        border-radius: 20px;
+        font-size: 1.2rem;
+        color: white; 
+        background-color: transparent;
+        cursor: pointer; 
+        text-decoration: none; 
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .project-info-container button:hover {
+        background-color: #faf9f7; 
+        color: black;
     }
     
 } 

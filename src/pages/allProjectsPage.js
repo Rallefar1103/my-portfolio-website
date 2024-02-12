@@ -56,6 +56,7 @@ const AllProjectsPage = () => {
           </div>
         </div>
       </div>
+
       <div className="all-projects-grid">
         {allProjects.map((project, index) => (
           <div className="all-project-container" key={index}>

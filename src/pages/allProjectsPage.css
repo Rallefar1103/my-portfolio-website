@@ -223,6 +223,38 @@
     color: black;
 }
 
+@media (max-width: 1750px){
+    .all-projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .ap-profile-container {
+        width: 75%;
+        padding-top: 75%; 
+        position: relative;
+    }
+    
+    .intro-profile-image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+        border-radius: 50%;
+        width: 100%; 
+        height: auto; 
+        object-fit: cover;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+  
+
+} 
+
 
 
 
@@ -231,7 +263,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
         height: 40vh;
         width: 90vw;
         margin-top: 2vh;
@@ -244,7 +276,7 @@
         align-items: center; 
         justify-content: center;
         height: 100%;
-        width: 70%;
+        width: 100%;
         padding-left: 1vw;
         padding-right: 1vw;
     }
@@ -259,12 +291,12 @@
     }
     
     .intro-container-right {
-        width: 60%;
+        width: 100%;
         height: 100%;
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: center; 
         justify-content: center;
         margin-left: 2vw;
         
@@ -275,18 +307,20 @@
     }
     
     .all-projects-intro-text-container h2{
-       font-size: 4vw;
+       font-size: 3rem;
     }
     
     .all-projects-intro-text-container h3{
-        font-size: 2.5vw;
+        font-size: 1.5rem;
     }
     
     .buttons-row-container {
         display: flex;
         position: relative;
         flex-direction: row;
+        justify-content: center;
         margin-right: 2vw;
+        width: 100%
     }
     
     .get-in-touch {
@@ -296,7 +330,7 @@
         padding-right: 1.3vw;
         border: 2px solid #9237a9; 
         border-radius: 20px;
-        font-size: 1.7vw;
+        font-size: 1.2rem;
         color: white; 
         background-color: transparent;
         cursor: pointer; 
@@ -315,35 +349,47 @@
         border: 2px white;
     }
 
-
+    /* GRID */
     .all-projects-grid {
-        grid-template-columns: 1fr; /* 1 column for mobile */
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 2vh;
+        width: 100%;
+        height: 100%;
     }
 
-   
-
-    .all-project-link-button {
-        padding-top: 1vh;
-        padding-left: 2vw;
-        padding-bottom: 1vh;
-        padding-right: 2vw;
-        border: 2px solid white; 
+    .all-project-container {
+        background-color: rgb(50, 50, 50);
         border-radius: 20px;
-        font-size: 1.7vw;
-        color: white; 
-        background-color: transparent;
-        cursor: pointer; 
-        text-decoration: none; 
-        font-weight: bold;
-        transition: background-color 0.3s;
+        overflow: hidden;
+        position: relative;
+        width: 100%; 
+        transition: box-shadow 0.3s;
     }
     
-    .all-project-link-button:hover {
-        background-color: #faf9f7; 
-        color: black;
+    .all-project-image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
     }
-
-
+    
+    
+    .all-project-image {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        border-radius: 20px;/* Keep the rounded corners */
+       
+    }
+    
+    .all-project-container:hover .all-project-info-container {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
     .all-project-info-container {
         position: absolute;
         top: 0;
@@ -363,43 +409,44 @@
         transform: translateY(20%);
         transition: opacity 0.3s, visibility 2s, transform 0.3s; 
     }
-
+    
     .all-project-info-container h3  {
         font-size: 2rem;
         font-weight: 600;
-        color: white;
     }
-
+    
     .all-project-info-container p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: rgba(255, 255, 255, 0.787); 
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
-
+    
     .all-project-container:hover {
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
     }
-
-    .all-project-container button {
-        padding-top: 1rem;
-        padding-left: 2rem;
-        padding-bottom: 1rem;
-        padding-right: 2rem;
+    
+    .all-project-info-container button {
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 1.5rem;
         border: 2px solid white; 
-        border-radius: 20px;
-        font-size: 1.5em;
-        color: white; 
+        border-radius: 15px;
+        font-size: 1.2rem;
+        color: white;
         background-color: transparent;
         cursor: pointer; 
         text-decoration: none; 
         font-weight: bold;
         transition: background-color 0.3s;
     }
-
-    .all-project-container button:hover {
+    
+    .all-project-info-container button:hover {
         background-color: #faf9f7; 
         color: black;
     }
+    
+    
 }
 
 @media (max-width: 425px) {
@@ -585,34 +632,3 @@
 
 }
 
-@media (max-width: 1750px){
-    .all-projects-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 2rem;
-        width: 100%; 
-        margin: 0 auto;
-    }
-
-    .ap-profile-container {
-        width: 75%;
-        padding-top: 75%; 
-        position: relative;
-    }
-    
-    .intro-profile-image {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%); 
-        border-radius: 50%;
-        width: 100%; 
-        height: auto; 
-        object-fit: cover;
-        border: 3px solid rgba(255, 255, 255, 0.4);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-  
-
-} 

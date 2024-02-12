@@ -146,37 +146,7 @@
     }
     
     .first-screen-back-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.5em 1em;
-      margin: 1em;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 2vh;
-      color: white;
-      text-decoration: none;
-      position: absolute; 
-      top: 10px; 
-      left: -120px;
-    
-      transition: background-color 0.3s;
-      z-index: 2;
-    }
-    
-    .first-screen-back-button:hover {
-      background-color: #e2e2e2;
-      color: black;
-    }
-    
-    .first-screen-back-button svg:hover {
-      color: black;
-    }
-    
-    .first-screen-back-button svg {
-      margin-right: 0.5em;
-      margin-top: 0.1em;
+      display: none;
     }
     
     .first-screen-img {
@@ -249,7 +219,7 @@
     }
     
     .first-screen-tag{
-      font-size: 1.6vw;
+      font-size: 2vw;
         color: yellow;
         font-weight: 500;
     }
@@ -277,23 +247,7 @@
     }
     
     .first-screen-back-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.5em 1em;
-      margin: 1em;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 2vh;
-      color: white;
-      text-decoration: none;
-      position: absolute; 
-      top: 10px; 
-      left: -90px;
-    
-      transition: background-color 0.3s;
-      z-index: 2;
+      display: none;
     }
     
     .first-screen-back-button:hover {
