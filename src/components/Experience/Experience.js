@@ -6,7 +6,9 @@ import "./Experience.css";
 
 const ExperienceCard = ({ Company }) => {
   const experience = experiences.find((exp) => exp.company === Company);
-
+  const [isNarrowScreen, setIsNarrowScreen] = useState(
+    window.matchMedia("(max-width: 1000px)").matches
+  );
   const [company, setCompany] = useState("");
   const [website, setWebsite] = useState("");
   const [timeFrame, setTimeFrame] = useState("");
@@ -19,6 +21,12 @@ const ExperienceCard = ({ Company }) => {
     setTimeFrame(experience.timeFrame);
     setResponsibilities(experience.responsibilities);
     setTitle(experience.title);
+
+    const mediaQuery = window.matchMedia("(max-width: 1000px)");
+    const handleResize = (e) => setIsNarrowScreen(e.matches);
+    mediaQuery.addListener(handleResize);
+
+    return () => mediaQuery.removeListener(handleResize);
   }, [
     experience.company,
     experience.website,
@@ -29,40 +37,80 @@ const ExperienceCard = ({ Company }) => {
   ]);
 
   return (
-    <div className="experience-card">
-      <div className="card-left">
-        <p>{timeFrame}</p>
-      </div>
-      <div className="card-right">
-        <div className="company-row">
-          <h2>{company}</h2>
-          <div className="company-title-container">
-            <h3>{title}</h3>
-          </div>
-          {website && (
-            <>
-              <div className="company-website-container">
-                <a className="company-website" href={website}>
-                  <p>Website</p>
-                </a>
+    <>
+      {isNarrowScreen ? (
+        <div className="experience-card">
+          <div className="card-right">
+            <div className="company-row">
+              <h2>{company}</h2>
+              <div className="company-title-container">
+                <h3>{title}</h3>
               </div>
-            </>
-          )}
-        </div>
-        <div className="responsibility-row">
-          <div className="responsibilities-contaner">
-            <p>{responsibilities}</p>
+              {website && (
+                <>
+                  <div className="company-website-container">
+                    <a className="company-website" href={website}>
+                      <p>Website</p>
+                    </a>
+                  </div>
+                </>
+              )}
+            </div>
+            <div className="time-frame-contaner">
+              <p className="time-frame">{timeFrame}</p>
+            </div>
+
+            <div className="responsibility-row">
+              <div className="responsibilities-contaner">
+                <p>{responsibilities}</p>
+              </div>
+            </div>
+            <div className="company-tech-tags">
+              {experience.techTags.map((tag, index) => (
+                <div className="company-tag-container" key={index}>
+                  <p>{tag}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="company-tech-tags">
-          {experience.techTags.map((tag, index) => (
-            <div className="company-tag-container" key={index}>
-              <p>{tag}</p>
+      ) : (
+        <div className="experience-card">
+          <div className="card-left">
+            <p>{timeFrame}</p>
+          </div>
+          <div className="card-right">
+            <div className="company-row">
+              <h2>{company}</h2>
+              <div className="company-title-container">
+                <h3>{title}</h3>
+              </div>
+              {website && (
+                <>
+                  <div className="company-website-container">
+                    <a className="company-website" href={website}>
+                      <p>Website</p>
+                    </a>
+                  </div>
+                </>
+              )}
             </div>
-          ))}
+            <div className="responsibility-row">
+              <div className="responsibilities-contaner">
+                <p>{responsibilities}</p>
+              </div>
+            </div>
+            <div className="company-tech-tags">
+              {experience.techTags.map((tag, index) => (
+                <div className="company-tag-container" key={index}>
+                  <p>{tag}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 
