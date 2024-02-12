@@ -3,7 +3,7 @@ import "./TwoMockupView.css";
 const TwoMockupView = ({ solution, solutionDescription, imageTwo }) => {
   return (
     <>
-      <div className="project-mockups">
+      <div className="project-mockups-second">
         <div className="project-two-mockups-left">
           <img
             src={imageTwo}

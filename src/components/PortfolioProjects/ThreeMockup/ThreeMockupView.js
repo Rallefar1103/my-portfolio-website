@@ -3,7 +3,7 @@ import "./ThreeMockupView.css";
 const ThreeMockupView = ({ extraText, imageThree }) => {
   return (
     <>
-      <div className="project-mockups">
+      <div className="project-mockups-third">
         <div className="project-three-mockups-left">
           <div className="project-three-mockups-text-container">
             <h2>{extraText}</h2>

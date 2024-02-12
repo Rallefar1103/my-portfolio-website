@@ -2,7 +2,7 @@ import "./OneMockupView.css";
 
 const OneMockupView = ({ challenge, challengeDescription, image }) => {
   return (
-    <div className="project-mockups">
+    <div className="project-mockups-first">
       <div className="project-mockups-left">
         <div className="project-one-mockup-text-container">
           <p className="the-challenge">THE CHALLENGE</p>

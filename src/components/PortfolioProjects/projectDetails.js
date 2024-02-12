@@ -49,7 +49,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <>
+    <div section="project-details-section">
       <ProjectDetailsRevisedLook
         backgroundImage={project.backgroundImage}
         title={project.name}
@@ -135,7 +135,7 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
