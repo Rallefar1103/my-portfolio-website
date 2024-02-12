@@ -320,17 +320,7 @@
         grid-template-columns: 1fr; /* 1 column for mobile */
     }
 
-    .portfolio-title {
-        margin-bottom: 1vw;
-        font-size: 5vw;
-    }
-    
-    .portfolio-intro {
-        font-weight: 300;
-        font-size: 2vw;
-        max-width: 65vw;
-        margin-bottom: 4vh;
-    }
+   
 
     .all-project-link-button {
         padding-top: 1vh;
@@ -501,17 +491,7 @@
         border: 2px white;
     }
 
-    .portfolio-title {
-        margin-bottom: 1vh;
-        font-size: 10vw;
-    }
-    
-    .portfolio-intro {
-        font-weight: 300;
-        font-size: 3.5vw;
-        max-width: 100%;
-        margin-bottom: 2vh;
-    }
+   
 
     .all-projects-grid {
         grid-template-columns: 1fr; /* 1 column for mobile */
