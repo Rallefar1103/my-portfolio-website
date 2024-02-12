@@ -1,5 +1,5 @@
 import React from "react";
-import "./intro-revised.css";
+import "./intro.css";
 
 import LinkedinIcon from "../../assets/linkedin.png";
 import GitHubIcon from "../../assets/github.png";
@@ -10,7 +10,7 @@ import AbstractBackgroundImage from "../../assets/background/abstract-background
 
 const IntroRevised = () => {
   return (
-    <section id="intro-revised">
+    <section id="intro">
       <img
         src={AbstractBackgroundImage}
         alt="Background"

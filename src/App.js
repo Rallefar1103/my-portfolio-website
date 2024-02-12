@@ -1,4 +1,5 @@
 import Navbar from "./components/NavBar/navbar";
+import IntroRevised from "./components/Intro/intro";
 import About from "./components/About/about";
 import Skills from "./components/Skills/skills";
 import Works from "./components/Works/works";
@@ -8,7 +9,7 @@ import AllProjectsPage from "./pages/allProjectsPage";
 
 import "./app.css";
 import { Routes, Route, useLocation } from "react-router-dom";
-import IntroRevised from "./components/Intro/intro-revised";
+
 import ProjectDetails from "./components/PortfolioProjects/projectDetails";
 import Experience from "./components/Experience/Experience";
 
