@@ -1,7 +1,6 @@
 import React from "react";
 import "./skills.css";
-import ProjectManIcon from "../../assets/processing.png";
-import { allSkills, projectManagementSkills } from "../../data/skillsData";
+import { allSkills } from "../../data/skillsData";
 
 const Skills = () => {
   return (
