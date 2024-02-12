@@ -177,7 +177,7 @@
         padding-left: 2vw;
         padding-right: 2vw;
         margin-bottom: 30rem;
-        width: 100dvw;
+        width: 100vw;
         height: 100%;
     }
 
@@ -189,7 +189,7 @@
     .portfolio-intro {
         font-weight: 300;
         font-size: 3.5vw;
-        max-width: 90dvw;
+        max-width: 90vw;
         width: 90%;
         margin-bottom: 2rem;
     }
@@ -209,7 +209,7 @@
         position: relative;
         transition: box-shadow 0.3s;
         width: 100%;
-        height: 30dvh;
+        height: 30vh;
     }
     
     .project-image-container {
@@ -289,7 +289,7 @@
         padding-left: 2vw;
         padding-right: 2vw;
         margin-bottom: 30rem;
-        width: 100dvw;
+        width: 100vw;
         height: 100%;
     }
 
@@ -302,7 +302,7 @@
         text-align: left;
         font-weight: 300;
         font-size: 1.5rem;
-        max-width: 90dvw;
+        max-width: 90vw;
         width: 90%;
         margin-bottom: 2rem;
     }
@@ -322,7 +322,7 @@
         position: relative;
         transition: box-shadow 0.3s;
         width: 100%;
-        height: 30dvh;
+        height: 30vh;
     }
     
     .project-image-container {

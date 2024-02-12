@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  height: 90dvh;
+  height: 90vh;
   margin-top: 2vh;
   width: 100%;
   }
@@ -98,7 +98,7 @@
   }
 
   .project-two-mockups-text-container h2 {
-    font-size: calc(3rem + 1.4dvw);
+    font-size: calc(3rem + 1.4vw);
     margin-bottom: 2rem;
   }
 
@@ -112,14 +112,14 @@
   }
   
   .solution {
-    font-size: calc(1.3rem + 1.3dvw);
+    font-size: calc(1.3rem + 1.3vw);
         font-weight: 300;
         margin-bottom: 1.2rem;
         letter-spacing: 5px;
   }
 
   .solution-description {
-    font-size: calc(1rem + 1dvw);
+    font-size: calc(1rem + 1vw);
     font-weight: 200;
   }
 }
@@ -144,7 +144,7 @@
       align-items: center; 
       justify-content: center;
       width: 95%;
-      height: 50dvh;
+      height: 50vh;
   }
   
   .project-two-mockups-right {
@@ -165,7 +165,7 @@
   }
 
   .project-two-mockups-text-container h2 {
-    font-size: calc(2rem + 1.4dvw);
+    font-size: calc(2rem + 1.4vw);
     margin-bottom: 2rem;
   }
 
@@ -179,14 +179,14 @@
   }
   
   .solution {
-    font-size: calc(1rem + 1.3dvw);
+    font-size: calc(1rem + 1.3vw);
     font-weight: 300;
     margin-bottom: 1.2rem;
     letter-spacing: 5px;
   }
 
   .solution-description {
-    font-size: calc(1rem + 1dvw);
+    font-size: calc(1rem + 1vw);
     font-weight: 200;
   }
   

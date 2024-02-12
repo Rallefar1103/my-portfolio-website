@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import LevelUp from "../../assets/experience/level-up.png";
-import AbstractWhiteBlob from "../../assets/experience/white-blob2.svg";
 import { experiences } from "../../data/allExperiences";
 import "./Experience.css";
 

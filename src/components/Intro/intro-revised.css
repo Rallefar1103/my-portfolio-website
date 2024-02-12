@@ -2,7 +2,7 @@
   #intro {
     position: relative;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -111,7 +111,7 @@
     #intro {
       position: relative;
       width: 100%;
-      height: 100dvh;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center; 
@@ -199,13 +199,13 @@
 @media (max-width: 768px) {
   #intro {
     position: relative;
-    width: 100dvw; 
+    width: 100vw; 
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start; 
     flex-direction: column;
-    margin-bottom: 30dvh;
+    margin-bottom: 30vh;
   }
 
   .intro-left {
@@ -294,13 +294,13 @@
 @media (max-width: 500px) {
   #intro {
     position: relative;
-    width: 100dvw; 
+    width: 100vw; 
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start; 
     flex-direction: column;
-    margin-bottom: 30dvh;
+    margin-bottom: 30vh;
   }
 
   .intro-left {
@@ -358,7 +358,7 @@
 
   .intro-right {
       width: 100%;
-      height: 30dvh; 
+      height: 30vh; 
       display: flex;
       align-items: center;
       justify-content: flex-start;

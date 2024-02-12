@@ -1,6 +1,6 @@
 .first-screen-wrapper{
-    width: 100dvw;
-    height: 100dvh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@
   
   .first-screen-right {
     width: 50%;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -152,8 +152,8 @@
 
   @media (max-width: 1330px) {
     .first-screen-wrapper{
-      width: 100dvw;
-      height: 100dvh; 
+      width: 100vw;
+      height: 100vh; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -236,8 +236,8 @@
   
   @media (max-width: 768px) {
     .first-screen-wrapper{
-      width: 100dvw;
-      height: 100dvh; 
+      width: 100vw;
+      height: 100vh; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -329,8 +329,8 @@
 
     
     .first-screen-wrapper{
-      width: 100dvw;
-      height: 100dvh; 
+      width: 100vw;
+      height: 100vh; 
       display: flex;
       align-items: center;
       justify-content: center;

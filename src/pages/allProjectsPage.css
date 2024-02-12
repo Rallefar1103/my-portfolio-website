@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 50dvh;
+    height: 50vh;
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -62,7 +62,7 @@
 .intro-container-right {
     width: 50%;
     min-width: 50%;
-    height: 50dvh;
+    height: 50vh;
     display: flex;
     position: relative;
     flex-direction: column;
