@@ -150,7 +150,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 0.8%;
+    padding-bottom: 1%;
   }
 
   .company-website-container p {
@@ -276,6 +276,36 @@
       font-size: calc(0.6rem + 0.5vw); /* Responsive font size */
       color: yellow;
       font-weight: 500;
+    }
+
+    .company-title-container {
+      height: 100%;
+      margin-right: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 0%;
+      padding-top: 0.5%;
+    }
+  
+    .company-title-container h3 {
+      font-size: calc(0.8rem + 1.2vw);
+      font-weight: 500;
+      
+    }
+  
+    .company-website-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1%;
+      padding-bottom: 0%;
+    }
+  
+    .company-website-container p {
+      font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
+      color: rgb(140, 84, 251);
     }
 
   }

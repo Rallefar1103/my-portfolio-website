@@ -50,3 +50,11 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 500px) {
+    
+    
+    .blog-header {
+        font-size: 12vw;
+    }
+}

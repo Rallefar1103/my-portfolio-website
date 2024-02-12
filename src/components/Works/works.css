@@ -279,3 +279,116 @@
     }
     
 } 
+
+@media (max-width: 500px) {
+    #works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-bottom: 30rem;
+        width: 100dvw;
+        height: 100%;
+    }
+
+    #works h2 {
+        margin-bottom: 1vh;
+        font-size: 12vw;
+    }
+    
+    .portfolio-intro {
+        text-align: left;
+        font-weight: 300;
+        font-size: 1.5rem;
+        max-width: 90dvw;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 2vh;
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-container {
+        background-color: rgb(50, 50, 50);
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        transition: box-shadow 0.3s;
+        width: 100%;
+        height: 30dvh;
+    }
+    
+    .project-image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        border-radius: 20px;
+        border: 1px solid #2E1E41; 
+    }
+
+    
+    .all-projects-button {
+        margin-top: 4vh;
+        padding-top: 1.2vh;
+        padding-left: 2.1vw;
+        padding-bottom: 1.4vh;
+        padding-right: 2.1vw;
+        border: 1px solid  #9237a9; 
+        border-radius: 20px;
+        font-size: 1.3rem;
+    }
+
+    
+    .project-info-container h3  {
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    .project-info-container p {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.787); 
+        margin-bottom: 2rem;
+    }
+
+    .project-container:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    }
+
+    .project-info-container button {
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        padding-right: 2rem;
+        border: 2px solid white; 
+        border-radius: 20px;
+        font-size: 1.2rem;
+        color: white; 
+        background-color: transparent;
+        cursor: pointer; 
+        text-decoration: none; 
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .project-info-container button:hover {
+        background-color: #faf9f7; 
+        color: black;
+    }
+    
+} 

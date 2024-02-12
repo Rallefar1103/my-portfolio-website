@@ -113,13 +113,13 @@ const ProjectDetails = () => {
               reach me directly or check out the GitHub page!
             </p>
           </div>
-          <div className="buttons-row-container">
+          <div className="call-to-action-button-container">
             <a
               href="mailto:rasmus.henriksen@live.dk"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button type="button" className="get-in-touch-project-details">
+              <button type="button" className="get-in-touch-btn">
                 Get in touch
               </button>
             </a>
@@ -128,7 +128,7 @@ const ProjectDetails = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button type="button" className="get-in-touch-project-details">
+              <button type="button" className="get-in-touch-btn">
                 GitHub
               </button>
             </a>
