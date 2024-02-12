@@ -24,9 +24,8 @@
 .portfolio-intro {
     font-weight: 300;
     font-size: 2rem;
-    min-width: 60%;
-    max-width: 80%;
-    width: 50%;
+    max-width: 100%;
+    width: 80%;
     margin-bottom: 3rem;
 }
 
@@ -94,13 +93,13 @@
 }
 
 .project-info-container h3  {
-    font-size: 2rem;
+    font-size: calc(1rem + 1vw);
     font-weight: 600;
     color: white;
 }
 
 .project-info-container p {
-    font-size: 1.5rem;
+    font-size: calc(0.6rem + 1vw);
     color: rgba(255, 255, 255, 0.787); 
     margin-bottom: 2rem;
 }
@@ -116,7 +115,7 @@
     padding-right: 2rem;
     border: 2px solid white; 
     border-radius: 20px;
-    font-size: 1.2em;
+    font-size: calc(0.5rem + 1vw);
     color: white; 
     background-color: transparent;
     cursor: pointer; 
